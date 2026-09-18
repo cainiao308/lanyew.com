@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>wpa</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="format-detection" content="telephone=yes" />
+     
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+     
+    <link
+      inline-mode
+      rel="stylesheet"
+      href="https://bqq.gtimg.com/b2b-qq/wpa/index.css?_t=1716377224645"
+    />
+    
+  </head>
+  <body>
+    <div class="main" id="app">
+      <div class="loading">
+        <img src="https://bqq.gtimg.com/qdweb_2018/static/img/external/loading.gif" />正在拼命加载中...
+      </div>
+      <div class="pc hide">
+        <div class="pc-wrap">
+          <h3>请选择沟通方式</h3>
+          <ul>
+            <li class="qq">
+              <i></i>
+              <p>唤起QQ客户端</p>
+            </li>
+            <li class="wx call">
+              <div class="wake-up">
+                <i></i>
+                <p>唤起微信客户端</p>
+                <p class="tips">无法唤起？<em class="checkQrCode">查看二维码</em></p>
+              </div>
+              <div class="qr-code">
+                <i></i>
+                <img />
+                <p>微信扫描沟通</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="m hide">
+        <h2 class="icon"></h2>
+        <h3>请选择沟通方式</h3>
+        <ul>
+          <li class="qq"><i></i>QQ会话</li>
+          <li class="wx"><i></i>微信会话</li>
+        </ul>
+      </div>
+    </div>
+
+    <script
+      inline-mode
+      charset="utf-8"
+      src="https://bqq.gtimg.com/qidian/src/sites/comp/third-party/jquery-1.12.4.min.js"
+    ></script>
+    <script
+      inline-mode
+      charset="utf-8"
+      src="https://bqq.gtimg.com/b2b-qq/wpa/index.js?_t=1716377224645"
+    ></script>
+
+    <!-- RUM监控.start -->
+    <script charset="utf-8" src="https://bqq.gtimg.com/qidian-monitor/qidianMonitor.umd.min.js"></script>
+    <script>
+      try {
+        var QidianMonitor = window.qidianMonitor;
+        new QidianMonitor({
+          projectName: 'b2b-qq'
+        });
+      } catch (error) {
+        console.log('rum接入错误', error);
+      }
+    </script>
+    <!-- RUM监控.end -->
+  </body>
+</html>

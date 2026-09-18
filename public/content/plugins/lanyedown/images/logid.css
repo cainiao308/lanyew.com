@@ -1,0 +1,78 @@
+/*by lanyes.org 蓝叶*/ 
+.clear { clear: both }
+.pagefujian {
+ margin: 10px auto;
+ border: 1px solid #cedebd;
+ background: #fdfefb;
+ -webkit-border-radius: 3px;
+ -moz-border-radius: 3px;
+ border-radius: 3px;
+ padding: 10px;
+ overflow: hidden;
+ height:66px !important;
+}
+.pagefujian *{margin:0;padding:0;border:0;}
+.pagefujian .img { background-position: 0 0 !important; }
+.pagefujian .pdf { background-position: -40px 0 !important; }
+.pagefujian .doc { background-position: -80px 0 !important; }
+.pagefujian .xls { background-position: -120px 0 !important; }
+.pagefujian .txt { background-position: -160px 0 !important; }
+.pagefujian .audio { background-position: -200px 0 !important; }
+.pagefujian .video { background-position: -240px 0 !important; }
+.pagefujian .ppt { background-position: -280px 0 !important; }
+.pagefujian .exe { background-position: -360px 0 !important; }
+.pagefujian .apk { background-position: -440px 0 !important; }
+.pagefujian .bt { background-position: -520px 0 !important; }
+.pagefujian .fileico {
+ width: 35px;
+ height: 44px;
+ background: url(/content/plugins/lanyedown/images/fileico.png) -400px 0;
+ float: left;
+}
+.pagefujian .filecont {
+ float: left;
+ padding: 0 0 0 10px;
+ text-indent: 0 !important;
+}
+.pagefujian .filecont p{margin:0 !important}
+.pagefujian .filecont .filetit {
+ height: 27px;
+ font-size: 14px;
+ line-height: 25px !important;
+ letter-spacing: 1px;
+ font-family: "Microsoft Yahei";
+ padding:0 0 0 !important;
+}
+.pagefujian .filecont .filetit span{background:url(/content/plugins/lanyedown/images/xing.png) no-repeat 0 -2px;width:88px;height:20px;float:left;margin-left:20px;}
+.pagefujian .filecont .filetit span.xing_a{background-position: 0 -25px;}
+.pagefujian .filecont .filetit span.xing_b{background-position: 0 -49px;}
+.pagefujian .filecont .filetit span.xing_c{background-position: 0 -72px;}
+.pagefujian .filecont .filetit span.xing_d{background-position: 0 -96px;}
+.pagefujian .filecont .filetit span.xing_e{background-position: 0 -2px;}
+.pagefujian .filecont .filetit a {
+ color: #666;
+ text-decoration: none;
+ display: block;
+ max-width: 290px;
+ overflow: hidden;
+ white-space: nowrap;
+ float: left;
+ text-overflow: ellipsis;
+}
+.pagefujian .filecont .filetit a:hover { text-decoration: underline; }
+.pagefujian .down_2 { float: right; }
+.pagefujian .down_2 a {
+ width: 130px;
+ height: 42px;
+ display: block;
+ background: url(/content/plugins/lanyedown/images/down_2.jpg) no-repeat -2px -1px;
+ overflow: hidden;
+}
+.pagefujian .down_2 a:hover { background: url(/content/plugins/lanyedown/images/down_2.jpg) no-repeat -2px -46px; }
+.pagefujian .fileinfo{white-space:nowrap;text-overflow:ellipsis;overflow:hidden;line-height:normal !important;font-size:12px !important;color:#8F8D8D !important;font-family:arial !important;padding:1px 0 10px;}
+.pagefujian .fileinfo span{padding-right: 10px;}
+@media screen and (max-width: 540px) {
+.pagefujian .down_2,.pagefujian .filecont .filetit span{ display: none; }
+.pagefujian .filecont .filetit a { float: none; }
+.pagefujian .filecont {float: none;padding: 0 0 0 45px}
+}

@@ -1,0 +1,1514 @@
+                                <!doctype html>
+<html lang="zh-cn">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>舍力博客 - 记录生活的点点滴滴，关注互联网IT技术的个人博客</title>
+    <meta name="keywords" content="舍力,舍力博客,emlog,emlog教程,emlog模板,emlog插件,个人博客" />
+    <meta name="description" content="舍力博客是记录舍力学习和成长的自媒体博客；关注网站SEO技术及互联网发展，免费分享Emlog建站教程、Emlog模板、Emlog插件、SEO教程及SEO优化排名实战心得!" />
+    <link rel="icon" type="image/x-icon" href="" />
+    <link rel="stylesheet" href="https://www.shuyong.net/content/templates/Joe/assets/css/joe.global.min.css?v=1.7.4">
+    <link rel="stylesheet" href="https://www.shuyong.net/content/templates/Joe/assets/css/joe.responsive.min.css?v=1.7.4">
+    <link rel="stylesheet" href="https://www.shuyong.net/content/templates/Joe/assets/css/swiper.min.css?v=1.7.4" />
+    <link rel="stylesheet" href="https://www.shuyong.net/content/templates/Joe/assets/css/joe.index.min.css?v=1.7.4">
+    <link rel="stylesheet" href="https://www.shuyong.net/content/templates/Joe/assets/css/joe.post.min.css?v=1.7.4">
+    <script src="https://www.shuyong.net/content/templates/Joe/assets/js/jquery.min.js?v=1.7.4"></script>
+    <script src="https://www.shuyong.net/content/templates/Joe/assets/js/joe.global.js?v=1.7.4"></script>
+    <script src="https://www.shuyong.net/content/templates/Joe/assets/js/joe.archive.min.js?v=1.7.4"></script>
+    <script src="https://www.shuyong.net/content/templates/Joe/assets/js/swiper.min.js?v=1.7.4"></script>
+    <script src="https://www.shuyong.net/content/templates/Joe/assets/js/joe.index.js?v=1.7.4"></script>
+    <script src="https://www.shuyong.net/content/templates/Joe/assets/js/clipboard.min.js?v=1.7.4"></script>
+    <script src="https://www.shuyong.net/content/templates/Joe/assets/js/joe.post_page.js?v=1.7.4"></script>
+        <style>
+        @font-face {
+            font-family: 'Joe Font';
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+            src: url('');
+            src: url('') format('woff');
+        }
+
+        body {
+            font-family: 'Joe Font', helvetica neue, Helvetica, Arial, sans-serif;
+        }
+
+        body::before {
+            background-image: linear-gradient(90deg, rgba(60, 10, 30, .04) 3%, transparent 0), linear-gradient(1turn, rgba(60, 10, 30, .04) 3%, transparent 0);
+            background-size: 20px 20px;
+            background-position: 50%;
+            background-repeat: repeat;
+        }
+
+        body {
+            --theme: #006fff;
+        }
+
+        .joe_footer {
+            background: var(--background);
+        }
+
+        .submit img {
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            height: 35px;
+        }
+
+        .submit input {
+            width: 80px;
+            padding: 8px;
+            margin-left: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        /* 底部友情链接样式 */
+        .joe_footer__links {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .joe_footer__links-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .joe_footer__links-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .joe_footer__links-item a {
+            display: flex;
+            align-items: center;
+            padding: 8px 12px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            text-decoration: none;
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+
+        .joe_footer__links-item a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .joe_footer__links-avatar {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            margin-right: 8px;
+            object-fit: cover;
+        }
+
+        .joe_footer__links-name {
+            font-size: 14px;
+            white-space: nowrap;
+        }
+
+        /* 移动端友情链接样式 */
+        @media (max-width: 768px) {
+            .joe_footer__links-list {
+                gap: 10px;
+            }
+
+            .joe_footer__links-item a {
+                padding: 6px 10px;
+            }
+
+            .joe_footer__links-avatar {
+                width: 20px;
+                height: 20px;
+                margin-right: 6px;
+            }
+
+            .joe_footer__links-name {
+                font-size: 12px;
+            }
+        }
+    </style>
+    <script type="text/javascript">
+        let quanjuurl = 'https://www.shuyong.net/content/templates/Joe/';
+        let quandenglu = 'https://www.shuyong.net/admin/';
+        let quanjuyhid = '0';
+    </script>
+    <script>
+        localStorage.getItem("data-night") && document.querySelector("html").setAttribute("data-night", "night");
+        window.Joe = {
+            THEME_URL: `https://www.shuyong.net/content/templates/Joe/`,
+            DYNAMIC_BACKGROUND: `off`,
+            WALLPAPER_BACKGROUND_PC: ``,
+            IS_MOBILE: /windows phone|iphone|android/gi.test(window.navigator.userAgent),
+            BAIDU_PUSH: false,
+            DOCUMENT_TITLE: ``,
+            PAGE_SIZE: `12`
+        }
+    </script>
+</head>
+
+<body>
+    <div id="Joe">
+        <header class="joe_header">
+            <div class="joe_header__above">
+                <div class="joe_container">
+                    <svg class="joe_header__above-slideicon" viewBox="0 0 1152 1024" width="20" height="20">
+                        <path d="M76.032 872a59.968 59.968 0 1 0 0 120h999.936a59.968 59.968 0 1 0 0-120H76.032zm16-420.032a59.968 59.968 0 1 0 0 120h599.936a59.968 59.968 0 1 0 0-119.936H92.032zM76.032 32a59.968 59.968 0 1 0 0 120h999.936a60.032 60.032 0 0 0 0-120H76.032z" />
+                    </svg>
+                    <a class="joe_header__above-logo" href="https://www.shuyong.net/">
+                        <img class="lazyload" src="https://www.shuyong.net/go/slimg/logo-01.png" alt="舍力博客是记录舍力学习和成长的自媒体博客；关注网站SEO技术及互联网发展，免费分享Emlog建站教程、Emlog模板、Emlog插件、SEO教程及SEO优化排名实战心得!" />
+                    </a>
+                    <nav class="joe_header__above-nav">
+                            <nav class="joe_header__below-class">
+                                    <a class="item" href="https://www.shuyong.net/" title="首页" >首页</a>
+                                                <a class="item" href="https://www.shuyong.net/about.html" title="关于本站" >关于本站</a>
+                                                <a class="item" href="http://www.syom.cn/template" title="网站模板" >网站模板</a>
+                                                                    <div class="joe_dropdown" trigger="hover">
+                        <div>
+                            <a class="item" href="https://www.shuyong.net/chengxu" title="代码教程">代码教程</a>
+                            <svg class="joe_dropdown__link-icon" viewBox="0 0 1024 1024" width="13" height="13">
+                                <path d="M561.873 725.165c-11.262 11.262-26.545 21.72-41.025 18.502-14.479 2.413-28.154-8.849-39.415-18.502L133.129 375.252c-17.697-17.696-17.697-46.655 0-64.352s46.655-17.696 64.351 0l324.173 333.021 324.977-333.02c17.696-17.697 46.655-17.697 64.351 0s17.697 46.655 0 64.351L561.873 725.165z" fill="var(--minor)"></path>
+                            </svg>
+                        </div>
+                        <nav class="joe_dropdown__menu" style="top: 45px;">
+                            <li class="nav-item list-menu"><a class="nav-link" href="https://www.shuyong.net/iemlog" title="Emlog教程">Emlog教程</a></li><li class="nav-item list-menu"><a class="nav-link" href="https://www.shuyong.net/metinfo" title="米拓教程">米拓教程</a></li><li class="nav-item list-menu"><a class="nav-link" href="https://www.shuyong.net/seo" title="SEO优化教程">SEO优化教程</a></li><li class="nav-item list-menu"><a class="nav-link" href="https://www.shuyong.net/ecshop" title="Ecshop教程">Ecshop教程</a></li><li class="nav-item list-menu"><a class="nav-link" href="https://www.shuyong.net/zblog" title="zblog教程">zblog教程</a></li><li class="nav-item list-menu"><a class="nav-link" href="https://www.shuyong.net/excel" title="Excel技巧">Excel技巧</a></li><li class="nav-item list-menu"><a class="nav-link" href="https://www.shuyong.net/Windows" title="电脑软件教程">电脑软件教程</a></li>                        </nav>
+                    </div>
+                                                                                                    <div class="joe_dropdown" trigger="hover">
+                        <div>
+                            <a class="item" href="https://www.shuyong.net/net" title="互联网">互联网</a>
+                            <svg class="joe_dropdown__link-icon" viewBox="0 0 1024 1024" width="13" height="13">
+                                <path d="M561.873 725.165c-11.262 11.262-26.545 21.72-41.025 18.502-14.479 2.413-28.154-8.849-39.415-18.502L133.129 375.252c-17.697-17.696-17.697-46.655 0-64.352s46.655-17.696 64.351 0l324.173 333.021 324.977-333.02c17.696-17.697 46.655-17.697 64.351 0s17.697 46.655 0 64.351L561.873 725.165z" fill="var(--minor)"></path>
+                            </svg>
+                        </div>
+                        <nav class="joe_dropdown__menu" style="top: 45px;">
+                            <li class="nav-item list-menu"><a class="nav-link" href="https://www.shuyong.net/resource" title="免费资源">免费资源</a></li><li class="nav-item list-menu"><a class="nav-link" href="https://www.shuyong.net/news" title="网络新闻">网络新闻</a></li>                        </nav>
+                    </div>
+                                                                                                                    <div class="joe_dropdown" trigger="hover">
+                        <div>
+                            <a class='item' href="http://www.syom.cn/guestbook.html" >留言咨询 <b class="caret"></b></a>
+                            <svg class="joe_dropdown__link-icon" viewBox="0 0 1024 1024" width="13" height="13">
+                                <path d="M561.873 725.165c-11.262 11.262-26.545 21.72-41.025 18.502-14.479 2.413-28.154-8.849-39.415-18.502L133.129 375.252c-17.697-17.696-17.697-46.655 0-64.352s46.655-17.696 64.351 0l324.173 333.021 324.977-333.02c17.696-17.697 46.655-17.697 64.351 0s17.697 46.655 0 64.351L561.873 725.165z" fill="var(--minor)"></path>
+                            </svg>
+                        </div>
+                        <nav class="joe_dropdown__menu" style="top: 45px;">
+                            <li class="nav-item list-menu"><a class="nav-link" href="http://www.syom.cn/zhidao.html"  >在线问答</a></li><li class="nav-item list-menu"><a class="nav-link" href="http://www.syom.cn/links.html"  >申请友链</a></li><li class="nav-item list-menu"><a class="nav-link" href="http://www.syom.cn/daohang" target="_blank" >网址导航</a></li>                        </nav>
+                    </div>
+                                                                <a class="item" href="http://www.syom.cn/contact.html" title="联系舍力" >联系舍力</a>
+                        </nav>
+                    </nav>
+                    <form class="joe_header__above-search" method="get" action="https://www.shuyong.net/">
+                        <input class="input" type="search" placeholder="输入关键词搜索..." value="" autocomplete="off" name="keyword">
+                        <button type="submit" class="submit">搜索</button>
+                        <span class="icon"></span>
+                    </form>
+                    <svg class="joe_header__above-searchicon" viewBox="0 0 1024 1024" width="20" height="20">
+                        <path d="M1008.19 932.031L771.72 695.56a431.153 431.153 0 1 0-76.158 76.158l236.408 236.472a53.758 53.758 0 0 0 76.158 0 53.758 53.758 0 0 0 0-76.158zM107.807 431.185a323.637 323.637 0 0 1 323.316-323.381 323.7 323.7 0 0 1 323.381 323.38 323.637 323.637 0 0 1-323.38 323.317 323.637 323.637 0 0 1-323.317-323.316z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="joe_header__below">
+                <div class="joe_container">
+                    <nav class="joe_header__below-class">
+                        <nav class="joe_header__below-class">
+                            <a class="item" href="http://www.shuyong.net">舍力</a>                        </nav>
+                    </nav>
+                    <div class="joe_header__below-sign">
+                        <div class="item">
+                                                            <svg t="1630233812535" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8403" width="25" height="25">
+                                    <path d="M0 510.327c0 281.86 228.466 510.327 510.327 510.327s510.327-228.466 510.327-510.327S792.188 0 510.327 0 0 228.466 0 510.327z" fill="#EAF4FF" p-id="8404"></path>
+                                    <path d="M510.327 0c281.86 0 510.327 228.466 510.327 510.327s-228.466 510.327-510.327 510.327S0 792.188 0 510.327 228.466 0 510.327 0z m0 31.898c-264.219 0-478.43 214.21-478.43 478.429 0 264.219 214.211 478.429 478.43 478.429s478.429-214.21 478.429-478.43c0-264.218-214.21-478.428-478.43-478.428z" fill="#90D0FF" p-id="8405"></path>
+                                    <path d="M725.527 448.86c0 129.037-93.605 233.626-209.036 233.626-115.491 0-209.063-104.582-209.063-233.626 0-129.05 93.599-233.66 209.063-233.66 115.43 0 209.036 104.61 209.036 233.66" fill="#FFDFC6" p-id="8406"></path>
+                                    <path d="M435.695 649.096H595.6v131.768H435.662V649.096h0.033z m-101.108-183.33c0 19.302-14.343 34.957-32.025 34.957-17.723 0-32.025-15.655-32.025-34.923 0-19.343 14.336-34.957 32.025-34.957 17.682 0 32.025 15.621 32.025 34.923z m427.831-0.415c0 19.309-14.342 34.93-32.025 34.93-17.689 0-32.025-15.621-32.025-34.93 0-19.302 14.336-34.956 32.025-34.956 17.683 0 32.025 15.654 32.025 34.93v0.026z" fill="#FFDFC6" p-id="8407"></path>
+                                    <path d="M433.185 666.65s30.265 15.675 74.204 15.675c51.574 2.115 85.253-15.26 85.253-15.26v15.709s-56.709 30.452-82.295 30.452c-25.58 0-77.57-35.967-77.57-35.967l0.408-10.575v-0.033z m53.65-512.38s-141.038 14.134-142.503 107.07c-1.433 92.87 108.925 110.666 149.798 120.826 40.907 10.167 153.373 23.21 219.096-84.182 0 0-18.03-42.125-27.876-71.493-4.397-7.656 7.075 13.051-32.366-11.986-39.44-25.005-92.394-66.038-166.149-60.236z" fill="#ECB485" p-id="8408"></path>
+                                    <path d="M387.192 209.05s-103.37 17.24-109.226 109.782c-5.897 92.542 10.508 116.957 10.508 116.957s23.317-0.067 29.18 34.803c0 0 10.789 6.405 11.753 0 1.606-10.642-9.45-61.146 12.589-108.09 21.879-46.648 42.954-53.314 42.954-53.314l2.242-100.138z m271.775 101.128s27.642 35.666 32.414 71.265c4.069 30.252 9.704 87.094 9.704 87.094s7.697 5.448 13.232-7.63c5.515-13.038 4.07-26.115 9.196-29.475 27.066-17.943 19.991-93.278 18.58-101.262-6.185-33.645-34.087-87.67-34.087-87.67l-49.032 67.678z"
+                                        fill="#3F3F3F" p-id="8409"></path>
+                                    <path d="M487.036 123.55s-147.376 5.996-148.848 103.202c-1.486 97.2 114.935 124.614 156.25 135.242 41.281 10.622 154.872 24.315 221.251-88.077 0 0 16.605-50.9 6.666-81.633-4.444-7.977-27.675 20.487-67.51-5.709-39.843-26.168-93.318-69.09-167.81-63.026" fill="#3F3F3F" p-id="8410"></path>
+                                    <path d="M885.392 860.187c-25.968-20.266-74.893-50.07-123.369-73.474-78.68-38.002-166.29-55.042-166.29-55.042l-0.066 2.597c-6.378 6.747-37.152 36.898-79.571 36.898-41.75 0-72.972-28.284-80.18-35.439l-0.381-3.64s-84.357 11.464-163.037 49.46c-53.87 26.008-108.216 59.92-131.079 79.844 96.31 101.771 230.748 159.423 371.39 159.263 146.995 0 279.452-61.722 372.576-160.467z" fill="#6EBDF7" p-id="8411"></path>
+                                </svg>
+                                <a href="./admin">登录</a>
+                                                    </div>
+                    </div>
+                </div>
+                <div class="joe_header__below-progress" style="width: 0%;"></div>
+            </div>
+            <div class="joe_header__searchout">
+                <div class="joe_container">
+                    <div class="joe_header__searchout-inner">
+                        <form class="search" method="get" action="https://www.shuyong.net/">
+                            <input class="input" type="search" placeholder="输入关键词搜索..." value="" autocomplete="off" name="keyword">
+                            <button type="submit" class="submit">搜索</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="joe_header__slideout">
+                <img width="100%" height="150" class="joe_header__slideout-image" src="" alt="侧边栏壁纸" />
+                <div class="joe_header__slideout-author">
+                    <img width="50" height="50" class="avatar lazyload" src="https://www.shuyong.net/content/uploadfile/202309/thum-db8e1694946312.jpg" alt="博主头像" />
+                    <div class="info">
+                        <a class="link">舍力</a>
+                        <p class="motto">静以修身。</p>
+                    </div>
+                </div>
+                    <ul class="joe_header__slideout-count">
+        <li class="item">
+            <svg class="icon" viewBox="0 0 1024 1024" width="15" height="15">
+                <path d="M606.227 985.923H164.75c-69.715 0-126.404-56.722-126.404-126.442V126.477C38.346 56.755 95.04 0 164.75 0h619.275c69.715 0 126.549 56.755 126.549 126.477v503.925c0 18.216-14.814 32.997-33.07 32.997-18.183 0-32.925-14.78-32.925-32.997V126.477c0-33.355-27.2-60.488-60.554-60.488H164.75c-33.353 0-60.41 27.133-60.41 60.488v733.004c0 33.353 27.057 60.441 60.41 60.441h441.477c18.183 0 32.925 14.787 32.925 33.004 0 18.211-14.742 32.997-32.925 32.997zm0 0" />
+                <path d="M657.62 322.056H291.154c-18.183 0-32.924-14.786-32.924-33.003 0-18.21 14.74-32.998 32.924-32.998H657.62c18.256 0 33.07 14.787 33.07 32.998 0 18.217-14.814 33.003-33.07 33.003zm0 0M657.62 504.749H291.154c-18.183 0-32.924-14.78-32.924-32.993 0-18.222 14.74-32.997 32.924-32.997H657.62c18.256 0 33.07 14.775 33.07 32.997 0 18.218-14.814 32.993-33.07 32.993zm0 0M445.611 687.486H291.154c-18.183 0-32.924-14.78-32.924-33.004 0-18.21 14.74-32.991 32.924-32.991h154.457c18.184 0 32.998 14.78 32.998 32.991 0 18.224-14.814 33.004-32.998 33.004zm0 0M866.482 1024c-8.447 0-16.896-3.225-23.34-9.662L577.595 748.786c-7.156-7.123-10.592-17.07-9.446-27.056l8.733-77.728c1.788-15.321 13.885-27.378 29.2-29.06l77.45-8.52c10.443-.965 19.9 2.433 26.905 9.449l265.558 265.551c12.875 12.877 12.875 33.784 0 46.666l-86.184 86.25c-6.438 6.437-14.887 9.662-23.33 9.662zm-231.05-310.646l231.05 231.018 39.575-39.62-231.043-231.05-35.505 3.938-4.076 35.714zm0 0" />
+            </svg>
+            <span>累计撰写 <strong>1141</strong> 篇文章</span>
+        </li>
+        <li class="item">
+            <svg class="icon" viewBox="0 0 1024 1024" width="15" height="15">
+                <path d="M921.6 153.6H102.4A102.4 102.4 0 0 0 0 256v512a102.4 102.4 0 0 0 102.4 102.4h819.2A102.4 102.4 0 0 0 1024 768V256a102.4 102.4 0 0 0-102.4-102.4zM687.616 473.088L972.8 258.304V791.04zM960 204.8L527.104 527.36 73.216 204.8zM371.2 483.584l-320 287.232V256zM73.984 819.2l339.2-307.2 83.456 59.392a51.2 51.2 0 0 0 60.416 0l89.6-67.328L931.072 819.2z" />
+            </svg>
+            <span>累计收到 <strong>3504</strong> 条评论</span>
+        </li>
+    </ul>
+                <ul class="joe_header__slideout-menu panel-box">
+                    <li>
+                        <a class="link" href="https://www.shuyong.net/" title="首页">
+                            <span>首页</span>
+                        </a>
+                    </li>
+                    <!-- 栏目 -->
+                    <li>
+                        <a class="link panel" href="#" rel="nofollow">
+                            <span>栏目</span>
+                            <svg class="icon" viewBox="0 0 1024 1024" width="13" height="13">
+                                <path d="M624.865 512.247L332.71 220.088c-12.28-12.27-12.28-32.186 0-44.457 12.27-12.28 32.186-12.28 44.457 0l314.388 314.388c12.28 12.27 12.28 32.186 0 44.457L377.167 848.863c-6.136 6.14-14.183 9.211-22.228 9.211s-16.092-3.071-22.228-9.211c-12.28-12.27-12.28-32.186 0-44.457l292.155-292.16z" />
+                            </svg>
+                        </a>
+                            <ul class="slides panel-body panel-box">
+                                    <li><a class="link " href="https://www.shuyong.net/" title="首页">首页</a></li>
+                                                <li><a class="link " href="https://www.shuyong.net/about.html" title="关于本站">关于本站</a></li>
+                                                <li><a class="link " href="http://www.syom.cn/template" title="网站模板">网站模板</a></li>
+                                                                    <li>
+                        <div class="link panel ">
+                            <a href="https://www.shuyong.net/chengxu" title="代码教程">代码教程</a>
+                            <svg class="icon" viewBox="0 0 1024 1024" width="13" height="13">
+                                <path d="M624.865 512.247L332.71 220.088c-12.28-12.27-12.28-32.186 0-44.457 12.27-12.28 32.186-12.28 44.457 0l314.388 314.388c12.28 12.27 12.28 32.186 0 44.457L377.167 848.863c-6.136 6.14-14.183 9.211-22.228 9.211s-16.092-3.071-22.228-9.211c-12.28-12.27-12.28-32.186 0-44.457l292.155-292.16z" />
+                            </svg>
+                        </div>
+                        <ul class="slides panel-body">
+                            <li><a class="link " href="https://www.shuyong.net/iemlog" title="Emlog教程">Emlog教程</a></li><li><a class="link " href="https://www.shuyong.net/metinfo" title="米拓教程">米拓教程</a></li><li><a class="link " href="https://www.shuyong.net/seo" title="SEO优化教程">SEO优化教程</a></li><li><a class="link " href="https://www.shuyong.net/ecshop" title="Ecshop教程">Ecshop教程</a></li><li><a class="link " href="https://www.shuyong.net/zblog" title="zblog教程">zblog教程</a></li><li><a class="link " href="https://www.shuyong.net/excel" title="Excel技巧">Excel技巧</a></li><li><a class="link " href="https://www.shuyong.net/Windows" title="电脑软件教程">电脑软件教程</a></li>                        </ul>
+                    </li>
+                                                                                                    <li>
+                        <div class="link panel ">
+                            <a href="https://www.shuyong.net/net" title="互联网">互联网</a>
+                            <svg class="icon" viewBox="0 0 1024 1024" width="13" height="13">
+                                <path d="M624.865 512.247L332.71 220.088c-12.28-12.27-12.28-32.186 0-44.457 12.27-12.28 32.186-12.28 44.457 0l314.388 314.388c12.28 12.27 12.28 32.186 0 44.457L377.167 848.863c-6.136 6.14-14.183 9.211-22.228 9.211s-16.092-3.071-22.228-9.211c-12.28-12.27-12.28-32.186 0-44.457l292.155-292.16z" />
+                            </svg>
+                        </div>
+                        <ul class="slides panel-body">
+                            <li><a class="link " href="https://www.shuyong.net/resource" title="免费资源">免费资源</a></li><li><a class="link " href="https://www.shuyong.net/news" title="网络新闻">网络新闻</a></li>                        </ul>
+                    </li>
+                                                                                                                    <li>
+                        <div class="link panel ">
+                            <a class='item' href="http://www.syom.cn/guestbook.html" >留言咨询 <b class="caret"></b></a>
+                            <svg class="joe_dropdown__link-icon" viewBox="0 0 1024 1024" width="13" height="13">
+                                <path d="M561.873 725.165c-11.262 11.262-26.545 21.72-41.025 18.502-14.479 2.413-28.154-8.849-39.415-18.502L133.129 375.252c-17.697-17.696-17.697-46.655 0-64.352s46.655-17.696 64.351 0l324.173 333.021 324.977-333.02c17.696-17.697 46.655-17.697 64.351 0s17.697 46.655 0 64.351L561.873 725.165z" fill="var(--minor)"></path>
+                            </svg>
+                        </div>
+                        <ul class="slides panel-body">
+                            <li><a class="link" href="http://www.syom.cn/zhidao.html"  >在线问答</a></li><li><a class="link" href="http://www.syom.cn/links.html"  >申请友链</a></li><li><a class="link" href="http://www.syom.cn/daohang" target="_blank" >网址导航</a></li>                        </ul>
+                    </li>
+                                                                <li><a class="link " href="http://www.syom.cn/contact.html" title="联系舍力">联系舍力</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="joe_header__mask"></div>
+        </header><div class="joe_container">
+    <div class="joe_main">
+        <div class="joe_index">
+            <div class="joe_index__banner">
+                <div class="swiper-container swiper-container-initialized swiper-container-horizontal">
+                    <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-1320px, 0px, 0px);">
+                        <!-- 幻灯片结束 -->
+                        <a class="item swiper-slide"href=""target="_blank"><img width="100%"height="100%"src="/content/templates/Joe/assets/img/demo-ad3.jpg"><div class="title"></div></a>                    </div>
+                    <div class="swiper-pagination swiper-pagination-bullets">
+                        <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+                    </div>
+                    <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"></div>
+                    <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide"></div>
+                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                </div>
+                                            </div>
+            <div class="joe_index__hot">
+                <ul class="joe_index__hot-list">
+                                    </ul>
+            </div>
+            <div class="joe_index__title">
+                <ul class="joe_index__title-title">
+                    <li class="item active" data-type="created">最新文章</li>
+                    <li class="line" style="left: 0px; width: 56px;"></li>
+                </ul>
+                            </div>
+            <div class="joe_index__list" data-wow="pulse">
+                <ul class="joe_list">
+                                                <li class="joe_list__item wow default">
+                                <div class="line"></div>
+                                <a href="https://www.shuyong.net/1150.html" class="thumbnail" title="Win11右键显示更多选项改为旧版系统样式(默认展开)">
+                                    <img width="100%" height="100%" data-original="https://www.shuyong.net/content/uploadfile/202605/d9041779359055.jpg" src="https://www.shuyong.net/content/uploadfile/202605/d9041779359055.jpg" alt="Win11右键显示更多选项改为旧版系统样式(默认展开)">
+                                    <time datetime="2026-5-21">2026-5-21</time>
+                                                                    </a>
+                                <div class="information">
+                                    <a href="https://www.shuyong.net/1150.html" class="title" title="Win11右键显示更多选项改为旧版系统样式(默认展开)">
+                                                                                Win11右键显示更多选项改为旧版系统样式(默认展开)                                    </a>
+                                    <a class="abstract" href="https://www.shuyong.net/1150.html" title="文章摘要">
+                                        用惯了Windows 10的小伙伴，升级Windows 11后最头疼的问题之一，莫过于被&quot;隐藏&quot;的右键菜单，常用的功能全被藏在&quot;显示更多选项&quot;里，每次操作都要多点一下，效率大打折扣。
+今天就给大家分享2种方法，无需装任何软件，就能轻松恢复Windows 10经典完整右键菜单，新手也能轻松上手！
+目前Windows 11没有官方设置能直接切换经典菜单，但以下方法均基于微软兼容的原生方案，安全稳定，不影响系统更新，请放心操作。
+
+方法一
+使用快捷键Shift
+该方法适合临时使用（对电脑系统设置零修改、最安全，即开即用）。
+操作非常简单，在桌面、文件夹或文件上，按住Shift键不放，再点击鼠标右键，弹出的就是Windows 10经典完整菜单，所有常用功能一目了然！
+方法二
+修改注册表（永久生效、纯原生，适合长期用）
+该方法通过修改注册表实现永久Windows 10经典右键菜单，属于微软兼容的原生方案，修改后无需每次按Shift。
+重要提醒：修改注册表前，务必备份！避免误操作导致系统问题，养成备份的习惯很重要！
+操作步骤
+1、打开注册表编辑器
+按下Win + R键，输入regedit，按回车键，在用户账户控制提示时点击&quot;是&quot;
+2、导航到目标路径
+在注册表编辑器中，依次展开以下路径：HKEY_CURRENT_USER\Software\Classes\CLSID
+3、创建新的注册表项
+右键点击CLSID，选择&quot;新建&quot; → “项”；将新项命名为：{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}
+在刚创建的项上右键，选择&quot;新建&quot; → “项”将子项命名为：InprocServer32
+4、设置默认值
+选中InprocServer32项，在右侧窗口中双击&quot;(默认)&quot;值，将数值数据留空，直接点击&quot;确定&quot;。
+5、重启系统或资源管理器
+重启电脑，或者通过任务管理器重启资源管理器进程                                    </a>
+                                    <div class="meta">
+                                        <ul class="items">
+                                            <li>
+                                                2026年5月21日                                            </li>
+                                            <li>
+                                                793 阅读
+                                            </li>
+                                            <li>
+                                                0 评论
+                                            </li>
+                                        </ul>
+                                        <div class="last" style="display: flex">
+                                            <svg class="icon" viewBox="0 0 1024 1024" width="15" height="15">
+                                                <path d="M512.2 564.743a76.818 76.818 0 0 1-30.973-6.508L108.224 393.877c-26.105-11.508-42.56-35.755-42.927-63.272-.384-27.44 15.356-52.053 41.042-64.232l373.004-176.74c20.591-9.737 45.16-9.755 65.75.017L917.68 266.39c25.668 12.188 41.39 36.792 41.024 64.231-.384 27.5-16.821 51.73-42.908 63.237l-372.57 164.377a77.18 77.18 0 0 1-31.025 6.508zM139.843 329.592l370.213 163.241c1.291.56 3.018.567 4.345-.009l369.758-163.128-369.706-175.464v-.01c-1.326-.628-3.158-.636-4.502 0l-370.108 175.37zm748.015 1.858h.175-.175zM512.376 941.674c-10.348 0-20.8-2.32-30.537-6.997L121.05 778.624c-18.113-7.834-26.454-28.87-18.62-46.983 7.835-18.112 28.862-26.488 46.993-18.61l362.08 156.629 345.26-156.366c17.939-8.166 39.14-.253 47.324 17.746 8.166 17.964.227 39.157-17.729 47.324l-344.51 156.61c-9.196 4.449-19.281 6.7-29.471 6.7z"
+                                                    fill="#444"></path>
+                                                <path d="M871.563 515.449L511.81 671.775 152.358 515.787v73.578a34.248 34.248 0 0 0 20.76 31.48l301.518 129.19c11.806 5.703 24.499 8.546 37.175 8.546s25.367-2.843 37.174-8.546L850.82 620.534a34.248 34.248 0 0 0 20.744-31.474V515.45z" fill="#ff6a18"></path>
+                                            </svg>
+                                                        <a class="link" rel="nofollow" href="https://www.shuyong.net/Windows">电脑软件教程</a>
+                                            </div>
+                                    </div>
+                                </div>
+                            </li>
+                                                    <li class="joe_list__item wow default">
+                                <div class="line"></div>
+                                <a href="https://www.shuyong.net/1149.html" class="thumbnail" title="emlogpro实现分站功能(同一后台，不同前端)">
+                                    <img width="100%" height="100%" data-original="https://www.shuyong.net/content/templates/Joe/assets/img/demo-cover.jpg" src="https://www.shuyong.net/content/templates/Joe/assets/img/demo-cover.jpg" alt="emlogpro实现分站功能(同一后台，不同前端)">
+                                    <time datetime="2026-3-27">2026-3-27</time>
+                                                                    </a>
+                                <div class="information">
+                                    <a href="https://www.shuyong.net/1149.html" class="title" title="emlogpro实现分站功能(同一后台，不同前端)">
+                                                                                emlogpro实现分站功能(同一后台，不同前端)                                    </a>
+                                    <a class="abstract" href="https://www.shuyong.net/1149.html" title="文章摘要">
+                                        EmLogPro是基于PHP和MySQL开发的博客系统，它本身并不直接支持内置的分站功能，舍力结合5.3.1版本m文件夹来实现这一需求。
+以下是一些实现分站功能的方法（本方法自用做记录之用）：
+在根目录创建一个文件夹，本文以syom做为示例，在syom创建一个index.php文件，内容如下：
+
+require_once '../init.php';
+$symb = 'syom';//当前目录地址，需跟文件名一样
+define('SYM_PATH',EMLOG_ROOT.'/'.$symb.'/');//不可更改项，否则出错！！！
+class View{public static function getView($symurl,$ext='.php'){return SYM_PATH.$symurl.$ext;}}//不可更改项，否则出错
+
+$logid = isset ($_GET) ? intval ($_GET) : '';
+$action = isset($_GET) ? addslashes($_GET) : '';
+$slsort = isset ($_GET) ? intval ($_GET) : '';
+$slkey = isset($_GET) ? addslashes($_GET) : '';
+$sltag =  isset ($_GET) ? addslashes ($_GET) : '';
+$slauthor =  isset ($_GET) ? addslashes($_GET) : '';
+$navi_cache = $CACHE->readCache('navi');
+$user_cache = $CACHE->readCache('user');
+$sort_cache = $CACHE->readCache('sort'); 
+$tag_cache = $CACHE->readCache('tags');
+
+未完待续！！！                                    </a>
+                                    <div class="meta">
+                                        <ul class="items">
+                                            <li>
+                                                2026年3月27日                                            </li>
+                                            <li>
+                                                773 阅读
+                                            </li>
+                                            <li>
+                                                0 评论
+                                            </li>
+                                        </ul>
+                                        <div class="last" style="display: flex">
+                                            <svg class="icon" viewBox="0 0 1024 1024" width="15" height="15">
+                                                <path d="M512.2 564.743a76.818 76.818 0 0 1-30.973-6.508L108.224 393.877c-26.105-11.508-42.56-35.755-42.927-63.272-.384-27.44 15.356-52.053 41.042-64.232l373.004-176.74c20.591-9.737 45.16-9.755 65.75.017L917.68 266.39c25.668 12.188 41.39 36.792 41.024 64.231-.384 27.5-16.821 51.73-42.908 63.237l-372.57 164.377a77.18 77.18 0 0 1-31.025 6.508zM139.843 329.592l370.213 163.241c1.291.56 3.018.567 4.345-.009l369.758-163.128-369.706-175.464v-.01c-1.326-.628-3.158-.636-4.502 0l-370.108 175.37zm748.015 1.858h.175-.175zM512.376 941.674c-10.348 0-20.8-2.32-30.537-6.997L121.05 778.624c-18.113-7.834-26.454-28.87-18.62-46.983 7.835-18.112 28.862-26.488 46.993-18.61l362.08 156.629 345.26-156.366c17.939-8.166 39.14-.253 47.324 17.746 8.166 17.964.227 39.157-17.729 47.324l-344.51 156.61c-9.196 4.449-19.281 6.7-29.471 6.7z"
+                                                    fill="#444"></path>
+                                                <path d="M871.563 515.449L511.81 671.775 152.358 515.787v73.578a34.248 34.248 0 0 0 20.76 31.48l301.518 129.19c11.806 5.703 24.499 8.546 37.175 8.546s25.367-2.843 37.174-8.546L850.82 620.534a34.248 34.248 0 0 0 20.744-31.474V515.45z" fill="#ff6a18"></path>
+                                            </svg>
+                                                        <a class="link" rel="nofollow" href="https://www.shuyong.net/iemlog">Emlog教程</a>
+                                            </div>
+                                    </div>
+                                </div>
+                            </li>
+                                                    <li class="joe_list__item wow default">
+                                <div class="line"></div>
+                                <a href="https://www.shuyong.net/1147.html" class="thumbnail" title="网页不满屏幕高度时，footer始终在底部显示代码">
+                                    <img width="100%" height="100%" data-original="https://www.shuyong.net/content/templates/Joe/assets/img/demo-cover.jpg" src="https://www.shuyong.net/content/templates/Joe/assets/img/demo-cover.jpg" alt="网页不满屏幕高度时，footer始终在底部显示代码">
+                                    <time datetime="2025-4-23">2025-4-23</time>
+                                                                    </a>
+                                <div class="information">
+                                    <a href="https://www.shuyong.net/1147.html" class="title" title="网页不满屏幕高度时，footer始终在底部显示代码">
+                                                                                网页不满屏幕高度时，footer始终在底部显示代码                                    </a>
+                                    <a class="abstract" href="https://www.shuyong.net/1147.html" title="文章摘要">
+                                        我们在布局的时候有这样一种情况，就是当页面高度没有超过屏幕高度的时候，footer要固定到底部，而当页面超出满屏的高度的时候，footer要随着高度走。下面我们就通过CSS实现这一效果：
+&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;footer始终居于底部&lt;/title&gt;
+&lt;style type="text/css"&gt;
+*{margin:0;padding:0; }
+html, body, .sycss{height:100%;}
+.sycss{height:auto;min-height:100%;_height:100%;font-size:14px;}
+.main{padding-bottom:50px; }
+.footer{position:relative;height:50px;line-height:50px;margin-top:-50px;background:#333;color:#fff;font-size:16px;text-align:center;}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class="sycss"&gt;
+&lt;div class="main"&gt;
+&lt;p&gt;成功的秘诀在于坚持自己的梦想。&lt;/p&gt;
+&lt;p&gt;每一次努力，都是幸运的伏笔。&lt;/p&gt;
+&lt;p&gt;不要等待机会，而要创造机会。&lt;/p&gt;
+&lt;p&gt;今天的努力，是为了明天的自由。&lt;/p&gt;
+&lt;p&gt;从明天起，做一个幸福的人；喂马，砍柴，周游世界&lt;/p&gt;
+&lt;p&gt;以积极的态度面对生活，才能感受到人生的美好！&lt;/p&gt;
+&lt;p&gt;只有不断学习，才能跟上时代的步伐！&lt;/p&gt;
+&lt;p&gt;岁月不居，时节如流。&lt;/p&gt;
+&lt;p&gt;星光不问赶路人，时光不负有心人。&lt;/p&gt;
+&lt;p&gt;每一次坚持，都是对梦想的靠近。&lt;/p&gt;
+&lt;p&gt;心中有信仰，脚下有力量。&lt;/p&gt;
+&lt;p&gt;每一个不曾起舞的日子，都是对生命的辜负。&lt;/p&gt;
+&lt;p&gt;想，全是问题；做，才有答案‌。‌&lt;/p&gt;
+&lt;p&gt;前方拥堵，但仍是最优路线‌。‌&lt;/p&gt;
+&lt;p&gt;走完该走的路，才能走想走的路‌。‌&lt;/p&gt;
+&lt;p&gt;在心里种花，人生才不会荒芜‌。‌&lt;/p&gt;
+&lt;p&gt;大道至简，实干为要‌‌。&lt;/p&gt;
+&lt;p&gt;有输得起的勇气，才会有赢得到的底气‌‌。&lt;/p&gt;
+&lt;p&gt;要努力，但不要着急；繁花锦簇、硕果累累都需要过程‌‌。&lt;/p&gt;
+&lt;p&gt;生活原本沉闷，但跑起来就有风‌‌。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="footer"&gt;页面高度不满，底部固定&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;                                    </a>
+                                    <div class="meta">
+                                        <ul class="items">
+                                            <li>
+                                                2025年4月23日                                            </li>
+                                            <li>
+                                                2491 阅读
+                                            </li>
+                                            <li>
+                                                0 评论
+                                            </li>
+                                        </ul>
+                                        <div class="last" style="display: flex">
+                                            <svg class="icon" viewBox="0 0 1024 1024" width="15" height="15">
+                                                <path d="M512.2 564.743a76.818 76.818 0 0 1-30.973-6.508L108.224 393.877c-26.105-11.508-42.56-35.755-42.927-63.272-.384-27.44 15.356-52.053 41.042-64.232l373.004-176.74c20.591-9.737 45.16-9.755 65.75.017L917.68 266.39c25.668 12.188 41.39 36.792 41.024 64.231-.384 27.5-16.821 51.73-42.908 63.237l-372.57 164.377a77.18 77.18 0 0 1-31.025 6.508zM139.843 329.592l370.213 163.241c1.291.56 3.018.567 4.345-.009l369.758-163.128-369.706-175.464v-.01c-1.326-.628-3.158-.636-4.502 0l-370.108 175.37zm748.015 1.858h.175-.175zM512.376 941.674c-10.348 0-20.8-2.32-30.537-6.997L121.05 778.624c-18.113-7.834-26.454-28.87-18.62-46.983 7.835-18.112 28.862-26.488 46.993-18.61l362.08 156.629 345.26-156.366c17.939-8.166 39.14-.253 47.324 17.746 8.166 17.964.227 39.157-17.729 47.324l-344.51 156.61c-9.196 4.449-19.281 6.7-29.471 6.7z"
+                                                    fill="#444"></path>
+                                                <path d="M871.563 515.449L511.81 671.775 152.358 515.787v73.578a34.248 34.248 0 0 0 20.76 31.48l301.518 129.19c11.806 5.703 24.499 8.546 37.175 8.546s25.367-2.843 37.174-8.546L850.82 620.534a34.248 34.248 0 0 0 20.744-31.474V515.45z" fill="#ff6a18"></path>
+                                            </svg>
+                                                        <a class="link" rel="nofollow" href="https://www.shuyong.net/chengxu">代码教程</a>
+                                            </div>
+                                    </div>
+                                </div>
+                            </li>
+                                                    <li class="joe_list__item wow default">
+                                <div class="line"></div>
+                                <a href="https://www.shuyong.net/1146.html" class="thumbnail" title="PHP递归目录遍历与图片过滤-实现图库功能">
+                                    <img width="100%" height="100%" data-original="https://www.shuyong.net/content/templates/Joe/assets/img/demo-cover.jpg" src="https://www.shuyong.net/content/templates/Joe/assets/img/demo-cover.jpg" alt="PHP递归目录遍历与图片过滤-实现图库功能">
+                                    <time datetime="2025-4-18">2025-4-18</time>
+                                                                    </a>
+                                <div class="information">
+                                    <a href="https://www.shuyong.net/1146.html" class="title" title="PHP递归目录遍历与图片过滤-实现图库功能">
+                                                                                PHP递归目录遍历与图片过滤-实现图库功能                                    </a>
+                                    <a class="abstract" href="https://www.shuyong.net/1146.html" title="文章摘要">
+                                        在PHP中递归遍历目录并过滤出图片文件，你可以使用scandir()函数配合is_dir()函数来遍历目录和子目录，然后使用pathinfo()函数来检查文件扩展名，从而过滤出图片文件。以下是一个简单的示例，演示如何实现这一功能：
+&lt;?php
+// 配置部分
+$excludeDirs = ; // 要排除的目录
+$baseDir = '../';                     // 基准目录
+$directory = new RecursiveDirectoryIterator($baseDir, RecursiveDirectoryIterator::SKIP_DOTS);// 创建递归目录迭代器
+
+// 创建目录过滤器
+$filter = new RecursiveCallbackFilterIterator($directory, 
+function($current) use ($excludeDirs, $baseDir) {
+if($current-&gt;isDir()) {// 获取相对基准目录的路径
+$relativePath = str_replace(realpath($baseDir).DIRECTORY_SEPARATOR,'',$current-&gt;getRealPath());
+foreach($excludeDirs as $exclude){if(strpos($relativePath, $exclude) === 0){return false;}}}return true;});// 检查是否在排除列表
+$iterator = new RecursiveIteratorIterator($filter,RecursiveIteratorIterator::SELF_FIRST);// 创建递归迭代器
+$regex = new RegexIterator($iterator,'/^.+\.(jpg|jpeg|png|gif)$/i',RecursiveRegexIterator::GET_MATCH);// 匹配图片文件
+
+// 按目录分类存储
+$categorized = ;
+foreach ($regex as $match) {
+$fullPath = $match; // 完整文件路径
+$dir = str_replace('\\', '/', dirname($fullPath));// 获取标准化目录路径（统一使用斜杠）
+if(!isset($categorized)){$categorized = ;}// 初始化目录存储空间
+//$categorized = basename($fullPath);// 存储文件名（带扩展名）
+$categorized = $fullPath; //完整文件名路径
+}
+?&gt;
+调用方法：
+&lt;?php
+foreach($categorized as $dir =&gt; $files) {
+$shortDir = str_replace('../', '', $dir);
+if(count($files)&gt;1){echo $shortDir;echo count($files);
+foreach($files as $file) {echo $file;}
+}}
+?&gt;
+演示地址：http://img.kh.syom.cn/tuku2025/                                    </a>
+                                    <div class="meta">
+                                        <ul class="items">
+                                            <li>
+                                                2025年4月18日                                            </li>
+                                            <li>
+                                                2174 阅读
+                                            </li>
+                                            <li>
+                                                0 评论
+                                            </li>
+                                        </ul>
+                                        <div class="last" style="display: flex">
+                                            <svg class="icon" viewBox="0 0 1024 1024" width="15" height="15">
+                                                <path d="M512.2 564.743a76.818 76.818 0 0 1-30.973-6.508L108.224 393.877c-26.105-11.508-42.56-35.755-42.927-63.272-.384-27.44 15.356-52.053 41.042-64.232l373.004-176.74c20.591-9.737 45.16-9.755 65.75.017L917.68 266.39c25.668 12.188 41.39 36.792 41.024 64.231-.384 27.5-16.821 51.73-42.908 63.237l-372.57 164.377a77.18 77.18 0 0 1-31.025 6.508zM139.843 329.592l370.213 163.241c1.291.56 3.018.567 4.345-.009l369.758-163.128-369.706-175.464v-.01c-1.326-.628-3.158-.636-4.502 0l-370.108 175.37zm748.015 1.858h.175-.175zM512.376 941.674c-10.348 0-20.8-2.32-30.537-6.997L121.05 778.624c-18.113-7.834-26.454-28.87-18.62-46.983 7.835-18.112 28.862-26.488 46.993-18.61l362.08 156.629 345.26-156.366c17.939-8.166 39.14-.253 47.324 17.746 8.166 17.964.227 39.157-17.729 47.324l-344.51 156.61c-9.196 4.449-19.281 6.7-29.471 6.7z"
+                                                    fill="#444"></path>
+                                                <path d="M871.563 515.449L511.81 671.775 152.358 515.787v73.578a34.248 34.248 0 0 0 20.76 31.48l301.518 129.19c11.806 5.703 24.499 8.546 37.175 8.546s25.367-2.843 37.174-8.546L850.82 620.534a34.248 34.248 0 0 0 20.744-31.474V515.45z" fill="#ff6a18"></path>
+                                            </svg>
+                                                        <a class="link" rel="nofollow" href="https://www.shuyong.net/chengxu">代码教程</a>
+                                            </div>
+                                    </div>
+                                </div>
+                            </li>
+                                                    <li class="joe_list__item wow default">
+                                <div class="line"></div>
+                                <a href="https://www.shuyong.net/1145.html" class="thumbnail" title="Microsoft Office 2016 免激活破解版">
+                                    <img width="100%" height="100%" data-original="https://www.shuyong.net/content/templates/Joe/assets/img/demo-cover.jpg" src="https://www.shuyong.net/content/templates/Joe/assets/img/demo-cover.jpg" alt="Microsoft Office 2016 免激活破解版">
+                                    <time datetime="2025-2-2">2025-2-2</time>
+                                                                    </a>
+                                <div class="information">
+                                    <a href="https://www.shuyong.net/1145.html" class="title" title="Microsoft Office 2016 免激活破解版">
+                                                                                Microsoft Office 2016 免激活破解版                                    </a>
+                                    <a class="abstract" href="https://www.shuyong.net/1145.html" title="文章摘要">
+                                        Microsoft Office 2016免激活破解版已经永久激活，无需密钥，激活工具，下载安装后即可永久免费所有的软件及功能，包含了Word、Excel和Powerpoint，有需要的用户可以赶紧下载哦！
+1、下载并解压缩；
+2、打开“Office 2016”文件夹，找到“setup.exe”文件，选择“以管理员身份运行”；
+3、勾选“我接受此协议的条款”，点击“继续”按钮；
+4、选择安装方式，这里有立即安装和自定义安装两种（区别：立即是默认路径，安装所有组件；自定义可以指定安装路径和选择只安装需要的组件）
+5、设置好路径，选择了安装组件后，点击“立即安装”按钮即可；
+6、之后耐心等待安装完成即可，然后在所有程序中你就可以找到安装好的office2016组件。
+下载链接: https://pan.baidu.com/s/1iL6S4MUYMi2EXOVzMT_yFw?pwd=7q1i 提取码: 7q1i                                    </a>
+                                    <div class="meta">
+                                        <ul class="items">
+                                            <li>
+                                                2025年2月2日                                            </li>
+                                            <li>
+                                                4067 阅读
+                                            </li>
+                                            <li>
+                                                0 评论
+                                            </li>
+                                        </ul>
+                                        <div class="last" style="display: flex">
+                                            <svg class="icon" viewBox="0 0 1024 1024" width="15" height="15">
+                                                <path d="M512.2 564.743a76.818 76.818 0 0 1-30.973-6.508L108.224 393.877c-26.105-11.508-42.56-35.755-42.927-63.272-.384-27.44 15.356-52.053 41.042-64.232l373.004-176.74c20.591-9.737 45.16-9.755 65.75.017L917.68 266.39c25.668 12.188 41.39 36.792 41.024 64.231-.384 27.5-16.821 51.73-42.908 63.237l-372.57 164.377a77.18 77.18 0 0 1-31.025 6.508zM139.843 329.592l370.213 163.241c1.291.56 3.018.567 4.345-.009l369.758-163.128-369.706-175.464v-.01c-1.326-.628-3.158-.636-4.502 0l-370.108 175.37zm748.015 1.858h.175-.175zM512.376 941.674c-10.348 0-20.8-2.32-30.537-6.997L121.05 778.624c-18.113-7.834-26.454-28.87-18.62-46.983 7.835-18.112 28.862-26.488 46.993-18.61l362.08 156.629 345.26-156.366c17.939-8.166 39.14-.253 47.324 17.746 8.166 17.964.227 39.157-17.729 47.324l-344.51 156.61c-9.196 4.449-19.281 6.7-29.471 6.7z"
+                                                    fill="#444"></path>
+                                                <path d="M871.563 515.449L511.81 671.775 152.358 515.787v73.578a34.248 34.248 0 0 0 20.76 31.48l301.518 129.19c11.806 5.703 24.499 8.546 37.175 8.546s25.367-2.843 37.174-8.546L850.82 620.534a34.248 34.248 0 0 0 20.744-31.474V515.45z" fill="#ff6a18"></path>
+                                            </svg>
+                                                        <a class="link" rel="nofollow" href="https://www.shuyong.net/resource">免费资源</a>
+                                            </div>
+                                    </div>
+                                </div>
+                            </li>
+                                                    <li class="joe_list__item wow default">
+                                <div class="line"></div>
+                                <a href="https://www.shuyong.net/1143.html" class="thumbnail" title="PHP 随机代码在规定时间内，生产随机数不变">
+                                    <img width="100%" height="100%" data-original="https://www.shuyong.net/content/templates/Joe/assets/img/demo-cover.jpg" src="https://www.shuyong.net/content/templates/Joe/assets/img/demo-cover.jpg" alt="PHP 随机代码在规定时间内，生产随机数不变">
+                                    <time datetime="2024-5-25">2024-5-25</time>
+                                                                    </a>
+                                <div class="information">
+                                    <a href="https://www.shuyong.net/1143.html" class="title" title="PHP 随机代码在规定时间内，生产随机数不变">
+                                                                                PHP 随机代码在规定时间内，生产随机数不变                                    </a>
+                                    <a class="abstract" href="https://www.shuyong.net/1143.html" title="文章摘要">
+                                        在PHP中生成一个在一定时间内保持不变的随机数可以通过多种方法实现。下面是一些常见的方法：
+方法1：使用缓存
+你可以使用PHP的缓存机制，比如$_SESSION（对于用户会话）或者file_put_contents()和file_get_contents()（对于更持久的存储）。
+示例：使用$_SESSION
+&lt;?php
+session_start();
+
+// 检查会话中是否已经有随机数
+if (!isset($_SESSION)) {
+    // 生成随机数并保存到会话中
+    $_SESSION = rand(1, 100); // 例如，生成1到100之间的随机数
+    $_SESSION = time(); // 记录当前时间
+}
+
+// 检查随机数是否在有效期内（例如，1小时内）
+$validity_period = 3600; // 1小时
+if (time() - $_SESSION &gt; $validity_period) {
+    // 如果超出有效期，重新生成随机数
+    $_SESSION = rand(1, 100);
+    $_SESSION = time();
+}
+
+echo $_SESSION;
+?&gt;
+方法2：使用数据库或文件存储
+如果你需要在不同的会话或请求中共享这个随机数，可以使用数据库或文件系统来存储这个随机数及其生成时间。
+示例：使用文件存储
+&lt;?php
+$filename = 'random_number.txt'; // 文件名
+$validity_period = 3600; // 1小时
+
+// 检查文件是否存在并检查是否过期
+if (file_exists($filename)) {
+    $data = json_decode(file_get_contents($filename), true);
+    if (time() - $data &gt; $validity_period) {
+        // 如果过期，重新生成随机数并保存到文件
+        $random_number = rand(1, 100);
+        file_put_contents($filename, json_encode());
+    } else {
+        // 如果未过期，使用现有随机数
+        $random_number = $data;
+    }
+} else {
+    // 文件不存在，生成并保存新随机数
+    $random_number = rand(1, 100);
+    file_put_contents($filename, json_encode());
+}
+
+echo $random_number;
+?&gt;
+方法3：使用Redis或Memcached（推荐用于高并发环境）
+如果你在一个高并发的环境中工作，使用Redis或Memcached这样的内存数据存储系统会更有效。
+示例：使用Redis（需要安装并启用Redis扩展）
+&lt;?php
+$redis = new Redis();
+$redis-&gt;connect('127.0.0.1', 6379); // 连接到Redis服务器
+$key = 'random_number'; // Redis键名
+$validity_period = 3600; // 1小时过期时间（秒）
+
+// 获取随机数，如果不存在或过期则重新生成并设置新的过期时间
+$random_number = $redis-&gt;get($key);
+if (!$random_number) {
+    $random_number = rand(1, 100); // 生成随机数
+    $redis-&gt;setex($key, $validity_period, $random_number); // 设置值和过期时间（秒）
+}
+
+echo $random_number;
+?&gt;以上方法可以根据你的具体需求和运行环境选择合适的实现方式。对于大多数Web应用来说，使用会话或文件存储就足够了。如果你需要更高级的缓存解决方案，可以考虑使用Redis或Memcached。                                    </a>
+                                    <div class="meta">
+                                        <ul class="items">
+                                            <li>
+                                                2024年5月25日                                            </li>
+                                            <li>
+                                                9807 阅读
+                                            </li>
+                                            <li>
+                                                1 评论
+                                            </li>
+                                        </ul>
+                                        <div class="last" style="display: flex">
+                                            <svg class="icon" viewBox="0 0 1024 1024" width="15" height="15">
+                                                <path d="M512.2 564.743a76.818 76.818 0 0 1-30.973-6.508L108.224 393.877c-26.105-11.508-42.56-35.755-42.927-63.272-.384-27.44 15.356-52.053 41.042-64.232l373.004-176.74c20.591-9.737 45.16-9.755 65.75.017L917.68 266.39c25.668 12.188 41.39 36.792 41.024 64.231-.384 27.5-16.821 51.73-42.908 63.237l-372.57 164.377a77.18 77.18 0 0 1-31.025 6.508zM139.843 329.592l370.213 163.241c1.291.56 3.018.567 4.345-.009l369.758-163.128-369.706-175.464v-.01c-1.326-.628-3.158-.636-4.502 0l-370.108 175.37zm748.015 1.858h.175-.175zM512.376 941.674c-10.348 0-20.8-2.32-30.537-6.997L121.05 778.624c-18.113-7.834-26.454-28.87-18.62-46.983 7.835-18.112 28.862-26.488 46.993-18.61l362.08 156.629 345.26-156.366c17.939-8.166 39.14-.253 47.324 17.746 8.166 17.964.227 39.157-17.729 47.324l-344.51 156.61c-9.196 4.449-19.281 6.7-29.471 6.7z"
+                                                    fill="#444"></path>
+                                                <path d="M871.563 515.449L511.81 671.775 152.358 515.787v73.578a34.248 34.248 0 0 0 20.76 31.48l301.518 129.19c11.806 5.703 24.499 8.546 37.175 8.546s25.367-2.843 37.174-8.546L850.82 620.534a34.248 34.248 0 0 0 20.744-31.474V515.45z" fill="#ff6a18"></path>
+                                            </svg>
+                                                        <a class="link" rel="nofollow" href="https://www.shuyong.net/chengxu">代码教程</a>
+                                            </div>
+                                    </div>
+                                </div>
+                            </li>
+                                                    <li class="joe_list__item wow default">
+                                <div class="line"></div>
+                                <a href="https://www.shuyong.net/1142.html" class="thumbnail" title="联益洗手液_20kg花香芦荟除菌酒店宾馆学校餐厅工业商用洗手液大桶装">
+                                    <img width="100%" height="100%" data-original="http://www.kanghang.com.cn/syimages/mlhg/ly/20xishouye-luhui.jpg" src="http://www.kanghang.com.cn/syimages/mlhg/ly/20xishouye-luhui.jpg" alt="联益洗手液_20kg花香芦荟除菌酒店宾馆学校餐厅工业商用洗手液大桶装">
+                                    <time datetime="2023-12-9">2023-12-9</time>
+                                                                    </a>
+                                <div class="information">
+                                    <a href="https://www.shuyong.net/1142.html" class="title" title="联益洗手液_20kg花香芦荟除菌酒店宾馆学校餐厅工业商用洗手液大桶装">
+                                                                                联益洗手液_20kg花香芦荟除菌酒店宾馆学校餐厅工业商用洗手液大桶装                                    </a>
+                                    <a class="abstract" href="https://www.shuyong.net/1142.html" title="文章摘要">
+                                        洗手液是一种用来清洁手部的护肤清洁液，通过以机械摩擦和表面活性剂的作用，配合水流或不需要水来清除手上的污垢和附着的细菌。
+
+     
+
+
+     
+
+联益洗手液成分：水、月桂醇聚醚硫酸酯钠、椰油酰胺丙基甜菜碱、甘油聚醚-26、氯化钠、柠檬酸钠、EDTA 二钠、柠檬酸、DMDM 乙内酰脲。
+联益洗手液功效：护肤、洁净、配合水流可去除手上的污垢保持皮肤水润。
+联益洗手液使用方法：先用清水充分湿润双手，取适量的洗手液于掌心双手充分揉搓至少30秒以上，在此过程中要注意揉搓到指尖、指缝，并让泡沫能覆盖到整个手的各个部分，揉搓完后用流水冲洗干净。最后，注意要用清洁的干毛巾或纸巾擦干，最好不要烘干，因为表面水的快速挥发会导致皮肤部分失水，造成皮肤发干，变得粗糙。
+联益洗手液注意事项：本品仅限外用，如有不适请停止使用；避免入眼；若不慎入眼，即以清水彻底冲洗。
+常用洗手液成份
+1、表面活性剂是洗手液的主要原材料之一，其主要功能是去除手上的油污和污垢，并要求对皮肤无刺激和低刺激，在环境中可以自然降解，降解后的产物对环境无害；主要采用阴离子表面活性剂以及少量的非离子和两性离子表面活性剂。 阴离子表面活性剂有十二烷基硫酸钠、脂肪醇聚氧乙烯醚硫酸盐、月桂酰肌氨酸盐等。
+非离子表面活性剂一般较少在洗手液中使用，少量的加入可以增进去污作用和提高泡沫的稳定性，如椰油酸二乙醇酰胺，其中烷基糖苷的加入可以降低表面活性剂的对皮肤的刺激。少量的两性离子加入有利于发泡和泡沫的持久，如甜菜碱和十二烷基二甲基氧化胺。
+2、润肤保湿剂可在皮肤表面水分挥发后留下一层保护膜，阻止或减缓皮肤内部水分的流失，保持皮肤的润湿性，如水溶性羊毛脂、丙三醇等。
+3、增稠剂即粘度调节剂，粘度反映的是洗手液体系的综合指标。洗手液具有适宜的粘度既可改善产品外观，又可使产品具有一定的稳定性。
+4、pH调节剂——需将洗手液pH值至弱酸性，接近人体皮肤pH值 (5.5-6.5)，从而避免对皮肤的刺激。
+5、其他——色素、香精、珠光剂、天然活性成分等。
+中国市场上洗手液主要分为两大类：
+一类是普通型洗手液, 其标签上的卫生许可证为:“卫妆准字”, 该类产品只能起到清洁去污、护肤的功效;
+另一类是具有抗 (抑) 菌功效的特种洗手液, 其标签上的卫生许可证为：“卫消证字”，该类产品具有抗菌或抑菌的功效。
+随着新型表面活性剂、特殊功能活性成分、功能性助剂技术的发展, 洗手液也被赋予了很多新功能。洗手液已经从最初只要清洗干净向多功能发展。近年来, 中国洗手液市场品种丰富多彩, 主要有以下几种：
+1、具有抗/抑菌功效的洗手液——研究证明，多数疾病是从“手入”的，很多病原体都是通过手送入口中，或通过手与鼻、眼等部位接触乘虚而入。洗手成为预防疾病的有效途径。
+该类产品主要采用三氯羟基二苯醚 (DP300) 、4-氯-3, 5-二甲酚 (PCMX) 、三氯均二苯脲 (TCC) 和邻苯基苯酚 (OPP) 作为抗/抑菌功效成分。
+2、儿童洗手液——必须选用无毒、无刺激、低刺激的原料，并尽量减少色素和香精的用量，一些绿色表面活性剂如烷基糖苷、氨基酸类表面活性剂等经常被用于儿童洗手液中。
+3、工业用洗手液——从事机修、采油、油墨、印刷、化工、食品加工等行业工人手上常沾有重油污，需要重油污的洗手液，应具有安全、洗涤能力强、刺激作用小的特点。
+4、免水洗手液——免水净手液主要在无水源, 节约用水等场所使用, 用作杀菌、净手的功能。它不需要水即可使手部保持洁净、卫生。
+5、医院用洗手液——医院里经常使用的洗手液主要有两类, 一类是具有抗/抑菌功效的洗手液, 另一类是在手术前、抽血等特定条件下使用的洗手液消毒产品, 该类产品基本没有添加阴离子表面活性剂。
+广州仓：
+联系电话：13418004163
+联系地址：广州室番禺区大龙街振兴南路21号之一
+——
+深圳仓：
+联系电话：188-1891-8161
+深圳市宝安区石岩街道水田社区兰姜新村十区187号                                    </a>
+                                    <div class="meta">
+                                        <ul class="items">
+                                            <li>
+                                                2023年12月9日                                            </li>
+                                            <li>
+                                                2573 阅读
+                                            </li>
+                                            <li>
+                                                0 评论
+                                            </li>
+                                        </ul>
+                                        <div class="last" style="display: flex">
+                                            <svg class="icon" viewBox="0 0 1024 1024" width="15" height="15">
+                                                <path d="M512.2 564.743a76.818 76.818 0 0 1-30.973-6.508L108.224 393.877c-26.105-11.508-42.56-35.755-42.927-63.272-.384-27.44 15.356-52.053 41.042-64.232l373.004-176.74c20.591-9.737 45.16-9.755 65.75.017L917.68 266.39c25.668 12.188 41.39 36.792 41.024 64.231-.384 27.5-16.821 51.73-42.908 63.237l-372.57 164.377a77.18 77.18 0 0 1-31.025 6.508zM139.843 329.592l370.213 163.241c1.291.56 3.018.567 4.345-.009l369.758-163.128-369.706-175.464v-.01c-1.326-.628-3.158-.636-4.502 0l-370.108 175.37zm748.015 1.858h.175-.175zM512.376 941.674c-10.348 0-20.8-2.32-30.537-6.997L121.05 778.624c-18.113-7.834-26.454-28.87-18.62-46.983 7.835-18.112 28.862-26.488 46.993-18.61l362.08 156.629 345.26-156.366c17.939-8.166 39.14-.253 47.324 17.746 8.166 17.964.227 39.157-17.729 47.324l-344.51 156.61c-9.196 4.449-19.281 6.7-29.471 6.7z"
+                                                    fill="#444"></path>
+                                                <path d="M871.563 515.449L511.81 671.775 152.358 515.787v73.578a34.248 34.248 0 0 0 20.76 31.48l301.518 129.19c11.806 5.703 24.499 8.546 37.175 8.546s25.367-2.843 37.174-8.546L850.82 620.534a34.248 34.248 0 0 0 20.744-31.474V515.45z" fill="#ff6a18"></path>
+                                            </svg>
+                                                        <a class="link" rel="nofollow" href="https://www.shuyong.net/zaxiang">信息发布</a>
+                                            </div>
+                                    </div>
+                                </div>
+                            </li>
+                                                    <li class="joe_list__item wow default">
+                                <div class="line"></div>
+                                <a href="https://www.shuyong.net/1141.html" class="thumbnail" title="联益洗碗机专用洗涤剂_洗碗机专用催干剂_单位学校酒店餐饮厨房洗碗机碱液催干剂厂家直销">
+                                    <img width="100%" height="100%" data-original="http://www.kanghang.com.cn/content/uploadfile/mlhg/lyxwj/lyxwj.jpg" src="http://www.kanghang.com.cn/content/uploadfile/mlhg/lyxwj/lyxwj.jpg" alt="联益洗碗机专用洗涤剂_洗碗机专用催干剂_单位学校酒店餐饮厨房洗碗机碱液催干剂厂家直销">
+                                    <time datetime="2023-11-10">2023-11-10</time>
+                                                                    </a>
+                                <div class="information">
+                                    <a href="https://www.shuyong.net/1141.html" class="title" title="联益洗碗机专用洗涤剂_洗碗机专用催干剂_单位学校酒店餐饮厨房洗碗机碱液催干剂厂家直销">
+                                                                                联益洗碗机专用洗涤剂_洗碗机专用催干剂_单位学校酒店餐饮厨房洗碗机碱液催干剂厂家直销                                    </a>
+                                    <a class="abstract" href="https://www.shuyong.net/1141.html" title="文章摘要">
+                                        联益洗碗机专用洗涤剂适用范围：配合商用洗碗机对餐具的强力去油垢清洗。
+联益洗碗机专用洗涤剂主要成分：无机碱、软水剂、助剂、缓蚀剂
+联益洗碗机专用洗涤剂说明：联益洗碗机专用洗涤剂专门为各类型洗碗机设计的超浓缩液体清洁剂，能快速消除食物污渍和餐具油污，不会对任何质料的餐具或洗碗机造成损害，适用于任何地区的水质。
+联益洗碗机专用洗涤剂使用方法：可根据水的硬度和洁净度调节使用量，理想的使用浓度为0.2%-2%，水温在60度-70度。用量大约每筐5～5.5ml， 注意：请勿让分配器在无洗涤剂状态下空转运行，洗臂喷嘴必须畅通，过水压力≥1Kg/cm3 。
+联益洗碗机专用洗涤剂注意事项：不得饮用，请置于孩童触及不到的地方；本品碱性，使用时穿上适当衣物，戴上胶手套及护眼/面用具，如触及眼睛或皮肤即用大量清水冲洗，若持续不适，立即去医院就医。
+
+     
+
+联益洗碗机专用催干剂适用范围：配合商用洗碗机对餐具的快速催干。
+联益洗碗机专用催干剂主要成分：表面活性剂、助剂、缓蚀剂
+联益洗碗机专用催干剂说明：联益洗碗机专用催干剂是专门为各类型洗碗机设计的超浓缩液体快干剂，能使器皿迅速干燥，亮白不留痕迹，不会对任何质料的餐具或洗碗机造成损害，而且适用于任何地区的水质。
+联益洗碗机专用催干剂使用方法：联益洗碗机专用催干剂可通过分配器自动加入洗碗机，理想的使用浓度为0.01%-1%，温度在75度-85度。用量大约每筐5～5.5ml，注意：请勿让分配器在无洗涤剂状态下空转运行，洗臂喷嘴必须畅通，过水压力≥1Kg/cm3 。
+联益洗碗机专用催干剂注意事项：不得饮用，请置于孩童触及不到的地方；勿与漂白剂一同使用；如触及眼睛或皮肤即用大量清水冲洗，若持续不适，立即去医院就医。
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+广州仓：
+联系电话：13418004163
+联系地址：广州室番禺区大龙街振兴南路21号之一
+深圳仓：
+联系电话：188-1891-8161
+深圳市宝安区石岩街道水田社区兰姜新村十区187号                                    </a>
+                                    <div class="meta">
+                                        <ul class="items">
+                                            <li>
+                                                2023年11月10日                                            </li>
+                                            <li>
+                                                2367 阅读
+                                            </li>
+                                            <li>
+                                                0 评论
+                                            </li>
+                                        </ul>
+                                        <div class="last" style="display: flex">
+                                            <svg class="icon" viewBox="0 0 1024 1024" width="15" height="15">
+                                                <path d="M512.2 564.743a76.818 76.818 0 0 1-30.973-6.508L108.224 393.877c-26.105-11.508-42.56-35.755-42.927-63.272-.384-27.44 15.356-52.053 41.042-64.232l373.004-176.74c20.591-9.737 45.16-9.755 65.75.017L917.68 266.39c25.668 12.188 41.39 36.792 41.024 64.231-.384 27.5-16.821 51.73-42.908 63.237l-372.57 164.377a77.18 77.18 0 0 1-31.025 6.508zM139.843 329.592l370.213 163.241c1.291.56 3.018.567 4.345-.009l369.758-163.128-369.706-175.464v-.01c-1.326-.628-3.158-.636-4.502 0l-370.108 175.37zm748.015 1.858h.175-.175zM512.376 941.674c-10.348 0-20.8-2.32-30.537-6.997L121.05 778.624c-18.113-7.834-26.454-28.87-18.62-46.983 7.835-18.112 28.862-26.488 46.993-18.61l362.08 156.629 345.26-156.366c17.939-8.166 39.14-.253 47.324 17.746 8.166 17.964.227 39.157-17.729 47.324l-344.51 156.61c-9.196 4.449-19.281 6.7-29.471 6.7z"
+                                                    fill="#444"></path>
+                                                <path d="M871.563 515.449L511.81 671.775 152.358 515.787v73.578a34.248 34.248 0 0 0 20.76 31.48l301.518 129.19c11.806 5.703 24.499 8.546 37.175 8.546s25.367-2.843 37.174-8.546L850.82 620.534a34.248 34.248 0 0 0 20.744-31.474V515.45z" fill="#ff6a18"></path>
+                                            </svg>
+                                                        <a class="link" rel="nofollow" href="https://www.shuyong.net/zaxiang">信息发布</a>
+                                            </div>
+                                    </div>
+                                </div>
+                            </li>
+                                                    <li class="joe_list__item wow default">
+                                <div class="line"></div>
+                                <a href="https://www.shuyong.net/1140.html" class="thumbnail" title="本地web服务器软件PHPTS - 免费的边缘计算服务器套件，Nginx+PHP+MySQL网站小程序一键搭建">
+                                    <img width="100%" height="100%" data-original="http://www.shuyong.net/content/uploadfile/202309/6dda63da16adb7e72579ffe6d72646cd20230919073409.png" src="http://www.shuyong.net/content/uploadfile/202309/6dda63da16adb7e72579ffe6d72646cd20230919073409.png" alt="本地web服务器软件PHPTS - 免费的边缘计算服务器套件，Nginx+PHP+MySQL网站小程序一键搭建">
+                                    <time datetime="2023-9-19">2023-9-19</time>
+                                                                    </a>
+                                <div class="information">
+                                    <a href="https://www.shuyong.net/1140.html" class="title" title="本地web服务器软件PHPTS - 免费的边缘计算服务器套件，Nginx+PHP+MySQL网站小程序一键搭建">
+                                                                                本地web服务器软件PHPTS - 免费的边缘计算服务器套件，Nginx+PHP+MySQL网站小程序一键搭建                                    </a>
+                                    <a class="abstract" href="https://www.shuyong.net/1140.html" title="文章摘要">
+                                        PHPTS&reg;，是 Windows 系统上一键免费搭建 Nginx + PHP + MySQL + Memcached + Redis + MongoDB + InfluxDB + AI语音合成等网站、APP、小程序服务器端运行环境的软件平台。
+
+PHPTS 套件集成服务
+PHPTS ，集成了 Nginx Web服务器、PHP 7.4/7.3/5.6 多版本语言、MySQL 8.0、Memcached、Redis、MongoDB、InfluxDB、Composer、Bash、phpMyAdmin ……
+1、Nginx Web服务器——Nginx 是一款开源的高性能的Web服务器和反向代理服务器，其特点是占有内存少，并发能力强，在百度、阿里、腾讯、网易、新浪得到广泛使用。
+2、PHP 编程语言——PHP 是一种通用性开源脚本语言，主要适用于Web、小程序开发领域。PHP 的特点是语法清晰、简单，开发周期短，是中小型Web开发的重要选择。
+3、MySQL 数据库——MySQL是流行的开源关系型数据库，使用结构化查询语言（SQL）进行数据库管理。一般中小型网站、小程序的开发首选 MySQL 作为关系型数据库。
+4、Memcached 内存缓存系统——Memcached 是开源的内存 key-Value 缓存系统，常用使用目的：通过缓存数据库查询结果，减少数据库访问次数，以提高动态Web应用的速度。
+5、Redis 内存键值数据库——Redis 是高性能的 key-Value 数据库，和 Memcached 类似，它支持存储的 Value 类型相对更多，包括字符串、链表、集合、有序集合和哈希。
+6、InfluxDB 时间序列数据库——可以按时间记录一些数据（监控数据、埋点统计数据等），然后制作图表做统计。广泛应用于IoT物联网设备监控、业务运维监控、工业设备监控。
+官网下载地址：www.phpts.com
+百度网盘下载: https://pan.baidu.com/s/1y51Sc5on28sxEN2KNR4Yjw 提取码: 7c97                                    </a>
+                                    <div class="meta">
+                                        <ul class="items">
+                                            <li>
+                                                2023年9月19日                                            </li>
+                                            <li>
+                                                14029 阅读
+                                            </li>
+                                            <li>
+                                                1 评论
+                                            </li>
+                                        </ul>
+                                        <div class="last" style="display: flex">
+                                            <svg class="icon" viewBox="0 0 1024 1024" width="15" height="15">
+                                                <path d="M512.2 564.743a76.818 76.818 0 0 1-30.973-6.508L108.224 393.877c-26.105-11.508-42.56-35.755-42.927-63.272-.384-27.44 15.356-52.053 41.042-64.232l373.004-176.74c20.591-9.737 45.16-9.755 65.75.017L917.68 266.39c25.668 12.188 41.39 36.792 41.024 64.231-.384 27.5-16.821 51.73-42.908 63.237l-372.57 164.377a77.18 77.18 0 0 1-31.025 6.508zM139.843 329.592l370.213 163.241c1.291.56 3.018.567 4.345-.009l369.758-163.128-369.706-175.464v-.01c-1.326-.628-3.158-.636-4.502 0l-370.108 175.37zm748.015 1.858h.175-.175zM512.376 941.674c-10.348 0-20.8-2.32-30.537-6.997L121.05 778.624c-18.113-7.834-26.454-28.87-18.62-46.983 7.835-18.112 28.862-26.488 46.993-18.61l362.08 156.629 345.26-156.366c17.939-8.166 39.14-.253 47.324 17.746 8.166 17.964.227 39.157-17.729 47.324l-344.51 156.61c-9.196 4.449-19.281 6.7-29.471 6.7z"
+                                                    fill="#444"></path>
+                                                <path d="M871.563 515.449L511.81 671.775 152.358 515.787v73.578a34.248 34.248 0 0 0 20.76 31.48l301.518 129.19c11.806 5.703 24.499 8.546 37.175 8.546s25.367-2.843 37.174-8.546L850.82 620.534a34.248 34.248 0 0 0 20.744-31.474V515.45z" fill="#ff6a18"></path>
+                                            </svg>
+                                                        <a class="link" rel="nofollow" href="https://www.shuyong.net/Windows">电脑软件教程</a>
+                                            </div>
+                                    </div>
+                                </div>
+                            </li>
+                                                    <li class="joe_list__item wow default">
+                                <div class="line"></div>
+                                <a href="https://www.shuyong.net/1139.html" class="thumbnail" title="凯鹏多功能清洁乳_瓷砖地板浴室不锈钢玻璃清洁剂_凯鹏潔而亮洁而亮">
+                                    <img width="100%" height="100%" data-original="http://www.kanghang.com.cn/syimages/kip/qingjieru.jpg" src="http://www.kanghang.com.cn/syimages/kip/qingjieru.jpg" alt="凯鹏多功能清洁乳_瓷砖地板浴室不锈钢玻璃清洁剂_凯鹏潔而亮洁而亮">
+                                    <time datetime="2023-8-5">2023-8-5</time>
+                                                                    </a>
+                                <div class="information">
+                                    <a href="https://www.shuyong.net/1139.html" class="title" title="凯鹏多功能清洁乳_瓷砖地板浴室不锈钢玻璃清洁剂_凯鹏潔而亮洁而亮">
+                                                                                凯鹏多功能清洁乳_瓷砖地板浴室不锈钢玻璃清洁剂_凯鹏潔而亮洁而亮                                    </a>
+                                    <a class="abstract" href="https://www.shuyong.net/1139.html" title="文章摘要">
+                                        洁而亮特有的强效高浓去污液配方，含温和擦磨料，独特去污因子能快速渗透至污垢内部，清除各种油腻和污迹。顽垢污渍易扫而净，家居表面亮洁如新。
+
+     
+
+
+凯鹏多功能清洁乳使用方法
+将潔而亮挤在要清洁的物体表面，用海棉或湿布抹擦将污迹和污垢清除，用清水过水即可。
+厨房：灶台、水槽、操作台、钢锅、电饭煲、油烟机、瓷砖、微波炉及茶杯茶具外表面等。
+浴室：浴缸、洗漱盆、陶瓷厕具外表面、淋浴喷头、地砖、瓷砖和水龙头等。
+其他：瓷器、不锈钢、大理石、陶瓷、搪瓷、自行车塑胶制品。
+勿用于油毡、电视、电脑屏幕及类似表面。使用于精致或未知物体表面，请先在不显眼处试擦，并确保使用后彻底洗净。正确使用本品不会在表面留下损伤或明显擦痕。
+凯鹏多功能清洁乳使用步骤：
+1、将潔而亮直接滴在要清洁物体表面；
+2、用温布（最好是超细纳米毛巾）或者湿海绵抹擦，将污迹和污垢清除。
+3、避免于物体表面摩擦，用清水冲洗清洁。
+
+注意事项：
+1、每次用后应关紧瓶盖；
+2、存放于小童难于触及的地方，不慎入眼，请即用大量清水冲洗或延医诊治；
+3、敏感性皮肤或有伤口者请佩戴手套，应避免直接接触未经稀释的液体；
+4、请置于阴凉处保存，与食物保持距离，切勿食用。
+5、若不慎误食，请携带产品立即就医，并出示瓶身标签。
+6、包装上未提及或未知的表面，先试后用。
+
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+
+     
+
+广州仓：
+联系电话：13418004163
+联系地址：广州室番禺区大龙街振兴南路21号之一
+深圳仓：
+联系电话：139-2411-2422
+深圳市宝安区石岩街道水田社区兰姜新村十区187号一单元                                    </a>
+                                    <div class="meta">
+                                        <ul class="items">
+                                            <li>
+                                                2023年8月5日                                            </li>
+                                            <li>
+                                                2546 阅读
+                                            </li>
+                                            <li>
+                                                0 评论
+                                            </li>
+                                        </ul>
+                                        <div class="last" style="display: flex">
+                                            <svg class="icon" viewBox="0 0 1024 1024" width="15" height="15">
+                                                <path d="M512.2 564.743a76.818 76.818 0 0 1-30.973-6.508L108.224 393.877c-26.105-11.508-42.56-35.755-42.927-63.272-.384-27.44 15.356-52.053 41.042-64.232l373.004-176.74c20.591-9.737 45.16-9.755 65.75.017L917.68 266.39c25.668 12.188 41.39 36.792 41.024 64.231-.384 27.5-16.821 51.73-42.908 63.237l-372.57 164.377a77.18 77.18 0 0 1-31.025 6.508zM139.843 329.592l370.213 163.241c1.291.56 3.018.567 4.345-.009l369.758-163.128-369.706-175.464v-.01c-1.326-.628-3.158-.636-4.502 0l-370.108 175.37zm748.015 1.858h.175-.175zM512.376 941.674c-10.348 0-20.8-2.32-30.537-6.997L121.05 778.624c-18.113-7.834-26.454-28.87-18.62-46.983 7.835-18.112 28.862-26.488 46.993-18.61l362.08 156.629 345.26-156.366c17.939-8.166 39.14-.253 47.324 17.746 8.166 17.964.227 39.157-17.729 47.324l-344.51 156.61c-9.196 4.449-19.281 6.7-29.471 6.7z"
+                                                    fill="#444"></path>
+                                                <path d="M871.563 515.449L511.81 671.775 152.358 515.787v73.578a34.248 34.248 0 0 0 20.76 31.48l301.518 129.19c11.806 5.703 24.499 8.546 37.175 8.546s25.367-2.843 37.174-8.546L850.82 620.534a34.248 34.248 0 0 0 20.744-31.474V515.45z" fill="#ff6a18"></path>
+                                            </svg>
+                                                        <a class="link" rel="nofollow" href="https://www.shuyong.net/zaxiang">信息发布</a>
+                                            </div>
+                                    </div>
+                                </div>
+                            </li>
+                                                    <li class="joe_list__item wow default">
+                                <div class="line"></div>
+                                <a href="https://www.shuyong.net/1138.html" class="thumbnail" title="win10删除文件没有确认提示的解决办法">
+                                    <img width="100%" height="100%" data-original="https://www.shuyong.net/content/templates/Joe/assets/img/demo-cover.jpg" src="https://www.shuyong.net/content/templates/Joe/assets/img/demo-cover.jpg" alt="win10删除文件没有确认提示的解决办法">
+                                    <time datetime="2023-2-18">2023-2-18</time>
+                                                                    </a>
+                                <div class="information">
+                                    <a href="https://www.shuyong.net/1138.html" class="title" title="win10删除文件没有确认提示的解决办法">
+                                                                                win10删除文件没有确认提示的解决办法                                    </a>
+                                    <a class="abstract" href="https://www.shuyong.net/1138.html" title="文章摘要">
+                                        要解决win10删除文件没有确认提示的问题，可以前往回收站设置页面来设置，通过几个步骤来处理，以下是具体的步骤内容：
+Win10纯净版删除文件时没有确认 的解决办法：
+1、首先在桌面上显示回收站图标，如果桌面上已经有回收站图标了，请直接跳到步骤4。右键桌面选择个性化。
+2、先选择窗口左侧的“主题”，然后在右侧打开“桌面图标设置”。
+3、将“回收站”勾选，然后点击确定保存，这样桌面上就会显示回收站图标了。
+4、鼠标右键回收站图标，选择属性。
+5、将“显示删除确认对话框”勾选上，点击确定保存，这样在删除文件的时候系统就会弹出确认对话框了。                                    </a>
+                                    <div class="meta">
+                                        <ul class="items">
+                                            <li>
+                                                2023年2月18日                                            </li>
+                                            <li>
+                                                13530 阅读
+                                            </li>
+                                            <li>
+                                                1 评论
+                                            </li>
+                                        </ul>
+                                        <div class="last" style="display: flex">
+                                            <svg class="icon" viewBox="0 0 1024 1024" width="15" height="15">
+                                                <path d="M512.2 564.743a76.818 76.818 0 0 1-30.973-6.508L108.224 393.877c-26.105-11.508-42.56-35.755-42.927-63.272-.384-27.44 15.356-52.053 41.042-64.232l373.004-176.74c20.591-9.737 45.16-9.755 65.75.017L917.68 266.39c25.668 12.188 41.39 36.792 41.024 64.231-.384 27.5-16.821 51.73-42.908 63.237l-372.57 164.377a77.18 77.18 0 0 1-31.025 6.508zM139.843 329.592l370.213 163.241c1.291.56 3.018.567 4.345-.009l369.758-163.128-369.706-175.464v-.01c-1.326-.628-3.158-.636-4.502 0l-370.108 175.37zm748.015 1.858h.175-.175zM512.376 941.674c-10.348 0-20.8-2.32-30.537-6.997L121.05 778.624c-18.113-7.834-26.454-28.87-18.62-46.983 7.835-18.112 28.862-26.488 46.993-18.61l362.08 156.629 345.26-156.366c17.939-8.166 39.14-.253 47.324 17.746 8.166 17.964.227 39.157-17.729 47.324l-344.51 156.61c-9.196 4.449-19.281 6.7-29.471 6.7z"
+                                                    fill="#444"></path>
+                                                <path d="M871.563 515.449L511.81 671.775 152.358 515.787v73.578a34.248 34.248 0 0 0 20.76 31.48l301.518 129.19c11.806 5.703 24.499 8.546 37.175 8.546s25.367-2.843 37.174-8.546L850.82 620.534a34.248 34.248 0 0 0 20.744-31.474V515.45z" fill="#ff6a18"></path>
+                                            </svg>
+                                                        <a class="link" rel="nofollow" href="https://www.shuyong.net/Windows">电脑软件教程</a>
+                                            </div>
+                                    </div>
+                                </div>
+                            </li>
+                                                    <li class="joe_list__item wow default">
+                                <div class="line"></div>
+                                <a href="https://www.shuyong.net/1137.html" class="thumbnail" title="通过MediaCreationTool下载官方正版Win10系统镜像">
+                                    <img width="100%" height="100%" data-original="http://www.shuyong.net/content/uploadfile/202302/win10-1.png" src="http://www.shuyong.net/content/uploadfile/202302/win10-1.png" alt="通过MediaCreationTool下载官方正版Win10系统镜像">
+                                    <time datetime="2023-2-17">2023-2-17</time>
+                                                                    </a>
+                                <div class="information">
+                                    <a href="https://www.shuyong.net/1137.html" class="title" title="通过MediaCreationTool下载官方正版Win10系统镜像">
+                                                                                通过MediaCreationTool下载官方正版Win10系统镜像                                    </a>
+                                    <a class="abstract" href="https://www.shuyong.net/1137.html" title="文章摘要">
+                                        操作步骤:
+一、打开微软下载WIN10网址：（如果网址无法打开，可以下载解压运行附件内的工具）
+https://www.microsoft.com/zh-cn/software-download/windows10
+
+2、选择立即下载工具，然后选择运行。您需要成为管理员才能运行此工具。
+3、如果您同意许可条款，请选择接受；
+
+4、在“您想要执行什么操作？”的页面上，选择“为另一台电脑创建安装介质”，然后选择“下一步”；
+
+5、选择 Windows 10 的语言、版本和体系结构（64 位或 32 位）；
+
+6、选择您要使用哪种介质：
+①选择ISO文件，然后选择下一步；
+②选择到您的需要保存的路径。然后选择保存，耐心等待下载完成。
+提示：若是需要修改文件名，不要修改后缀 &quot;.iso&quot;
+
+
+
+
+
+
+
+
+
+
+温馨提示：对此站点上的介质创建工具的使用 受Microsoft 使用条款约束。                                    </a>
+                                    <div class="meta">
+                                        <ul class="items">
+                                            <li>
+                                                2023年2月17日                                            </li>
+                                            <li>
+                                                14287 阅读
+                                            </li>
+                                            <li>
+                                                0 评论
+                                            </li>
+                                        </ul>
+                                        <div class="last" style="display: flex">
+                                            <svg class="icon" viewBox="0 0 1024 1024" width="15" height="15">
+                                                <path d="M512.2 564.743a76.818 76.818 0 0 1-30.973-6.508L108.224 393.877c-26.105-11.508-42.56-35.755-42.927-63.272-.384-27.44 15.356-52.053 41.042-64.232l373.004-176.74c20.591-9.737 45.16-9.755 65.75.017L917.68 266.39c25.668 12.188 41.39 36.792 41.024 64.231-.384 27.5-16.821 51.73-42.908 63.237l-372.57 164.377a77.18 77.18 0 0 1-31.025 6.508zM139.843 329.592l370.213 163.241c1.291.56 3.018.567 4.345-.009l369.758-163.128-369.706-175.464v-.01c-1.326-.628-3.158-.636-4.502 0l-370.108 175.37zm748.015 1.858h.175-.175zM512.376 941.674c-10.348 0-20.8-2.32-30.537-6.997L121.05 778.624c-18.113-7.834-26.454-28.87-18.62-46.983 7.835-18.112 28.862-26.488 46.993-18.61l362.08 156.629 345.26-156.366c17.939-8.166 39.14-.253 47.324 17.746 8.166 17.964.227 39.157-17.729 47.324l-344.51 156.61c-9.196 4.449-19.281 6.7-29.471 6.7z"
+                                                    fill="#444"></path>
+                                                <path d="M871.563 515.449L511.81 671.775 152.358 515.787v73.578a34.248 34.248 0 0 0 20.76 31.48l301.518 129.19c11.806 5.703 24.499 8.546 37.175 8.546s25.367-2.843 37.174-8.546L850.82 620.534a34.248 34.248 0 0 0 20.744-31.474V515.45z" fill="#ff6a18"></path>
+                                            </svg>
+                                                        <a class="link" rel="nofollow" href="https://www.shuyong.net/Windows">电脑软件教程</a>
+                                            </div>
+                                    </div>
+                                </div>
+                            </li>
+                                        </ul>
+                <ul class="joe_list__loading" style="display: none;">
+                    <li class="item">
+                        <div class="thumbnail"></div>
+                        <div class="information">
+                            <div class="title"></div>
+                            <div class="abstract">
+                                <p></p>
+                                <p></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="thumbnail"></div>
+                        <div class="information">
+                            <div class="title"></div>
+                            <div class="abstract">
+                                <p></p>
+                                <p></p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul class="joe_pagination">
+            <li class="active"><a>1</a></li><li>
+<li><a href="https://www.shuyong.net/page/2">2</a></li>
+<li><a href="https://www.shuyong.net/page/3">3</a></li>
+<li class="next"><a href="https://www.shuyong.net/page/95"><svg class="icon icon-next"viewBox="0 0 1024 1024"width="12"height="12"><path d="M822.272 146.944l-396.8 396.8c-19.456 19.456-51.2 19.456-70.656 0-18.944-19.456-18.944-51.2 0-70.656l396.8-396.8c19.456-19.456 51.2-19.456 70.656 0 18.944 19.456 18.944 45.056 0 70.656z"></path><path d="M745.472 940.544l-396.8-396.8c-19.456-19.456-19.456-51.2 0-70.656 19.456-19.456 51.2-19.456 70.656 0l403.456 390.144c19.456 25.6 19.456 51.2 0 76.8-26.112 19.968-51.712 19.968-77.312.512zm-564.224-63.488c0-3.584 0-7.68.512-11.264h-.512v-714.24h.512c-.512-3.584-.512-7.168-.512-11.264 0-43.008 21.504-78.336 48.128-78.336s48.128 34.816 48.128 78.336c0 3.584 0 7.68-.512 11.264h.512v714.24h-.512c.512 3.584.512 7.168.512 11.264 0 43.008-21.504 78.336-48.128 78.336s-48.128-35.328-48.128-78.336z"></path></svg></a></li>
+        </ul>
+    </div>
+    <aside class="joe_aside">
+    <section class="joe_aside__item author">
+        <img width="100%" height="120" class="image lazyloaded" src="" alt="博主栏壁纸">
+        <div class="user">
+            <img width="75" height="75" class="avatar lazyloaded" src="https://www.shuyong.net/content/uploadfile/202309/thum-db8e1694946312.jpg" alt="博主头像">
+            <a class="link" href="" target="_blank" rel="noopener noreferrer nofollow">舍力</a>
+            <p class="motto">静以修身。</p>
+        </div>
+            <div class="count">
+        <div class="item" title="累计文章数">
+            <span class="num">1141</span>
+            <span>文章数</span>
+        </div>
+        <div class="item" title="累计评论数">
+            <span class="num">3504</span>
+            <span>评论量</span>
+        </div>
+    </div>
+        <ul class="list">
+                    </ul>
+    </section>
+            <section class="joe_aside__item timelife">
+            <div class="joe_aside__item-title">
+                <svg class="icon" viewBox="0 0 1024 1024" width="18" height="18">
+                    <path d="M864.801 895.471h-33.56v-96.859c0-126.081-73.017-235.093-179.062-287.102 106.046-52.01 179.062-161.022 179.062-287.102v-96.859h33.56c17.301 0 31.325-14.327 31.325-32 0-17.673-14.024-32-31.325-32H159.018c-17.3 0-31.325 14.327-31.325 32 0 17.673 14.025 32 31.325 32h33.02v96.859c0 126.08 73.016 235.092 179.061 287.102-106.046 52.009-179.062 161.02-179.062 287.101v96.859h-33.02c-17.3 0-31.325 14.326-31.325 32s14.025 32 31.325 32H864.8c17.301 0 31.325-14.326 31.325-32s-14.023-31.999-31.324-31.999zM256.05 222.427v-94.878h513.046v94.878c0 141.674-114.85 256.522-256.523 256.522-141.674 0-256.523-114.848-256.523-256.522zm513.046 673.044H256.05v-94.879c0-141.674 114.849-256.521 256.523-256.521 141.673 0 256.523 114.848 256.523 256.521v94.879z"/>
+                    <path d="M544.141 384c0-17.69-14.341-32.031-32.031-32.031-71.694 0-127.854-56.161-127.854-127.855 0-17.69-14.341-32.032-32.031-32.032s-32.032 14.341-32.032 32.032c0 107.617 84.3 191.918 191.917 191.918 17.69 0 32.031-14.342 32.031-32.032z"/>
+                </svg>
+                <span class="text">倒计时</span>
+                <span class="line"></span>
+            </div>
+            <div class="joe_aside__item-contain"></div>
+        </section>
+            <section class="joe_aside__item newreply">
+        <div class="joe_aside__item-title">
+            <svg class="icon" viewBox="0 0 1024 1024" width="18" height="18">
+                <path d="M512 647.239a204.391 204.391 0 0 0 204.391-204.391V204.39a204.391 204.391 0 0 0-408.782 0v238.457A204.391 204.391 0 0 0 512 647.238zM375.74 204.39a136.26 136.26 0 0 1 272.52 0v238.457a136.26 136.26 0 0 1-272.52 0z"></path>
+                <path d="M852.652 476.913a34.065 34.065 0 0 0-68.13 0A257.533 257.533 0 0 1 512 715.369a257.533 257.533 0 0 1-272.522-238.456 34.065 34.065 0 0 0-34.065-34.065 34.065 34.065 0 0 0-34.065 34.065 321.576 321.576 0 0 0 307.268 303.861v173.052H307.61a34.065 34.065 0 0 0-34.065 34.065 34.065 34.065 0 0 0 34.065 34.065H716.39a34.065 34.065 0 0 0 34.065-34.065 34.065 34.065 0 0 0-34.065-34.065H546.065V778.73a321.576 321.576 0 0 0 306.587-301.817z"></path>
+            </svg>
+            <span class="text">最新评论</span>
+            <span class="line"></span>
+        </div>
+        <ul class="joe_aside__item-contain">
+                            <li class="item">
+                    <div class="user">
+                        <img width="40" height="40" class="avatar lazyloaded" src="//cravatar.cn/avatar/78e82bdf1a48b98118e671f00affd837?s=120" data-src="//cravatar.cn/avatar/78e82bdf1a48b98118e671f00affd837?s=120" alt="肥饶">
+                        <div class="info">
+                            <div class="author">肥饶</div>
+                            <span class="date">2 年前</span>
+                        </div>
+                    </div>
+                    <div class="reply">
+                        <a class="link" href="https://www.shuyong.net/1143.html#4489">这个好&nbsp;&nbsp;随机</a>
+                    </div>
+                </li>
+                            <li class="item">
+                    <div class="user">
+                        <img width="40" height="40" class="avatar lazyloaded" src="//cravatar.cn/avatar/486c4dfb5f8ddab952cba4c8644a821c?s=120" data-src="//cravatar.cn/avatar/486c4dfb5f8ddab952cba4c8644a821c?s=120" alt="爱比宝">
+                        <div class="info">
+                            <div class="author">爱比宝</div>
+                            <span class="date">2 年前</span>
+                        </div>
+                    </div>
+                    <div class="reply">
+                        <a class="link" href="https://www.shuyong.net/1140.html#4471">好工具，谢谢分享</a>
+                    </div>
+                </li>
+                            <li class="item">
+                    <div class="user">
+                        <img width="40" height="40" class="avatar lazyloaded" src="//cravatar.cn/avatar/dc42fa84dffaf217fe17618883b32a40?s=120" data-src="//cravatar.cn/avatar/dc42fa84dffaf217fe17618883b32a40?s=120" alt="上海网站建设">
+                        <div class="info">
+                            <div class="author">上海网站建设</div>
+                            <span class="date">3 年前</span>
+                        </div>
+                    </div>
+                    <div class="reply">
+                        <a class="link" href="https://www.shuyong.net/1135.html#4465">感谢分享</a>
+                    </div>
+                </li>
+                            <li class="item">
+                    <div class="user">
+                        <img width="40" height="40" class="avatar lazyloaded" src="//cravatar.cn/avatar/1bfbb602b44db0953154321615c55673?s=120" data-src="//cravatar.cn/avatar/1bfbb602b44db0953154321615c55673?s=120" alt="ET聊">
+                        <div class="info">
+                            <div class="author">ET聊</div>
+                            <span class="date">3 年前</span>
+                        </div>
+                    </div>
+                    <div class="reply">
+                        <a class="link" href="https://www.shuyong.net/links.html#4457">分享资源交流经验</a>
+                    </div>
+                </li>
+                            <li class="item">
+                    <div class="user">
+                        <img width="40" height="40" class="avatar lazyloaded" src="//cravatar.cn/avatar/ae9861b4aa280b8cd93ad000264fa810?s=120" data-src="//cravatar.cn/avatar/ae9861b4aa280b8cd93ad000264fa810?s=120" alt="百胜综合盘">
+                        <div class="info">
+                            <div class="author">百胜综合盘</div>
+                            <span class="date">3 年前</span>
+                        </div>
+                    </div>
+                    <div class="reply">
+                        <a class="link" href="https://www.shuyong.net/1138.html#4456">很8错！感谢分享</a>
+                    </div>
+                </li>
+                            <li class="item">
+                    <div class="user">
+                        <img width="40" height="40" class="avatar lazyloaded" src="//cravatar.cn/avatar/d13ed5612751918dc502a948b6170be6?s=120" data-src="//cravatar.cn/avatar/d13ed5612751918dc502a948b6170be6?s=120" alt="百科情报站">
+                        <div class="info">
+                            <div class="author">百科情报站</div>
+                            <span class="date">3 年前</span>
+                        </div>
+                    </div>
+                    <div class="reply">
+                        <a class="link" href="https://www.shuyong.net/1131.html#4452">你这网站可以哦， 来换个友链吧</a>
+                    </div>
+                </li>
+                            <li class="item">
+                    <div class="user">
+                        <img width="40" height="40" class="avatar lazyloaded" src="//cravatar.cn/avatar/f1faff412bae591cc893fc00e9b9ee36?s=120" data-src="//cravatar.cn/avatar/f1faff412bae591cc893fc00e9b9ee36?s=120" alt="舍力">
+                        <div class="info">
+                            <div class="author">舍力</div>
+                            <span class="date">3 年前</span>
+                        </div>
+                    </div>
+                    <div class="reply">
+                        <a class="link" href="https://www.shuyong.net/1132.html#4399">@言之在线：win10都还没有弄明白呢</a>
+                    </div>
+                </li>
+                            <li class="item">
+                    <div class="user">
+                        <img width="40" height="40" class="avatar lazyloaded" src="//cravatar.cn/avatar/47974d053e62ac549814387b195a2797?s=120" data-src="//cravatar.cn/avatar/47974d053e62ac549814387b195a2797?s=120" alt="言之在线">
+                        <div class="info">
+                            <div class="author">言之在线</div>
+                            <span class="date">3 年前</span>
+                        </div>
+                    </div>
+                    <div class="reply">
+                        <a class="link" href="https://www.shuyong.net/1132.html#4398">win11好还是win10好</a>
+                    </div>
+                </li>
+                            <li class="item">
+                    <div class="user">
+                        <img width="40" height="40" class="avatar lazyloaded" src="//cravatar.cn/avatar/a820f8cabae23fee5d5a7425ef77a0eb?s=120" data-src="//cravatar.cn/avatar/a820f8cabae23fee5d5a7425ef77a0eb?s=120" alt="天兴工作室">
+                        <div class="info">
+                            <div class="author">天兴工作室</div>
+                            <span class="date">3 年前</span>
+                        </div>
+                    </div>
+                    <div class="reply">
+                        <a class="link" href="https://www.shuyong.net/links.html#4397">网站整改，我网站友链全部下了，麻烦我的链接也可以删掉了</a>
+                    </div>
+                </li>
+                            <li class="item">
+                    <div class="user">
+                        <img width="40" height="40" class="avatar lazyloaded" src="//cravatar.cn/avatar/3a0b4359074bcdd603b6d5eb59ea7e18?s=120" data-src="//cravatar.cn/avatar/3a0b4359074bcdd603b6d5eb59ea7e18?s=120" alt="贵金属回收">
+                        <div class="info">
+                            <div class="author">贵金属回收</div>
+                            <span class="date">4 年前</span>
+                        </div>
+                    </div>
+                    <div class="reply">
+                        <a class="link" href="https://www.shuyong.net/967.html#4389">善良让这世界有了温暖，如果都是冷漠，那多无趣</a>
+                    </div>
+                </li>
+                    </ul>
+    </section>
+    </aside>
+</div>    </div>
+<script language="javascript">
+    var now = new Date();
+
+    function createtime() {
+        var grt = new Date('2013/5/24 00:00:00'); /* 网站启用时间 */
+        now.setTime(now.getTime() + 250);
+        var totalSeconds = (now - grt) / 1000;
+        var totalDays = Math.floor(totalSeconds / 86400);
+        
+        // 计算年数和剩余天数（按每年365天计算）
+        var years = Math.floor(totalDays / 365);
+        var days = totalDays % 365;
+        
+        // 计算小时
+        var hours = (totalSeconds / 3600) - (totalDays * 24);
+        var hnum = Math.floor(hours);
+        if (String(hnum).length == 1) {
+            hnum = "0" + hnum;
+        }
+        
+        // 计算分钟
+        var minutes = (totalSeconds / 60) - (totalDays * 24 * 60) - (hnum * 60);
+        var mnum = Math.floor(minutes);
+        if (String(mnum).length == 1) {
+            mnum = "0" + mnum;
+        }
+        
+        // 计算秒
+        var seconds = totalSeconds - (totalDays * 24 * 60 * 60) - (hnum * 60 * 60) - (mnum * 60);
+        var snum = Math.round(seconds);
+        if (String(snum).length == 1) {
+            snum = "0" + snum;
+        }
+        
+        // 更新显示内容
+        document.getElementById("timeDate").innerHTML = "已稳定运行" + years + "年" + days + "天";
+        document.getElementById("times").innerHTML = hnum + "小时" + mnum + "分" + snum + "秒";
+    }
+
+    setInterval("createtime()", 250);
+
+    /**
+     * 点击刷新验证码（保持不变）
+     */
+    $("#captcha").click(function() {
+        captchaRefresh($(this))
+    })
+
+    function captchaRefresh($t) {
+        var timestamp = new Date().getTime()
+        var blogUrl = $("#blog_url").val();
+        $t.attr("src", blogUrl + "/include/lib/checkcode.php?" + timestamp)
+    }
+</script>
+<footer class="joe_footer" id="joe_footer">
+        <div class="joe_container">
+        <div class="item run">
+            <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+            <div><script type="text/javascript" src="https://www.shuyong.net/content/plugins/sl_dmgl/dmgl.js"></script>
+</div>
+        </div>
+        <div class="item">基于<a href="https://www.bt.cn/register.html?referee=20329" target="_blank" rel="nofollow">宝塔面板</a>，数据存储于阿里云ECS
+
+<script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1252914337'%3E%3C/span%3E%3Cscript src='https://s23.cnzz.com/stat.php%3Fid%3D1252914337%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+
+<script>document.addEventListener('visibilitychange',function(){if(document.visibilityState=='hidden'){normal_title=document.title;document.title='舍力欢迎你';}else{document.title=normal_title;}});
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?410ca4f46ef4cc9dc1208df92f15a0bd";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>            <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备11021420号</a></div>
+    </div>
+</footer>
+<div class="joe_action">
+    <div class="joe_action_item scroll">
+        <svg viewBox="0 0 1024 1024" width="25" height="25">
+            <path d="M725.902 498.916c18.205-251.45-93.298-410.738-205.369-475.592l-6.257-3.982-6.258 3.414c-111.502 64.853-224.711 224.142-204.8 475.59-55.751 53.476-80.214 116.623-80.214 204.8v15.36l179.2-35.27c11.378 40.39 58.596 69.973 113.21 69.973 54.613 0 101.262-29.582 112.64-68.836l180.337 36.41v-15.36c-.569-89.885-25.031-153.6-82.489-206.507zM571.733 392.533c-33.564 31.29-87.04 28.445-118.329-5.12s-28.444-87.04 5.12-117.76c33.565-31.289 87.04-28.444 118.33 5.12s28.444 86.471-5.12 117.76zm-56.32 368.64c-35.84 0-64.284 29.014-64.284 64.285 0 35.84 54.044 182.613 64.284 182.613s64.285-146.773 64.285-182.613c0-35.271-29.014-64.285-64.285-64.285z" />
+        </svg>
+    </div>
+    <div class="joe_action_item mode">
+        <svg class="icon-1" viewBox="0 0 1024 1024" width="25" height="25">
+            <path d="M587.264 104.96c33.28 57.856 52.224 124.928 52.224 196.608 0 218.112-176.128 394.752-393.728 394.752-29.696 0-58.368-3.584-86.528-9.728C223.744 832.512 369.152 934.4 538.624 934.4c229.376 0 414.72-186.368 414.72-416.256 1.024-212.992-159.744-389.12-366.08-413.184z" />
+            <path d="M340.48 567.808l-23.552-70.144-70.144-23.552 70.144-23.552 23.552-70.144 23.552 70.144 70.144 23.552-70.144 23.552-23.552 70.144zM168.96 361.472l-30.208-91.136-91.648-30.208 91.136-30.208 30.72-91.648 30.208 91.136 91.136 30.208-91.136 30.208-30.208 91.648z" />
+        </svg>
+        <svg class="icon-2" viewBox="0 0 1024 1024" width="25" height="25">
+            <path d="M234.24 512a277.76 277.76 0 1 0 555.52 0 277.76 277.76 0 1 0-555.52 0zM512 187.733a42.667 42.667 0 0 1-42.667-42.666v-102.4a42.667 42.667 0 0 1 85.334 0v102.826A42.667 42.667 0 0 1 512 187.733zm-258.987 107.52a42.667 42.667 0 0 1-29.866-12.373l-72.96-73.387a42.667 42.667 0 0 1 59.306-59.306l73.387 72.96a42.667 42.667 0 0 1 0 59.733 42.667 42.667 0 0 1-29.867 12.373zm-107.52 259.414H42.667a42.667 42.667 0 0 1 0-85.334h102.826a42.667 42.667 0 0 1 0 85.334zm34.134 331.946a42.667 42.667 0 0 1-29.44-72.106l72.96-73.387a42.667 42.667 0 0 1 59.733 59.733l-73.387 73.387a42.667 42.667 0 0 1-29.866 12.373zM512 1024a42.667 42.667 0 0 1-42.667-42.667V878.507a42.667 42.667 0 0 1 85.334 0v102.826A42.667 42.667 0 0 1 512 1024zm332.373-137.387a42.667 42.667 0 0 1-29.866-12.373l-73.387-73.387a42.667 42.667 0 0 1 0-59.733 42.667 42.667 0 0 1 59.733 0l72.96 73.387a42.667 42.667 0 0 1-29.44 72.106zm136.96-331.946H878.507a42.667 42.667 0 1 1 0-85.334h102.826a42.667 42.667 0 0 1 0 85.334zM770.987 295.253a42.667 42.667 0 0 1-29.867-12.373 42.667 42.667 0 0 1 0-59.733l73.387-72.96a42.667 42.667 0 1 1 59.306 59.306l-72.96 73.387a42.667 42.667 0 0 1-29.866 12.373z" />
+        </svg>
+    </div>
+</div>
+</body>
+
+</html>

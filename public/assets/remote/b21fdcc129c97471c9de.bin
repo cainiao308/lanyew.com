@@ -1,0 +1,606 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="referrer" content="never">
+<title>在线影视库</title>
+<script type="text/javascript" src="static/js/jquery.min.js"></script>
+<link href="static/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="static/css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+<link href="static/fontawesom/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css?var=2.3.1" rel="stylesheet" type="text/css" />
+<script type="text/javascript">var moviekuhost="https://blws.cc/movie/",movieurlmode="2";</script>
+</head>
+<body>
+<nav class="navbar navbar-default header"> <div class="container" id="menu"> <div class="navbar-header"> <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="./" id="logo" title="在线影视库" style="line-height:30px;">在线影视库</a> </div> <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> <ul class="nav navbar-nav navbar-right"><li><a href="type-1-1.html"><i class="fa fa-tv"></i> 电视剧</a></li><li><a href="type-2-1.html"><i class="fa fa-rocket"></i> 科幻片</a></li><li><a href="type-3-1.html"><i class="fa fa-bolt"></i> 动作片</a></li><li><a href="type-4-1.html"><i class="fa fa-smile-o"></i> 喜剧片</a></li><li><a href="type-5-1.html"><i class="fa fa-bomb"></i> 战争片</a></li><li><a href="type-6-1.html"><i class="fa fa-film"></i> 剧情片</a></li><li><a href="type-7-1.html"><i class="fa fa-child"></i> 动画片</a></li><li><a href="type-8-1.html"><i class="fa fa-frown-o"></i> 恐怖片</a></li><li class="dropdown">
+ <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多 <span class="caret"></span></a>
+ <ul class="dropdown-menu">
+<li><a href="javascript:;" onClick=alert("请添加站长QQ：84953409")>购买</a></li>  
+<li><a href="https://lanyew.com/" target="_blank">蓝叶</a></li>
+<li role="separator" class="divider"></li>
+<li><a href="https://lanyew.com/liuyanben.html" target="_blank">给我留言</a></li>
+<li role="separator" class="divider"></li>
+  <li><a href="https://luobow.cc/" target="_blank">萝卜游戏厅</a></li>
+ </ul>
+</li><li><a href="javascript:;" id="manualToggleBtn" style="padding:15px 5px;">�</a></li></ul></div></div></nav>
+<div class="container" id="wrap">
+  <div class="row">
+  <div class="alert alert-info alert-search" role="alert">
+    <div class="sitelogo"><a href="./"><img src="images/logo.png" alt="在线影视库" /></a></div>    <form method="get" id="movieSearch" onsubmit="return Searchvod();">
+    <div class="input-group">
+      <input id="searchtext" type="text" name="key" class="form-control" placeholder="请输入关键词进行搜索..." x-webkit-speech />
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button" onClick="Searchvod();" id="searchbtn">搜索影片</button>
+      </span>
+    </div>
+      </form>
+    <div class="input-group hotlist">热门：
+          <a href="so-火遮眼.html">火遮眼</a>
+	      <a href="so-镖人.html">镖人</a>
+	      <a href="so-黑夜告白.html">黑夜告白</a>
+	      <a href="so-八千里路云和月.html">八千里路云和月</a>
+	      <a href="so-唐朝诡事录之长安.html">唐朝诡事录之长安</a>
+	      <a href="so-树影迷宫.html">树影迷宫</a>
+	      <a href="so-731.html">731</a>
+	      <a href="so-南京照相馆.html">南京照相馆</a>
+	      <a href="so-1917.html">1917</a>
+	      <a href="so-1923.html">1923</a>
+	      <a href="so-1883.html">1883</a>
+	      <a href="so-哪吒之魔童闹海.html">哪吒之魔童闹海</a>
+	      <a href="so-仙逆.html">仙逆</a>
+	      <a href="so-凡人修仙传.html">凡人修仙传</a>
+	      <a href="so-斗破苍穹.html">斗破苍穹</a>
+	     </div>
+  </div>
+    <div class="row list-toplist"> 
+  <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-83839-1-1.html" title="抓特务" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/83839.png" width="300" height="150" alt="抓特务" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-83839-1-1.html" title="抓特务" target="_blank">抓特务</a></h3></div>
+      <div class="type_name">剧情片</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-83757-1-1.html" title="重器2026" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/83757.png" width="300" height="150" alt="重器2026" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-83757-1-1.html" title="重器2026" target="_blank">重器2026</a></h3></div>
+      <div class="type_name">国产剧</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-84008-1-1.html" title="人生复本第二季" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/84008.png" width="300" height="150" alt="人生复本第二季" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-84008-1-1.html" title="人生复本第二季" target="_blank">人生复本第二季</a></h3></div>
+      <div class="type_name">欧美剧</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-8915-1-1.html" title="仙逆" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/8915.png" width="300" height="150" alt="仙逆" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-8915-1-1.html" title="仙逆" target="_blank">仙逆</a></h3></div>
+      <div class="type_name">国产动漫</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-8298-1-1.html" title="凡人修仙传" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/8298.png" width="300" height="150" alt="凡人修仙传" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-8298-1-1.html" title="凡人修仙传" target="_blank">凡人修仙传</a></h3></div>
+      <div class="type_name">国产动漫</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-82047-1-1.html" title="群体" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/82047.png" width="300" height="150" alt="群体" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-82047-1-1.html" title="群体" target="_blank">群体</a></h3></div>
+      <div class="type_name">恐怖片</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-10453-1-1.html" title="特洛伊" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/10453.png" width="300" height="150" alt="特洛伊" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-10453-1-1.html" title="特洛伊" target="_blank">特洛伊</a></h3></div>
+      <div class="type_name">动作片</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-80007-1-1.html" title="洛杉矶劫案" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/80007.png" width="300" height="150" alt="洛杉矶劫案" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-80007-1-1.html" title="洛杉矶劫案" target="_blank">洛杉矶劫案</a></h3></div>
+      <div class="type_name">动作片</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-83960-1-1.html" title="夜王" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/83960.png" width="300" height="150" alt="夜王" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-83960-1-1.html" title="夜王" target="_blank">夜王</a></h3></div>
+      <div class="type_name">喜剧片</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-103063-2-1.html" title="侠盗猎车手6：加长版深度实机赏析" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/1080zyk/103063.png" width="300" height="150" alt="侠盗猎车手6：加长版深度实机赏析" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-103063-2-1.html" title="侠盗猎车手6：加长版深度实机赏析" target="_blank">侠盗猎车手6：加长版深度实机赏析</a></h3></div>
+      <div class="type_name">动画片</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-84021-1-1.html" title="耳语者" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/84021.png" width="300" height="150" alt="耳语者" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-84021-1-1.html" title="耳语者" target="_blank">耳语者</a></h3></div>
+      <div class="type_name">恐怖片</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-82921-1-1.html" title="金特务：本色回归" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/82921.png" width="300" height="150" alt="金特务：本色回归" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-82921-1-1.html" title="金特务：本色回归" target="_blank">金特务：本色回归</a></h3></div>
+      <div class="type_name">韩国剧</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-83101-1-1.html" title="悬案" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/83101.png" width="300" height="150" alt="悬案" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-83101-1-1.html" title="悬案" target="_blank">悬案</a></h3></div>
+      <div class="type_name">国产剧</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-82487-1-1.html" title="揭秘日" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/82487.png" width="300" height="150" alt="揭秘日" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-82487-1-1.html" title="揭秘日" target="_blank">揭秘日</a></h3></div>
+      <div class="type_name">科幻片</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-81830-1-1.html" title="寒战1994" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/81830.png" width="300" height="150" alt="寒战1994" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-81830-1-1.html" title="寒战1994" target="_blank">寒战1994</a></h3></div>
+      <div class="type_name">动作片</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-55065-1-1.html" title="胆小鬼" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/55065.png" width="300" height="150" alt="胆小鬼" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-55065-1-1.html" title="胆小鬼" target="_blank">胆小鬼</a></h3></div>
+      <div class="type_name">国产剧</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-82486-1-1.html" title="火遮眼2025" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/82486.png" width="300" height="150" alt="火遮眼2025" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-82486-1-1.html" title="火遮眼2025" target="_blank">火遮眼2025</a></h3></div>
+      <div class="type_name">动作片</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-13825-1-1.html" title="羊毛战记/末日地堡第二季" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/13825.png" width="300" height="150" alt="羊毛战记/末日地堡第二季" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-13825-1-1.html" title="羊毛战记/末日地堡第二季" target="_blank">羊毛战记/末日地堡第二季</a></h3></div>
+      <div class="type_name">科幻片</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-33111-1-1.html" title="羊毛战记/末日地堡第一季" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/33111.png" width="300" height="150" alt="羊毛战记/末日地堡第一季" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-33111-1-1.html" title="羊毛战记/末日地堡第一季" target="_blank">羊毛战记/末日地堡第一季</a></h3></div>
+      <div class="type_name">科幻片</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-83009-1-1.html" title="宗师叶问2" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/83009.png" width="300" height="150" alt="宗师叶问2" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-83009-1-1.html" title="宗师叶问2" target="_blank">宗师叶问2</a></h3></div>
+      <div class="type_name">动作片</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-82155-1-1.html" title="后室" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/82155.png" width="300" height="150" alt="后室" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-82155-1-1.html" title="后室" target="_blank">后室</a></h3></div>
+      <div class="type_name">科幻片</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-83104-1-1.html" title="末日地堡第三季" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/83104.png" width="300" height="150" alt="末日地堡第三季" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-83104-1-1.html" title="末日地堡第三季" target="_blank">末日地堡第三季</a></h3></div>
+      <div class="type_name">欧美剧</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-81939-1-1.html" title="达顿牧场" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/81939.png" width="300" height="150" alt="达顿牧场" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-81939-1-1.html" title="达顿牧场" target="_blank">达顿牧场</a></h3></div>
+      <div class="type_name">欧美剧</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-37989-2-1.html" title="怪谈1964" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/1080zyk/37989.png" width="300" height="150" alt="怪谈1964" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-37989-2-1.html" title="怪谈1964" target="_blank">怪谈1964</a></h3></div>
+      <div class="type_name">恐怖片</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-81961-1-1.html" title="痴迷2025" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/81961.png" width="300" height="150" alt="痴迷2025" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-81961-1-1.html" title="痴迷2025" target="_blank">痴迷2025</a></h3></div>
+      <div class="type_name">恐怖片</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-82035-1-1.html" title="星球大战：曼达洛人与古古" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/82035.png" width="300" height="150" alt="星球大战：曼达洛人与古古" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-82035-1-1.html" title="星球大战：曼达洛人与古古" target="_blank">星球大战：曼达洛人与古古</a></h3></div>
+      <div class="type_name">科幻片</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-82309-1-1.html" title="宇宙巨人：希曼崛起" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/82309.png" width="300" height="150" alt="宇宙巨人：希曼崛起" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-82309-1-1.html" title="宇宙巨人：希曼崛起" target="_blank">宇宙巨人：希曼崛起</a></h3></div>
+      <div class="type_name">科幻片</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-81974-1-1.html" title="绵羊侦探团" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/81974.png" width="300" height="150" alt="绵羊侦探团" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-81974-1-1.html" title="绵羊侦探团" target="_blank">绵羊侦探团</a></h3></div>
+      <div class="type_name">喜剧片</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-82307-1-1.html" title="惊声尖笑6" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/82307.png" width="300" height="150" alt="惊声尖笑6" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-82307-1-1.html" title="惊声尖笑6" target="_blank">惊声尖笑6</a></h3></div>
+      <div class="type_name">恐怖片</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-71399-1-1.html" title="无悔追踪" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/71399.png" width="300" height="150" alt="无悔追踪" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-71399-1-1.html" title="无悔追踪" target="_blank">无悔追踪</a></h3></div>
+      <div class="type_name">国产剧</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-80973-1-1.html" title="导火线" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/80973.png" width="300" height="150" alt="导火线" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-80973-1-1.html" title="导火线" target="_blank">导火线</a></h3></div>
+      <div class="type_name">动作片</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-25814-1-1.html" title="时空线索" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/25814.png" width="300" height="150" alt="时空线索" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-25814-1-1.html" title="时空线索" target="_blank">时空线索</a></h3></div>
+      <div class="type_name">科幻片</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-81964-2-1.html" title="团战之夜" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/1080zyk/81964.png" width="300" height="150" alt="团战之夜" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-81964-2-1.html" title="团战之夜" target="_blank">团战之夜</a></h3></div>
+      <div class="type_name">科幻片</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-76860-1-1.html" title="一人之下第六季" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/76860.png" width="300" height="150" alt="一人之下第六季" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-76860-1-1.html" title="一人之下第六季" target="_blank">一人之下第六季</a></h3></div>
+      <div class="type_name">国产动漫</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-63961-1-1.html" title="如月车站" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/63961.png" width="300" height="150" alt="如月车站" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-63961-1-1.html" title="如月车站" target="_blank">如月车站</a></h3></div>
+      <div class="type_name">恐怖片</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-63957-1-1.html" title="如月车站Re：" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/63957.png" width="300" height="150" alt="如月车站Re：" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-63957-1-1.html" title="如月车站Re：" target="_blank">如月车站Re：</a></h3></div>
+      <div class="type_name">恐怖片</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-81613-1-1.html" title="深水" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/81613.png" width="300" height="150" alt="深水" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-81613-1-1.html" title="深水" target="_blank">深水</a></h3></div>
+      <div class="type_name">剧情片</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-40561-1-1.html" title="一路不顺风" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/40561.png" width="300" height="150" alt="一路不顺风" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-40561-1-1.html" title="一路不顺风" target="_blank">一路不顺风</a></h3></div>
+      <div class="type_name">喜剧片</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-94725-2-1.html" title="诺曼底72小时" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/1080zyk/94725.png" width="300" height="150" alt="诺曼底72小时" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-94725-2-1.html" title="诺曼底72小时" target="_blank">诺曼底72小时</a></h3></div>
+      <div class="type_name">战争片</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-40791-2-1.html" title="唬胆特工" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/1080zyk/40791.png" width="300" height="150" alt="唬胆特工" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-40791-2-1.html" title="唬胆特工" target="_blank">唬胆特工</a></h3></div>
+      <div class="type_name">喜剧片</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-95017-2-1.html" title="南部档案" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/1080zyk/95017.png" width="300" height="150" alt="南部档案" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-95017-2-1.html" title="南部档案" target="_blank">南部档案</a></h3></div>
+      <div class="type_name">国产剧</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-95025-2-1.html" title="我的妈耶" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/1080zyk/95025.png" width="300" height="150" alt="我的妈耶" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-95025-2-1.html" title="我的妈耶" target="_blank">我的妈耶</a></h3></div>
+      <div class="type_name">喜剧片</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-82299-2-1.html" title="镖人：风起大漠" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/1080zyk/82299.png" width="300" height="150" alt="镖人：风起大漠" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-82299-2-1.html" title="镖人：风起大漠" target="_blank">镖人：风起大漠</a></h3></div>
+      <div class="type_name">动作片</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-59307-1-1.html" title="记忆之夜" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/59307.png" width="300" height="150" alt="记忆之夜" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-59307-1-1.html" title="记忆之夜" target="_blank">记忆之夜</a></h3></div>
+      <div class="type_name">恐怖片</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-82236-1-1.html" title="灵魂摆渡·十年" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/82236.png" width="300" height="150" alt="灵魂摆渡·十年" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-82236-1-1.html" title="灵魂摆渡·十年" target="_blank">灵魂摆渡·十年</a></h3></div>
+      <div class="type_name">国产剧</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-81870-1-1.html" title="雨霖铃2026" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/81870.png" width="300" height="150" alt="雨霖铃2026" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-81870-1-1.html" title="雨霖铃2026" target="_blank">雨霖铃2026</a></h3></div>
+      <div class="type_name">国产剧</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-265-1-1.html" title="回到未来" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/265.png" width="300" height="150" alt="回到未来" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-265-1-1.html" title="回到未来" target="_blank">回到未来</a></h3></div>
+      <div class="type_name">科幻片</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-25803-1-1.html" title="回到未来2" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/25803.png" width="300" height="150" alt="回到未来2" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-25803-1-1.html" title="回到未来2" target="_blank">回到未来2</a></h3></div>
+      <div class="type_name">科幻片</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-82114-1-1.html" title="耀眼2026" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/82114.png" width="300" height="150" alt="耀眼2026" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-82114-1-1.html" title="耀眼2026" target="_blank">耀眼2026</a></h3></div>
+      <div class="type_name">国产剧</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-81820-1-1.html" title="主角" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/81820.png" width="300" height="150" alt="主角" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-81820-1-1.html" title="主角" target="_blank">主角</a></h3></div>
+      <div class="type_name">国产剧</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-80998-1-1.html" title="黑袍纠察队第五季" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/80998.png" width="300" height="150" alt="黑袍纠察队第五季" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-80998-1-1.html" title="黑袍纠察队第五季" target="_blank">黑袍纠察队第五季</a></h3></div>
+      <div class="type_name">欧美剧</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-82126-1-1.html" title="暗影蜘蛛侠" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/82126.png" width="300" height="150" alt="暗影蜘蛛侠" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-82126-1-1.html" title="暗影蜘蛛侠" target="_blank">暗影蜘蛛侠</a></h3></div>
+      <div class="type_name">欧美剧</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-94702-2-1.html" title="翘楚" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/1080zyk/94702.png" width="300" height="150" alt="翘楚" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-94702-2-1.html" title="翘楚" target="_blank">翘楚</a></h3></div>
+      <div class="type_name">国产剧</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-93449-2-1.html" title="大唐迷雾" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/1080zyk/93449.png" width="300" height="150" alt="大唐迷雾" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-93449-2-1.html" title="大唐迷雾" target="_blank">大唐迷雾</a></h3></div>
+      <div class="type_name">国产剧</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-81965-1-1.html" title="金谍行动" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/81965.png" width="300" height="150" alt="金谍行动" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-81965-1-1.html" title="金谍行动" target="_blank">金谍行动</a></h3></div>
+      <div class="type_name">动作片</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-92641-2-1.html" title="家业" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/1080zyk/92641.png" width="300" height="150" alt="家业" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-92641-2-1.html" title="家业" target="_blank">家业</a></h3></div>
+      <div class="type_name">国产剧</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-90641-2-1.html" title="寂静的朋友" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/1080zyk/90641.png" width="300" height="150" alt="寂静的朋友" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-90641-2-1.html" title="寂静的朋友" target="_blank">寂静的朋友</a></h3></div>
+      <div class="type_name">科幻片</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-83815-2-1.html" title="熊出没·年年有熊" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/1080zyk/83815.png" width="300" height="150" alt="熊出没·年年有熊" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-83815-2-1.html" title="熊出没·年年有熊" target="_blank">熊出没·年年有熊</a></h3></div>
+      <div class="type_name">动画片</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-1728-1-1.html" title="金刚川" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/dyttm3u8/1728.png" width="300" height="150" alt="金刚川" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-1728-1-1.html" title="金刚川" target="_blank">金刚川</a></h3></div>
+      <div class="type_name">战争片</div>  </div>
+ </div>
+ <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="thumbnail">
+   <a class="vodpic" href="file-4227-2-1.html" title="南京！南京！" target="_blank">
+      <img src="images/nopic.png" data-original="https://gimg3.baidu.com/gimg/app=2028&src=blws.cc/movie/topdata/1080zyk/4227.png" width="300" height="150" alt="南京！南京！" />
+      <div class="vodpicBg"></div>
+   </a>
+   <div class="caption"><h3><a href="file-4227-2-1.html" title="南京！南京！" target="_blank">南京！南京！</a></h3></div>
+      <div class="type_name">战争片</div>  </div>
+ </div>
+</div><!--/topdata--> 
+    </div>
+<script src="js/script.js?var=2.3.1"></script>
+</div><div class="warning"></div><div class="uptopbtn" onClick="upTopfun()"></div>
+<div class="loadwrap"><div class="loaderbox"><svg version="1.1" id="loader-1"  x="0px" y="0px" width="100px" height="100px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve"><path fill="#000" d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z"><animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite" /></path></svg><div class="load-msg">加载中....</div></div></div>
+<div class="footer">Copyright © 2025-2026 <a href="https://blws.cc/movie/" target="_blank">在线影视库</a></div></div></div><div id="web_bg"><img src="https://blws.cc/movie/static/images/bg.png" /></div>
+<div class="modal fade bs-play-modal-md" id="playModal" tabindex="-1" role="dialog" aria-labelledby="playmodal"><div class="modal-dialog modal-md" style="max-width:350px;margin:0 auto"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" id="closemodal">×</span></button><h4 class="modal-title"><span style="margin-right:5px;top:3px;color:red" class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></h4></div><div class="modal-body" style="text-align:center"><p><span class="glyphicon glyphicon-ok okico" aria-hidden="true"></span></p><p></p></div></div></div></div><script src="https://blws.cc/movie/static/js/script.js"></script><div class="modal fade" id="editModal" tabindex="-1" role="dialog"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><h4 class="modal-title">编辑资源</h4></div><div class="modal-body"><form id="editForm"><input type="hidden" id="edit_id"><input type="hidden" id="edit_type"><input type="hidden" name="mode" value="edit"><div class="form-group"><label>标题</label><input class="form-control" id="edit_title" required></div><div class="form-group"><label>分类名</label><select class="form-control" id="edit_type_name"><option value="科幻片">科幻片</option><option value="动作片">动作片</option><option value="喜剧片">喜剧片</option><option value="战争片">战争片</option><option value="剧情片">剧情片</option><option value="动画片">动画片</option><option value="恐怖片">恐怖片</option></select></div></form></div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">取消</button><button type="button" class="btn btn-primary" id="saveEditBtn" onclick="saveEdit()">保存</button></div></div></div></div></body></html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>世界OnLine - 地球OnLine启动器</title>
+    <meta name="description" content="欢迎登入世界 OnLine！地球 OnLine 启动器，一场无法回档的地球 OnLine 游戏。开局随机，没有攻略，自由探索这个宏大开放世界。">
+    <meta name="keywords" content="世界OnLine，地球OnLine启动器，地球OnLine游戏">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0a0f1e">
+    <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="assets/icon.php?size=192">
+    <link rel="stylesheet" href="assets/style.css?v=20260828b">
+</head>
+<body class="index-page">
+
+    <!-- 线性图标库（SVG sprite） -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon-sprite">
+        <symbol id="icon-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+        <symbol id="icon-home" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></symbol>
+        <symbol id="icon-book" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol>
+        <symbol id="icon-gamepad" viewBox="0 0 24 24"><line x1="6" y1="12" x2="10" y2="12"/><line x1="8" y1="10" x2="8" y2="14"/><line x1="15" y1="13" x2="15.01" y2="13"/><line x1="18" y1="11" x2="18.01" y2="11"/><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"/></symbol>
+        <symbol id="icon-gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"/></symbol>
+        <symbol id="icon-briefcase" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+        <symbol id="icon-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+        <symbol id="icon-scale" viewBox="0 0 24 24"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></symbol>
+        <symbol id="icon-dice" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="7.5" cy="7.5" r="1" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1" fill="currentColor" stroke="none"/><circle cx="16.5" cy="16.5" r="1" fill="currentColor" stroke="none"/></symbol>
+        <symbol id="icon-skull" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-6.86 8.6 4.5 4.5 0 0 0-1.7 3.57V16a2 2 0 0 0 2 2h1v2a2 2 0 0 0 2 2h6.1a2 2 0 0 0 2-2v-2h1a2 2 0 0 0 2-2v-1.83a4.5 4.5 0 0 0-1.7-3.57A7 7 0 0 0 12 2z"/><circle cx="9" cy="10" r="1.2" fill="currentColor" stroke="none"/><circle cx="15" cy="10" r="1.2" fill="currentColor" stroke="none"/><path d="M10 16v2M14 16v2"/></symbol>
+        <symbol id="icon-lightbulb" viewBox="0 0 24 24"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7z"/></symbol>
+        <symbol id="icon-earth" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+        <symbol id="icon-megaphone" viewBox="0 0 24 24"><path d="M3 11l18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></symbol>
+        <symbol id="icon-zap" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></symbol>
+    </svg>
+
+    <!-- 星空粒子 -->
+    <div class="stars" id="stars"></div>
+
+    <!-- 流星 -->
+    <div class="meteor"></div>
+    <div class="meteor"></div>
+    <div class="meteor"></div>
+
+    <!-- 鼠标粒子拖尾容器 -->
+    <div class="cursor-trail" id="cursor-trail"></div>
+
+    <!-- 页面内容 -->
+    <div class="index-container">
+        <div class="title-wrap">
+            <div class="earth-logo"><svg class="icon"><use href="#icon-globe"></use></svg></div>
+            <h1 class="index-title" id="typewriter-title"></h1>
+            <div class="index-subtitle">当前版本：<span class="version-date">2026.8.26</span> | 服务器：地球-东亚-中国</div>
+        </div>
+
+        <div class="index-desc" id="typewriter-desc"></div>
+
+        <!-- 服务器公告栏（数据来自 api/announcements.php） -->
+        <div class="notice-bar index-notice" id="indexNotice" style="display:none">
+            <div class="notice-track" id="indexNoticeTrack"></div>
+        </div>
+
+        <!-- 核心设定卡片 -->
+        <div class="game-cards" id="game-cards">
+            <div class="game-card" data-setting="birth">
+                <div class="card-icon"><svg class="icon"><use href="#icon-gift"></use></svg></div>
+                <div class="card-title">出生</div>
+                <div class="card-tag rare">稀有SSR</div>
+                <div class="card-brief">账号自动注册</div>
+                <div class="card-detail">初始属性随机分配</div>
+            </div>
+            <div class="game-card" data-setting="daily">
+                <div class="card-icon"><svg class="icon"><use href="#icon-briefcase"></use></svg></div>
+                <div class="card-title">日常副本</div>
+                <div class="card-tag common">日常任务</div>
+                <div class="card-brief">搬砖 · 肝副本</div>
+                <div class="card-detail">经验值获取主渠道</div>
+            </div>
+            <div class="game-card" data-setting="choice">
+                <div class="card-icon"><svg class="icon"><use href="#icon-target"></use></svg></div>
+                <div class="card-title">人生选择</div>
+                <div class="card-tag epic">关键剧情</div>
+                <div class="card-brief">支线剧情触发</div>
+                <div class="card-detail">不可逆的任务节点</div>
+            </div>
+            <div class="game-card" data-setting="rules">
+                <div class="card-icon"><svg class="icon"><use href="#icon-scale"></use></svg></div>
+                <div class="card-title">社会规则</div>
+                <div class="card-tag common">安全区机制</div>
+                <div class="card-brief">防沉迷系统</div>
+                <div class="card-detail">全服通用协议</div>
+            </div>
+            <div class="game-card" data-setting="luck">
+                <div class="card-icon"><svg class="icon"><use href="#icon-dice"></use></svg></div>
+                <div class="card-title">机遇/成功</div>
+                <div class="card-tag legendary">传说级</div>
+                <div class="card-brief">稀有掉落 · 隐藏彩蛋</div>
+                <div class="card-detail">欧皇时刻降临</div>
+            </div>
+            <div class="game-card danger" data-setting="death">
+                <div class="card-icon"><svg class="icon"><use href="#icon-skull"></use></svg></div>
+                <div class="card-title">衰老/死亡</div>
+                <div class="card-tag danger">永久下线</div>
+                <div class="card-brief">等级过高强制删号</div>
+                <div class="card-detail">角色数据不可转移</div>
+            </div>
+        </div>
+
+        <div class="online-counter">
+            <span class="counter-label"><svg class="icon"><use href="#icon-earth"></use></svg> 本世界已被探索</span>
+            <span class="counter-number" id="online-number">--</span>
+            <span class="counter-unit">次</span>
+        </div>
+
+        <div class="action-buttons">
+            <button class="gradient-btn btn-primary" onclick="location.href='settings.html'">
+                <svg class="icon"><use href="#icon-book"></use></svg> 世界手册
+            </button>
+            <button class="gradient-btn btn-secondary" onclick="location.href='login.php'">
+                <svg class="icon"><use href="#icon-gamepad"></use></svg> 进入世界
+            </button>
+            <!-- 阶段5：数据大屏入口 -->
+            <button class="gradient-btn btn-primary" onclick="window.open('screen.php','_blank')">
+                <svg class="icon"><use href="#icon-globe"></use></svg> 数据大屏
+            </button>
+        </div>
+
+        <div class="footer-hint"><svg class="icon"><use href="#icon-lightbulb"></use></svg> 提示：本服务器为真实模式，所有设定均为不可逆操作；数据来源：抖音精选APP相关内容热度汇总（2026最新）</div>
+    </div>
+
+    <script>
+        // ===== 生成星空 =====
+        const starsBox = document.getElementById('stars');
+        for (let i = 0; i < 100; i++) {
+            const star = document.createElement('div');
+            star.className = 'star';
+            star.style.left = Math.random() * 100 + '%';
+            star.style.top = Math.random() * 100 + '%';
+            const size = Math.random() * 2 + 1;
+            star.style.width = size + 'px';
+            star.style.height = size + 'px';
+            star.style.animationDelay = Math.random() * 3 + 's';
+            star.style.animationDuration = (2 + Math.random() * 3) + 's';
+            starsBox.appendChild(star);
+        }
+
+        // ===== 打字机效果 =====
+        function typeWriter(elementId, text, speed = 80) {
+            const el = document.getElementById(elementId);
+            el.textContent = '';
+            let i = 0;
+            function type() {
+                if (i < text.length) {
+                    el.textContent += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                }
+            }
+            type();
+        }
+
+        // 标题和描述延迟打字
+        setTimeout(() => {
+            typeWriter('typewriter-title', '世界 ONLINE', 120);
+        }, 300);
+
+        setTimeout(() => {
+            const descEl = document.getElementById('typewriter-desc');
+            descEl.style.opacity = '1';
+            typeWriter('typewriter-desc',
+                '欢迎来到世界Online，这里没有NPC，\n每一个玩家都是现实中的人类，\n在这个世界留下你对人生、国家与城市的评价',
+                50);
+        }, 1200);
+
+        // ===== 卡片入场动画 =====
+        const cards = document.querySelectorAll('.game-card');
+        cards.forEach((card, index) => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(40px) scale(0.9)';
+            setTimeout(() => {
+                card.style.transition = 'all 0.6s cubic-bezier(0.22, 1, 0.36, 1)';
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0) scale(1)';
+            }, 1800 + index * 150);
+        });
+
+        // ===== 访问次数：从后端拉取真实数据 =====
+        const counterEl = document.getElementById('online-number');
+        
+        async function fetchVisits() {
+            try {
+                // 请求统计接口（同时触发访问次数+1）
+                const res = await fetch('api/stats.php?t=' + Date.now());
+                const data = await res.json();
+                if (data.success) {
+                    const target = data.total_visits || 0;
+                    animateCounter(target);
+                } else {
+                    counterEl.textContent = '∞';
+                }
+            } catch (e) {
+                // 接口未就绪时显示 ∞
+                counterEl.textContent = '∞';
+            }
+        }
+
+        function animateCounter(target) {
+            if (!target || target <= 0) {
+                counterEl.textContent = '∞';
+                return;
+            }
+            const duration = 2000;
+            const startTime = performance.now();
+            const startVal = 0;
+            
+            function step(currentTime) {
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                // easeOutExpo
+                const ease = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
+                const current = Math.floor(startVal + (target - startVal) * ease);
+                counterEl.textContent = current.toLocaleString();
+                if (progress < 1) {
+                    requestAnimationFrame(step);
+                }
+            }
+            requestAnimationFrame(step);
+        }
+
+        setTimeout(fetchVisits, 2000);
+
+        // ===== 服务器公告栏（滚动展示） =====
+        async function fetchAnnouncements() {
+            try {
+                const res = await fetch('api/announcements.php?t=' + Date.now());
+                const data = await res.json();
+                const bar = document.getElementById('indexNotice');
+                const track = document.getElementById('indexNoticeTrack');
+                if (!data.success || !data.announcements || !data.announcements.length) return;
+                const items = [];
+                if (data.daily_event) {
+                    items.push('<span class="notice-item notice-event"><svg class="icon"><use href="#icon-zap"></use></svg> 【今日随机事件 ' + data.daily_event.date + '】' + escapeHtml(data.daily_event.content) + '</span>');
+                }
+                data.announcements.forEach(n => {
+                    items.push('<span class="notice-item">' + escapeHtml(n.content) + '</span>');
+                });
+                track.innerHTML = items.join('');
+                bar.style.display = 'flex';
+                // 横向滚动
+                if (track.scrollWidth > bar.clientWidth) {
+                    let offset = 0;
+                    setInterval(() => {
+                        const maxScroll = track.scrollWidth - bar.clientWidth;
+                        offset += 0.6;
+                        if (offset > maxScroll + 40) offset = 0;
+                        track.style.transform = 'translateX(-' + offset + 'px)';
+                    }, 30);
+                }
+            } catch (e) { /* 公告接口不可用时静默 */ }
+        }
+        function escapeHtml(s) {
+            return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+        }
+        setTimeout(fetchAnnouncements, 2500);
+
+        // ===== 鼠标粒子拖尾 =====
+        const trailContainer = document.getElementById('cursor-trail');
+        let lastTrail = 0;
+        document.addEventListener('mousemove', (e) => {
+            const now = Date.now();
+            if (now - lastTrail < 30) return;
+            lastTrail = now;
+
+            const particle = document.createElement('div');
+            particle.className = 'trail-particle';
+            particle.style.left = e.clientX + 'px';
+            particle.style.top = e.clientY + 'px';
+            particle.style.width = (Math.random() * 4 + 2) + 'px';
+            particle.style.height = particle.style.width;
+            particle.style.animationDuration = (Math.random() * 0.8 + 0.5) + 's';
+            trailContainer.appendChild(particle);
+
+            setTimeout(() => particle.remove(), 1300);
+        });
+
+        // ===== 版本号 = 当天中国时间（UTC+8）=====
+        (function () {
+            const now = new Date(Date.now() + 8 * 3600 * 1000);
+            const ver = now.getUTCFullYear() + '.' + (now.getUTCMonth() + 1) + '.' + now.getUTCDate();
+            document.querySelectorAll('.version-date').forEach(el => { el.textContent = ver; });
+        })();
+
+        // ===== PWA Service Worker 注册（阶段3） =====
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js').catch(() => {});
+            });
+        }
+    </script>
+</body>
+</html>

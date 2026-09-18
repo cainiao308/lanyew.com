@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>门户首页 - liluohost</title>
+
+    <!-- Styling -->
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600|Raleway:400,700" rel="stylesheet">
+<link href="/templates/six/css/all.min.css?v=6e7c52" rel="stylesheet">
+<link href="/assets/css/fontawesome-all.min.css" rel="stylesheet">
+<link href="/templates/six/css/custom.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+    var csrfToken = 'eef6ba0621da311d84d510b7cd039d68e9fcc81e',
+        markdownGuide = 'Markdown 使用教程',
+        locale = 'en',
+        saved = '已保存',
+        saving = '自动保存',
+        whmcsBaseUrl = "",
+        requiredText = '必需',
+        recaptchaSiteKey = "";
+</script>
+<script src="/templates/six/js/scripts.min.js?v=6e7c52"></script>
+
+
+    
+
+</head>
+<body data-phone-cc-input="1">
+
+
+
+<section id="header">
+    <div class="container">
+        <ul class="top-nav">
+                            <li>
+                    <a href="#" class="choose-language" data-toggle="popover" id="languageChooser">
+                        中文
+                        <b class="caret"></b>
+                    </a>
+                    <div id="languageChooserContent" class="hidden">
+                        <ul>
+                                                            <li>
+                                    <a href="/?language=arabic">العربية</a>
+                                </li>
+                                                            <li>
+                                    <a href="/?language=azerbaijani">Azerbaijani</a>
+                                </li>
+                                                            <li>
+                                    <a href="/?language=catalan">Català</a>
+                                </li>
+                                                            <li>
+                                    <a href="/?language=chinese-cn">中文</a>
+                                </li>
+                                                            <li>
+                                    <a href="/?language=chinese">中文</a>
+                                </li>
+                                                            <li>
+                                    <a href="/?language=croatian">Hrvatski</a>
+                                </li>
+                                                            <li>
+                                    <a href="/?language=czech">Čeština</a>
+                                </li>
+                                                            <li>
+                                    <a href="/?language=danish">Dansk</a>
+                                </li>
+                                                            <li>
+                                    <a href="/?language=dutch">Nederlands</a>
+                                </li>
+                                                            <li>
+                                    <a href="/?language=english">English</a>
+                                </li>
+                                                            <li>
+                                    <a href="/?language=estonian">Estonian</a>
+                                </li>
+                                                            <li>
+                                    <a href="/?language=farsi">Persian</a>
+                                </li>
+                                                            <li>
+                                    <a href="/?language=french">Français</a>
+                                </li>
+                                                            <li>
+                                    <a href="/?language=german">Deutsch</a>
+                                </li>
+                                                            <li>
+                                    <a href="/?language=hebrew">עברית</a>
+                                </li>
+                                                            <li>
+                                    <a href="/?language=hungarian">Magyar</a>
+                                </li>
+                                                            <li>
+                                    <a href="/?language=italian">Italiano</a>
+                                </li>
+                                                            <li>
+                                    <a href="/?language=macedonian">Macedonian</a>
+                                </li>
+                                                            <li>
+                                    <a href="/?language=norwegian">Norwegian</a>
+                                </li>
+                                                            <li>
+                                    <a href="/?language=portuguese-br">Português</a>
+                                </li>
+                                                            <li>
+                                    <a href="/?language=portuguese-pt">Português</a>
+                                </li>
+                                                            <li>
+                                    <a href="/?language=romanian">Română</a>
+                                </li>
+                                                            <li>
+                                    <a href="/?language=russian">Русский</a>
+                                </li>
+                                                            <li>
+                                    <a href="/?language=spanish">Español</a>
+                                </li>
+                                                            <li>
+                                    <a href="/?language=swedish">Svenska</a>
+                                </li>
+                                                            <li>
+                                    <a href="/?language=turkish">Türkçe</a>
+                                </li>
+                                                            <li>
+                                    <a href="/?language=ukranian">Українська</a>
+                                </li>
+                                                    </ul>
+                    </div>
+                </li>
+                                        <li>
+                    <a href="/clientarea.php">用户登录</a>
+                </li>
+                                <li class="primary-action">
+                    <a href="/cart.php?a=view" class="btn">
+                        查看购物车
+                    </a>
+                </li>
+                                </ul>
+
+                    <a href="/index.php" class="logo logo-text">liluohost</a>
+        
+    </div>
+</section>
+
+<section id="main-menu">
+
+    <nav id="nav" class="navbar navbar-default navbar-main" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-nav">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="primary-nav">
+
+                <ul class="nav navbar-nav">
+
+                        <li menuItemName="Home" class="" id="Primary_Navbar-Home">
+        <a href="/index.php">
+                        用户中心
+                                </a>
+            </li>
+    <li menuItemName="Store" class="dropdown" id="Primary_Navbar-Store">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        在线购买
+                        &nbsp;<b class="caret"></b>        </a>
+                    <ul class="dropdown-menu">
+                            <li menuItemName="Browse Products Services" id="Primary_Navbar-Store-Browse_Products_Services">
+                    <a href="/cart.php">
+                                                浏览全部
+                                            </a>
+                </li>
+                            <li menuItemName="Shop Divider 1" class="nav-divider" id="Primary_Navbar-Store-Shop_Divider_1">
+                    <a href="">
+                                                -----
+                                            </a>
+                </li>
+                            <li menuItemName="香港虛擬主機" id="Primary_Navbar-Store-香港虛擬主機">
+                    <a href="/cart.php?gid=5">
+                                                香港虛擬主機
+                                            </a>
+                </li>
+                            <li menuItemName="香港KVM VPS主机" id="Primary_Navbar-Store-香港KVM_VPS主机">
+                    <a href="/cart.php?gid=12">
+                                                香港KVM VPS主机
+                                            </a>
+                </li>
+                        </ul>
+            </li>
+    <li menuItemName="Announcements" class="" id="Primary_Navbar-Announcements">
+        <a href="/index.php/announcements">
+                        公告信息
+                                </a>
+            </li>
+    <li menuItemName="Knowledgebase" class="" id="Primary_Navbar-Knowledgebase">
+        <a href="/index.php/knowledgebase">
+                        帮助中心
+                                </a>
+            </li>
+    <li menuItemName="Network Status" class="" id="Primary_Navbar-Network_Status">
+        <a href="/serverstatus.php">
+                        服务监控
+                                </a>
+            </li>
+    <li menuItemName="提前续费" class="" id="Primary_Navbar-提前续费">
+        <a href="https://my.liluohost.com/index.php?m=renewal">
+                        提前续费
+                                </a>
+            </li>
+    <li menuItemName="Affiliates" class="" id="Primary_Navbar-Affiliates">
+        <a href="/affiliates.php">
+                        用户推广
+                                </a>
+            </li>
+    <li menuItemName="Contact Us" class="" id="Primary_Navbar-Contact_Us">
+        <a href="/contact.php">
+                        联系我们
+                                </a>
+            </li>
+
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+
+                        <li menuItemName="Account" class="dropdown" id="Secondary_Navbar-Account">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        账户管理
+                        &nbsp;<b class="caret"></b>        </a>
+                    <ul class="dropdown-menu">
+                            <li menuItemName="Login" id="Secondary_Navbar-Account-Login">
+                    <a href="/clientarea.php">
+                                                用户登录
+                                            </a>
+                </li>
+                            <li menuItemName="Divider" class="nav-divider" id="Secondary_Navbar-Account-Divider">
+                    <a href="">
+                                                -----
+                                            </a>
+                </li>
+                            <li menuItemName="Forgot Password?" id="Secondary_Navbar-Account-Forgot_Password?">
+                    <a href="/index.php/password/reset/begin">
+                                                忘记密码？
+                                            </a>
+                </li>
+                        </ul>
+            </li>
+
+                </ul>
+
+            </div><!-- /.navbar-collapse -->
+        </div>
+    </nav>
+
+</section>
+
+    <section id="home-banner">
+        <div class="container text-center">
+                            <h2>您今天要做点什么？</h2>
+                    </div>
+    </section>
+    <div class="home-shortcuts">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 hidden-sm hidden-xs text-center">
+                    <p class="lead">
+                        今天我们有什么可帮到您的？
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-8">
+                    <ul>
+                                                <li>
+                            <a id="btnOrderHosting" href="cart.php">
+                                <i class="far fa-hdd"></i>
+                                <p>
+                                    购买服务 <span>&raquo;</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="btnMakePayment" href="clientarea.php">
+                                <i class="fas fa-credit-card"></i>
+                                <p>
+                                    创建订单 <span>&raquo;</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="btnGetSupport" href="submitticket.php">
+                                <i class="far fa-envelope"></i>
+                                <p>
+                                    请求帮助 <span>&raquo;</span>
+                                </p>
+                            </a>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<section id="main-body">
+    <div class="container">
+        <div class="row">
+
+                <!-- Container for main page display content -->
+        <div class="col-xs-12 main-content">
+            
+
+
+
+
+                </div><!-- /.main-content -->
+                            <div class="clearfix"></div>
+        </div>
+    </div>
+</section>
+
+<section id="footer">
+    <div class="container">
+        <a href="#" class="back-to-top"><i class="fas fa-chevron-up"></i></a>
+        <p>Copyright &copy; 2026 liluohost. All Rights Reserved.</p>
+    </div>
+</section>
+
+<div id="fullpage-overlay" class="hidden">
+    <div class="outer-wrapper">
+        <div class="inner-wrapper">
+            <img src="/assets/img/overlay-spinner.svg">
+            <br>
+            <span class="msg"></span>
+        </div>
+    </div>
+</div>
+
+<div class="modal system-modal fade" id="modalAjax" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content panel-primary">
+            <div class="modal-header panel-heading">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body panel-body">
+                正在加载…
+            </div>
+            <div class="modal-footer panel-footer">
+                <div class="pull-left loader">
+                    <i class="fas fa-circle-notch fa-spin"></i>
+                    正在加载…
+                </div>
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close
+                </button>
+                <button type="button" class="btn btn-primary modal-submit">
+                    Submit
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<form action="#" id="frmGeneratePassword" class="form-horizontal">
+    <div class="modal fade" id="modalGeneratePassword">
+        <div class="modal-dialog">
+            <div class="modal-content panel-primary">
+                <div class="modal-header panel-heading">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">
+                        Generate Password
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-danger hidden" id="generatePwLengthError">
+                        Please enter a number between 8 and 64 for the password length
+                    </div>
+                    <div class="form-group">
+                        <label for="generatePwLength" class="col-sm-4 control-label">Password Length</label>
+                        <div class="col-sm-8">
+                            <input type="number" min="8" max="64" value="12" step="1" class="form-control input-inline input-inline-100" id="inputGeneratePasswordLength">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="generatePwOutput" class="col-sm-4 control-label">Generated Password</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" id="inputGeneratePasswordOutput">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-4">
+                            <button type="submit" class="btn btn-default btn-sm">
+                                <i class="fas fa-plus fa-fw"></i>
+                                Generate new password
+                            </button>
+                            <button type="button" class="btn btn-default btn-sm copy-to-clipboard" data-clipboard-target="#inputGeneratePasswordOutput">
+                                <img src="/assets/img/clippy.svg" alt="Copy to clipboard" width="15">
+                                
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Close
+                    </button>
+                    <button type="button" class="btn btn-primary" id="btnGeneratePasswordInsert" data-clipboard-target="#inputGeneratePasswordOutput">
+                        Copy to clipboard & Insert
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+
+</body>
+</html>

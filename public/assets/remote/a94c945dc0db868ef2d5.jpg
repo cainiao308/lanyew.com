@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>lmcjl在线工具</title>
+        <meta name="description" content="lmcjl在线工具致力于打造和收集各种简单、易用、便捷、免安装、自动化的在线工具,用户无需下载安装即可使用各种各样优秀的在线工具。" />
+        <meta name="keywords" content="在线工具,lmcjl在线工具,在线工具大全,好用的在线工具" />
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="Shortcut icon" href="/public/images/favicon.ico" />
+        <link rel="stylesheet" href="/public/plugins/layui/css/layui.css" media="all">
+        <link rel="stylesheet" type="text/css" href="/public/plugins/layui/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/public/build/css/app.css" media="all">
+        <link rel="stylesheet" href="/public/index/css/index.css" />
+        <script src="/public/js/jquery.js"></script>
+        <script src="/public/plugins/layui/layui.js"></script>
+    </head>
+    <body>
+        <div class="layui-layout layui-layout-admin kit-layout-admin">
+            <div class="layui-header">
+    <div class="layui-header-lmcjl"></div>
+    <div class="layui-logo">
+        <a href="/" style='color:#fff;font-size:30px;'>
+            <i class="fa fa-android"></i> 
+            <img src="/public/images/logo.gif" height="35" alt="在线工具"/>
+        </a>
+    </div>
+    <div class="layui-logo kit-logo-mobile"><a href="/"><img src="/public/images/logo.gif"  height="40" alt="在线工具"/></a></div>
+    <ul class="layui-nav layui-layout-left kit-nav">
+        <li class="layui-nav-item"><a href="/"><i class="fa fa-internet-explorer"></i> 在线工具</a></li>
+        <li class="layui-nav-item"><a href="/index/javascript/jquery.html"><i class="fa fa-tags"></i> Jquery插件库 丨 网站模板</a></li>
+        <li class="layui-nav-item"><a href="/index/resume/index.html"><i class="fa fa-cloud-download"></i> 简历模板</a></li>
+        <li class="layui-nav-item"><a href="/index/picture/index.html"><i class="fa fa-image"></i> 图片素材下载</a></li>
+        <li class="layui-nav-item"><a href="/index/friendship/index.html"><i class="fa  fa-chain"></i> 导航链接</a></li>
+        <li class="layui-nav-item"><a href="/index/mood/index.html"><i class="fa fa-heart-o"></i> 心情贴</a></li>
+    </ul>
+    <ul class="layui-nav layui-layout-right kit-nav">
+       <li class="layui-nav-item">
+            <a>网站导航</a>
+            <dl class="layui-nav-child">
+                <dd><a href="/"> <i class="fa fa-internet-explorer"></i> 在线工具</a></dd>
+                <dd><a href="/index/javascript/jquery.html"><i class="fa fa-tags"></i> Jquery插件库 丨 网站模板</a></dd>
+                <dd><a href="/index/resume/index.html"><i class="fa fa-cloud-download"></i> 简历模板</a></dd>
+                <dd><a href="/index/picture/index.html"><i class="fa fa-image"></i> 图片素材下载</a></dd>
+            </dl>
+        </li>
+                    <li class="layui-nav-item"><a href="/index/login.html"><i class="fa fa-user" aria-hidden="true"></i> 登录 / 注册</a></li>
+            </ul>
+</div>
+    <a id="love">
+         <img  src="/public/images/love.png"  alt="在线工具"/>
+    </a>
+    <div class="lmcjl_right_fixed">
+                <a  class="feedback graHover" style="background-color: #fd0054;color:#fff;" href="/task.html" target="_blank">获取<i class="fa fa-android"></i>币</a>
+        <a  class="feedback graHover" style="background-color: #373331;color:#fff;" href="/index/index/mycenter.html" target="_blank" rel="nofollow">签到有礼</a>
+                <a  class="feedback graHover contact" style="background-color: #77529e;color:#fff;" target="_blank" href="tencent://message/?uin=286142878" title="QQ：286142878" rel="external nofollow">联系站长</a>
+            </div>
+    <script>
+        layui.use(['element','table'], function () {
+            var $ = layui.$;
+            var visit_url = window.location.href;
+            var HTTP_REFERER = '';
+            $.ajax({
+                type: 'post',
+                url: '/index/index/source',
+                data: 'HTTP_REFERER='+encodeURIComponent(HTTP_REFERER)+'&visit_url='+encodeURIComponent(visit_url)+'&width='+window.screen.width+'&height='+window.screen.height,
+                dataType: 'json',
+                success: function (json) {
+
+                }
+            });
+            $('.contact').click(function(){
+                layer.alert('懒猪QQ：286142878');
+            });
+            $('#love').click(function(){
+                $('body,html').animate({scrollTop:0},800);
+            });
+            $('#love img').mouseenter(function(){
+                $(this).attr('src','/public/images/love.gif');
+            });
+            $('#love img').mouseleave(function(){
+                $(this).attr('src','/public/images/love.png');
+            });
+            var element = layui.element;
+            $('.sign_in').on('click',function(){
+                layer.open({type: 2, title: '签到', shadeClose: true, shade: 0.8, scrollbar: false, maxmin: true, area: ['320px', '90%'], content: '/index/index/signin'});
+            });
+            $(".kit-side-fold").off("click").on("click", function () {
+                var i = $("div.kit-side");
+                i.hasClass("kit-sided") ? (i.removeClass("kit-sided"), i.find("li.layui-nav-item").removeClass("kit-side-folded"), i.find("dd").removeClass("kit-side-folded"), $("div.layui-body").removeClass("kit-body-folded"), $("div.layui-footer").removeClass("kit-footer-folded")) : (i.addClass("kit-sided"), i.find("li.layui-nav-item").addClass("kit-side-folded"), i.find("dd").addClass("kit-side-folded"), $("div.layui-body").addClass("kit-body-folded"), $("div.layui-footer").addClass("kit-footer-folded"))
+            });
+            $('.useredit').on('click', function () {
+                layer.open({type: 2, title: '修改个人信息', shadeClose: true, shade: 0.8, scrollbar: false, maxmin: true, area: ['320px', '350px'], content: '/index/mycenter/useredit'});
+            });
+                        $('.news').on('click', function () {
+                News(1);
+            });
+            function News(type) {
+                $.ajax({
+                    type: 'get',
+                    url: '/index/index/news',
+                    data: 'type=' + type,
+                    dataType: 'json',
+                    success: function (json) {
+                        if (json.status == 0) {
+                            if (type == 0) {
+                                if (json.msg > 0) {
+                                    var avatarUrl_html = '<span class="layui-badge">' + json.msg + '</span>';
+                                    $('.avatarUrl').html(avatarUrl_html);
+                                } else {
+                                    $('.avatarUrl').html('');
+                                }
+                            } else {
+                                if (json.msg.length < 1) {
+                                    layer.msg('主管大大！暂时没有消息');
+                                    $('.avatarUrl').html('');
+                                    return false;
+                                }
+                                $('.avatarUrl').html('');
+                                var layer_width = $(window).width();
+                                if (layer_width > 700) {
+                                    layer_width = 700;
+                                }
+                                var content = '';
+                                $(json.msg).each(function (i, j) {
+                                    content += '<blockquote class="layui-elem-quote"><a target="_block" href="' + j.url + '">' + j.name + '</a></blockquote>';
+                                });
+                                layer.open({
+                                    type: 1
+                                    , title: "消息中心",
+                                    maxmin: true
+                                    , area: ['' + layer_width * 0.8 + 'px']
+                                    , content: content
+                                    , btnAlign: 'c' //按钮居中
+                                    , shade: 0 //不显示遮罩
+                                });
+                            }
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+
+            <div class="layui-body" id="container">
+<link rel="stylesheet" href="/public/jquery/css/jquery.css" />
+<div class="layui-form layui-form-pane" style="margin:15px;">    
+    <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">    
+        <ul class="layui-tab-title">
+            <li class="layui-this">站内搜索</li>
+                    </ul>      
+        <div class="layui-tab-content" style="padding: 10px 5px 10px 5px;">    
+            <div class="layui-tab-item layui-show">            
+                <div class="layui-form-item">
+                    <div class="lmcjl_so">
+                        <a href="javascript:;" class="lmcjl_add_menu" onclick="Add('/index/mycenter/menu', '添加快捷导航')">添加快捷导航</a>
+                        <div class="lmcjl_sou">
+                            <div class="lmcjl_so_img">
+                                <img src="/public/index/logo.svg" />
+                            </div>
+                            <div class="lmcjl_so_form">
+                                <input class="wd" type="text" placeholder="搜索其实很简单！！输入相关关键词"  maxlength="100" id="search_name" autocomplete="off">
+                                <button type="button" class="search"><i style="font-size: 20px;" class="fa fa-search"></i></button>
+                            </div>
+                                                        <div class="lmcjl_look">
+                                                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-tab layui-tab-brief">           
+                        <ul class="layui-tab-title">                   
+                            <li class="layui-this">所有工具</li>    
+                            <li class="lmcjl_content">搜索结果</li>
+                        </ul>                  
+                        <div class="layui-tab-content">                      
+                            <div class="layui-tab-item layui-show">                     
+                                <div>                                
+                                    <button class="layui-btn layui-btn-lg layui-btn-primary layui-btn-radius name_id name_click" name_id="0">全部</button>
+                                                                            <button class="layui-btn layui-btn-lg layui-btn-primary layui-btn-radius name_id "  name_id="2">开发者工具</button> 
+                                                                             <button class="layui-btn layui-btn-lg layui-btn-primary layui-btn-radius name_id "  name_id="9">视频处理工具</button> 
+                                                                             <button class="layui-btn layui-btn-lg layui-btn-primary layui-btn-radius name_id "  name_id="5">图片处理工具</button> 
+                                                                             <button class="layui-btn layui-btn-lg layui-btn-primary layui-btn-radius name_id "  name_id="3">关键词处理工具</button> 
+                                                                             <button class="layui-btn layui-btn-lg layui-btn-primary layui-btn-radius name_id "  name_id="4">办公转换工具</button> 
+                                                                             <button class="layui-btn layui-btn-lg layui-btn-primary layui-btn-radius name_id "  name_id="7">便民工具</button> 
+                                                                             <button class="layui-btn layui-btn-lg layui-btn-primary layui-btn-radius name_id "  name_id="8">其他工具</button> 
+                                                                     </div>                            
+                                <div style='margin-top:20px;'>
+                                                                        <h2 class='index_title '><a>开发者工具</a> <span>HTML | CSS | JS | 编辑器 | 插件模板下载</span></h2>
+                                                                          <div class="jquery index_menu name_2 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="网站模板下载，JQuery插件下载，HTML5插件下载，CSS3插件下载">
+                                                <img src='/public/index/23.png' alt="Jquery | HTML5 | CSS3 插件模板库"/>
+                                                <a href='/index/javascript/jquery.html'>Jquery | HTML5 | CSS3 插件模板库                                                    <svg t="1499634215564" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2464" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" class="icon"><path d="M156.181 847.743s277.072 359.221 631.433 52.012c386.442-335.403-322.279-563.866-322.279-563.866L275.76 528.867 156.18 847.743z" fill="#FDB350" p-id="2465"></path><path d="M325.827 982.39c-65.622-136.105-30.624-214.366 19.93-287.766 54.928-80.69 69.51-160.41 69.51-160.41s43.263 56.387 25.764 144.37c76.316-85.067 90.899-221.172 79.233-273.184 173.048 121.037 246.934 383.04 147.285 576.99 529.84-299.432 131.73-748.58 62.22-799.134 23.332 50.554 27.707 136.106-19.444 177.91C631.578 61.247 436.17 0 436.17 0c23.332 154.577-83.608 323.737-186.66 449.634-3.402-61.733-7.29-104.023-39.859-163.326-7.291 111.8-92.843 203.186-116.176 315.473-31.11 152.146 23.333 263.461 232.352 380.61z" fill="#F23921" p-id="2466"></path></svg>
+                                                                                                    </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="网站模板下载，JQuery插件下载，HTML5插件下载，CSS3插件下载">网站插件和网站模板下载</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='23' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_2 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="">
+                                                <img src='/public/index/81.png' alt="PHP代码文件加密"/>
+                                                <a href='/index/php/encryption.html'>PHP代码文件加密                                                    <svg t="1499634215564" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2464" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" class="icon"><path d="M156.181 847.743s277.072 359.221 631.433 52.012c386.442-335.403-322.279-563.866-322.279-563.866L275.76 528.867 156.18 847.743z" fill="#FDB350" p-id="2465"></path><path d="M325.827 982.39c-65.622-136.105-30.624-214.366 19.93-287.766 54.928-80.69 69.51-160.41 69.51-160.41s43.263 56.387 25.764 144.37c76.316-85.067 90.899-221.172 79.233-273.184 173.048 121.037 246.934 383.04 147.285 576.99 529.84-299.432 131.73-748.58 62.22-799.134 23.332 50.554 27.707 136.106-19.444 177.91C631.578 61.247 436.17 0 436.17 0c23.332 154.577-83.608 323.737-186.66 449.634-3.402-61.733-7.29-104.023-39.859-163.326-7.291 111.8-92.843 203.186-116.176 315.473-31.11 152.146 23.333 263.461 232.352 380.61z" fill="#F23921" p-id="2466"></path></svg>
+                                                                                                    </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="">可以多个PHP文件进行代码加密</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='81' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_2 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="HTML在线美化、格式化、压缩、HTML/JS转换、转PHP、ASP、JSP、Perl、VB.NET、SWS多种转换方法">
+                                                <img src='/public/index/12.png' alt="HTML工具"/>
+                                                <a href='/index/html/index.html'>HTML工具                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="HTML在线美化、格式化、压缩、HTML/JS转换、转PHP、ASP、JSP、Perl、VB.NET、SWS多种转换方法">HTML美化、格式化、压缩、多语言转化</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='12' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_2 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="内含JS普通压缩和加密压缩与解密，能为JS节省文件大小和提高代码的安全性。">
+                                                <img src='/public/index/13.png' alt="JS混淆加密压缩"/>
+                                                <a href='/index/javascript/index.html'>JS混淆加密压缩                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="内含JS普通压缩和加密压缩与解密，能为JS节省文件大小和提高代码的安全性。">JS加密、解密、压缩</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='13' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_2 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="UrlEncode编码和UrlDecode解码的两种链接处理方法，有效的解决部分由于带有特殊字符的链接，导致链接无法访问。">
+                                                <img src='/public/index/15.png' alt="UrlEncode编码 / UrlDecode解码"/>
+                                                <a href='/index/code/code.html'>UrlEncode编码 / UrlDecode解码                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="UrlEncode编码和UrlDecode解码的两种链接处理方法，有效的解决部分由于带有特殊字符的链接，导致链接无法访问。">网站链接编码和解码</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='15' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_2 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="富含高级压缩和普通压缩，最大量的压缩CSS内容，从而减少CSS文件大小，同时带有格式化CSS内容，能够格式出简洁易看的CSS内容。">
+                                                <img src='/public/index/16.png' alt="Css在线解压缩/整理/格式化"/>
+                                                <a href='/index/css/index.html'>Css在线解压缩/整理/格式化                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="富含高级压缩和普通压缩，最大量的压缩CSS内容，从而减少CSS文件大小，同时带有格式化CSS内容，能够格式出简洁易看的CSS内容。">Css压缩、整理、格式化</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='16' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_2 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="能够将北京时间转化成时间戳，也可以将时间戳转化成北京时间，同时也有当前的时间戳和北京时间，有助于开发者查看时间戳。">
+                                                <img src='/public/index/17.png' alt="Unix时间戳(Unix timestamp)"/>
+                                                <a href='/index/timestamp/index.html'>Unix时间戳(Unix timestamp)                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="能够将北京时间转化成时间戳，也可以将时间戳转化成北京时间，同时也有当前的时间戳和北京时间，有助于开发者查看时间戳。">时间戳转化工具</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='17' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_2 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="PHP Artisan 转化：支持创建迁移文件，运行迁移，创建模型，创建填充器，运行填充器，创建空白控制器，创建资源控制器，创建表单请求验证，创建中间件，运行Elixir">
+                                                <img src='/public/index/19.png' alt="PHP Artisan 转化"/>
+                                                <a href='/index/php/index.html'>PHP Artisan 转化                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="PHP Artisan 转化：支持创建迁移文件，运行迁移，创建模型，创建填充器，运行填充器，创建空白控制器，创建资源控制器，创建表单请求验证，创建中间件，运行Elixir">php多命令转化</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='19' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_2 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="layer编辑器转化成HTML标签代码，为前端开发者编写文章内容效果提供了一定的帮助。">
+                                                <img src='/public/index/20.png' alt="layer编辑器转化HTML"/>
+                                                <a href='/index/layer/index.html'>layer编辑器转化HTML                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="layer编辑器转化成HTML标签代码，为前端开发者编写文章内容效果提供了一定的帮助。">将内容转化成layer的html标签代码</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='20' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_2 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="Ueditor编辑器转化成HTML标签代码，为前端开发者编写文章内容效果提供了一定的帮助。">
+                                                <img src='/public/index/21.png' alt="Ueditor编辑器转化HTML"/>
+                                                <a href='/index/ueditor/index.html'>Ueditor编辑器转化HTML                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="Ueditor编辑器转化成HTML标签代码，为前端开发者编写文章内容效果提供了一定的帮助。">将内容转化成Ueditor的html标签代码</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='21' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_2 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="icon图标，只前端工程师在使用方法时，提供了一定的参考和使用，省略去查询文档和查看文件的时间。">
+                                                <img src='/public/index/28.png' alt="icon图标"/>
+                                                <a href='/index/ui/icon.html'>icon图标                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="icon图标，只前端工程师在使用方法时，提供了一定的参考和使用，省略去查询文档和查看文件的时间。">icon图标的样式用法</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='28' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_2 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="">
+                                                <img src='/public/index/73.png' alt="MD5加密"/>
+                                                <a href='/index/tools/md5.html'>MD5加密                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="">md5加密32位和16位</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='73' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_2 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="">
+                                                <img src='/public/index/106.png' alt="网页抓取诊断"/>
+                                                <a href='/index/html/html.html'>网页抓取诊断                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="">查看抓取内容,自助诊断蜘蛛看到的内容和预期是否一致</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='106' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_2 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="">
+                                                <img src='/public/index/116.png' alt="htaccess换Nginx"/>
+                                                <a href='/index/linux/nginx.html'>htaccess换Nginx                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="">htaccess换Nginx</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='116' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_2 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="">
+                                                <img src='/public/index/118.png' alt="robots.txt文件生成器"/>
+                                                <a href='/index/tools/robots.html'>robots.txt文件生成器                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="">在线网站robots.txt文件生成工具</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='118' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <h2 class='index_title '><a>视频处理工具</a> <span>视频提取 | 视频合并 | 视频拼接 | 视频转化 | 视频处理 | MP4处理</span></h2>
+                                                                          <div class="jquery index_menu name_9 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="">
+                                                <img src='/public/index/75.png' alt="视频转gif"/>
+                                                <a href='/index/tools/videogif.html'>视频转gif                                                    <svg t="1499634215564" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2464" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" class="icon"><path d="M156.181 847.743s277.072 359.221 631.433 52.012c386.442-335.403-322.279-563.866-322.279-563.866L275.76 528.867 156.18 847.743z" fill="#FDB350" p-id="2465"></path><path d="M325.827 982.39c-65.622-136.105-30.624-214.366 19.93-287.766 54.928-80.69 69.51-160.41 69.51-160.41s43.263 56.387 25.764 144.37c76.316-85.067 90.899-221.172 79.233-273.184 173.048 121.037 246.934 383.04 147.285 576.99 529.84-299.432 131.73-748.58 62.22-799.134 23.332 50.554 27.707 136.106-19.444 177.91C631.578 61.247 436.17 0 436.17 0c23.332 154.577-83.608 323.737-186.66 449.634-3.402-61.733-7.29-104.023-39.859-163.326-7.291 111.8-92.843 203.186-116.176 315.473-31.11 152.146 23.333 263.461 232.352 380.61z" fill="#F23921" p-id="2466"></path></svg>
+                                                                                                    </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="">视频转gif在线工具</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='75' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_9 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="">
+                                                <img src='/public/index/82.png' alt="电脑屏幕录制"/>
+                                                <a href='/index/tools/screen.html'>电脑屏幕录制                                                    <svg t="1499634215564" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2464" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" class="icon"><path d="M156.181 847.743s277.072 359.221 631.433 52.012c386.442-335.403-322.279-563.866-322.279-563.866L275.76 528.867 156.18 847.743z" fill="#FDB350" p-id="2465"></path><path d="M325.827 982.39c-65.622-136.105-30.624-214.366 19.93-287.766 54.928-80.69 69.51-160.41 69.51-160.41s43.263 56.387 25.764 144.37c76.316-85.067 90.899-221.172 79.233-273.184 173.048 121.037 246.934 383.04 147.285 576.99 529.84-299.432 131.73-748.58 62.22-799.134 23.332 50.554 27.707 136.106-19.444 177.91C631.578 61.247 436.17 0 436.17 0c23.332 154.577-83.608 323.737-186.66 449.634-3.402-61.733-7.29-104.023-39.859-163.326-7.291 111.8-92.843 203.186-116.176 315.473-31.11 152.146 23.333 263.461 232.352 380.61z" fill="#F23921" p-id="2466"></path></svg>
+                                                                                                    </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="">在线录制电脑屏幕视频，无需下载</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='82' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_9 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="">
+                                                <img src='/public/index/74.png' alt="视频转化图片"/>
+                                                <a href='/index/tools/videoimg.html'>视频转化图片                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="">将视频帧数转化成图片集</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='74' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_9 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="">
+                                                <img src='/public/index/76.png' alt="视频转MP3音频格式"/>
+                                                <a href='/index/tools/videomp3.html'>视频转MP3音频格式                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="">视频转化成MP3音频文件</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='76' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_9 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="">
+                                                <img src='/public/index/94.png' alt="wmv转换mp4视频"/>
+                                                <a href='/index/tools/wmvmp4.html'>wmv转换mp4视频                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="">wmv视频格式转换mp4视频格式</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='94' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_9 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="">
+                                                <img src='/public/index/111.png' alt="视频压缩"/>
+                                                <a href='/index/video/yasuo.html'>视频压缩                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="">压缩视频大小的同时，尽最大保持无损画质</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='111' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <h2 class='index_title '><a>图片处理工具</a> <span>智能识别 | 图片制作 | 图片处理 | 二维码生成 | 二维码解析 | 二维码合成</span></h2>
+                                                                          <div class="jquery index_menu name_5 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="该功能可识别图片文字，为遇见图片文档需要手打或者图片需要里面的文字资料的时候，可以大大的方便节省去手打输入的时间。">
+                                                <img src='/public/index/34.png' alt="图片识别文字"/>
+                                                <a href='/index/distinguish/words.html'>图片识别文字                                                    <svg t="1499634215564" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2464" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" class="icon"><path d="M156.181 847.743s277.072 359.221 631.433 52.012c386.442-335.403-322.279-563.866-322.279-563.866L275.76 528.867 156.18 847.743z" fill="#FDB350" p-id="2465"></path><path d="M325.827 982.39c-65.622-136.105-30.624-214.366 19.93-287.766 54.928-80.69 69.51-160.41 69.51-160.41s43.263 56.387 25.764 144.37c76.316-85.067 90.899-221.172 79.233-273.184 173.048 121.037 246.934 383.04 147.285 576.99 529.84-299.432 131.73-748.58 62.22-799.134 23.332 50.554 27.707 136.106-19.444 177.91C631.578 61.247 436.17 0 436.17 0c23.332 154.577-83.608 323.737-186.66 449.634-3.402-61.733-7.29-104.023-39.859-163.326-7.291 111.8-92.843 203.186-116.176 315.473-31.11 152.146 23.333 263.461 232.352 380.61z" fill="#F23921" p-id="2466"></path></svg>
+                                                                                                    </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="该功能可识别图片文字，为遇见图片文档需要手打或者图片需要里面的文字资料的时候，可以大大的方便节省去手打输入的时间。">可提取图片里的文字</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='34' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_5 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="在线透明ICO制作，大大的方便了网站的ICO图标的制作过程，只需要导入图片，选择尺寸，点击制作生成即可。">
+                                                <img src='/public/index/32.png' alt="在线透明ICO制作"/>
+                                                <a href='/index/images/index.html'>在线透明ICO制作                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="在线透明ICO制作，大大的方便了网站的ICO图标的制作过程，只需要导入图片，选择尺寸，点击制作生成即可。">通过图片一键制作ico文件</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='32' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_5 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="图片加密与解密：可给图片加密与解密，通过解密图片，获取加密的密码，可防止图片侵权。">
+                                                <img src='/public/index/33.png' alt="图片加密与解密"/>
+                                                <a href='/index/images/code.html'>图片加密与解密                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="图片加密与解密：可给图片加密与解密，通过解密图片，获取加密的密码，可防止图片侵权。">给图片加上特定的标识密码和可解密标识</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='33' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_5 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="通过画图来制作图片，可用于文字画图制作，也可用于漫画画图制作等等，具体由画图人所需图片的样式来操作。">
+                                                <img src='/public/index/36.png' alt="画图工具"/>
+                                                <a href='/index/canvas/index.html'>画图工具                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="通过画图来制作图片，可用于文字画图制作，也可用于漫画画图制作等等，具体由画图人所需图片的样式来操作。">通过操作在画板进行画画，可涂改</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='36' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_5 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="可通过链接生成二维码，也可以通过扫描二维码识别出来链接，方便了使用者进行二维码操作。">
+                                                <img src='/public/index/41.png' alt="二维码生成与识别"/>
+                                                <a href='/index/code/index.html'>二维码生成与识别                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="可通过链接生成二维码，也可以通过扫描二维码识别出来链接，方便了使用者进行二维码操作。">链接生成二维码和二维码识别出链接</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='41' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_5 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="把二维码和LOGO图片分别上传，然后点击生成即可。LOGO图片直接会在二维码居中，方便制作带有品牌LOGO的二维码。">
+                                                <img src='/public/index/42.png' alt="二维码和LOGO合成"/>
+                                                <a href='/index/code/logo.html'>二维码和LOGO合成                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="把二维码和LOGO图片分别上传，然后点击生成即可。LOGO图片直接会在二维码居中，方便制作带有品牌LOGO的二维码。">通过图片和二维码进行合成带LOGO二维码</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='42' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_5 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="">
+                                                <img src='/public/index/83.png' alt="表情包在线生成"/>
+                                                <a href='/index/images/emoticon.html'>表情包在线生成                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="">在线生成表情包，斗图时代开启</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='83' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_5 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="">
+                                                <img src='/public/index/98.png' alt="图片过度变形工具"/>
+                                                <a href='/index/images/hypermorph.html'>图片过度变形工具                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="">将一张图片渐渐变形转化成另一张图片</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='98' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_5 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="">
+                                                <img src='/public/index/103.png' alt="国庆头像生成"/>
+                                                <a href='/index/images/gq.html'>国庆头像生成                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="">国庆节微信头像在线生成器</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='103' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_5 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="">
+                                                <img src='/public/index/117.png' alt="朋友圈图片批量生成"/>
+                                                <a href='/index/pyq/index.html'>朋友圈图片批量生成                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="">可一键生成各类营销海报，还可通过更换多种二维码。方便您一键生成朋友圈分享素材</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='117' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <h2 class='index_title '><a>关键词处理工具</a> <span></span></h2>
+                                                                          <div class="jquery index_menu name_3 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="该功能可用正则表达式匹配内容，从而筛选出内容，也可以在各大编辑器（如sublime_text、NetBeans）使用正则匹配批量修改内容，同时还富含正则表达式的功能讲解，为使用人增加了一定的参考。">
+                                                <img src='/public/index/9.png' alt="正则表达式处理"/>
+                                                <a href='/index/regular/index.html'>正则表达式处理                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="该功能可用正则表达式匹配内容，从而筛选出内容，也可以在各大编辑器（如sublime_text、NetBeans）使用正则匹配批量修改内容，同时还富含正则表达式的功能讲解，为使用人增加了一定的参考。">多种用法，可去除链接、提取手机号码等</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='9' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_3 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="计算文章内容的字数，该功能内含一个空格、符号也是一个字数，快速的帮你识别文章内容字数，为编写公众号和编写优化文章或编写小说提供一定的数据参考。">
+                                                <img src='/public/index/11.png' alt="字符串长度计算"/>
+                                                <a href='/index/keyword/length.html'>字符串长度计算                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="计算文章内容的字数，该功能内含一个空格、符号也是一个字数，快速的帮你识别文章内容字数，为编写公众号和编写优化文章或编写小说提供一定的数据参考。">计算字符串内容的总长度（字数、数量）</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='11' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_3 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="">
+                                                <img src='/public/index/70.png' alt="文本切割成单字符"/>
+                                                <a href='/index/tools/dasan.html'>文本切割成单字符                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="">文本切割成单字符后追加内容</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='70' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <h2 class='index_title '><a>办公转换工具</a> <span>在线转换 | 格式转化 | 数据转换 | 办公文件转换</span></h2>
+                                                                          <div class="jquery index_menu name_4 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="">
+                                                <img src='/public/index/77.png' alt="文字合成语音"/>
+                                                <a href='/index/distinguish/mp3.html'>文字合成语音                                                    <svg t="1499634215564" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2464" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" class="icon"><path d="M156.181 847.743s277.072 359.221 631.433 52.012c386.442-335.403-322.279-563.866-322.279-563.866L275.76 528.867 156.18 847.743z" fill="#FDB350" p-id="2465"></path><path d="M325.827 982.39c-65.622-136.105-30.624-214.366 19.93-287.766 54.928-80.69 69.51-160.41 69.51-160.41s43.263 56.387 25.764 144.37c76.316-85.067 90.899-221.172 79.233-273.184 173.048 121.037 246.934 383.04 147.285 576.99 529.84-299.432 131.73-748.58 62.22-799.134 23.332 50.554 27.707 136.106-19.444 177.91C631.578 61.247 436.17 0 436.17 0c23.332 154.577-83.608 323.737-186.66 449.634-3.402-61.733-7.29-104.023-39.859-163.326-7.291 111.8-92.843 203.186-116.176 315.473-31.11 152.146 23.333 263.461 232.352 380.61z" fill="#F23921" p-id="2466"></path></svg>
+                                                                                                    </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="">文字转化成音频MP3格式</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='77' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_4 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="将阿拉伯数字复制粘贴或输入到“输入小写数字金额”中，比如（123456），在“显示中文大写金额”框中显示自动转换完成的中文大写内容。最后复制转换完成的内容到想到的地方粘贴即可。">
+                                                <img src='/public/index/46.png' alt="人民币大写在线转换工具"/>
+                                                <a href='/index/rmb/index.html'>人民币大写在线转换工具                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="将阿拉伯数字复制粘贴或输入到“输入小写数字金额”中，比如（123456），在“显示中文大写金额”框中显示自动转换完成的中文大写内容。最后复制转换完成的内容到想到的地方粘贴即可。">将数字转化成大写</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='46' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_4 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="请在文本框里输入你想要的转换的简体字,然后点击“繁体字”转换按钮,即可将简体字准确的转换翻译为繁体字或QQ非主流繁体字。">
+                                                <img src='/public/index/47.png' alt="在线繁体字转换器"/>
+                                                <a href='/index/typeface/index.html'>在线繁体字转换器                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="请在文本框里输入你想要的转换的简体字,然后点击“繁体字”转换按钮,即可将简体字准确的转换翻译为繁体字或QQ非主流繁体字。">将字体转化繁体字、简体字、QQ个性字体</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='47' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_4 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="在线将汉字翻译为汉语拼音，可选择翻译中汉字和拼音，拼音带有第几声符，也让平时遇见不懂的文字，能了解该文字怎么读。">
+                                                <img src='/public/index/48.png' alt="在线汉字转换成拼音工具"/>
+                                                <a href='/index/typeface/pinyin.html'>在线汉字转换成拼音工具                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="在线将汉字翻译为汉语拼音，可选择翻译中汉字和拼音，拼音带有第几声符，也让平时遇见不懂的文字，能了解该文字怎么读。">讲简体汉字转化成拼音</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='48' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_4 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="该工具可以将您输入的英文字母全部转换成大写或者小写字母">
+                                                <img src='/public/index/50.png' alt="英文字母大小写转换"/>
+                                                <a href='/index/typeface/english.html'>英文字母大小写转换                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="该工具可以将您输入的英文字母全部转换成大写或者小写字母">英文字母大小写转换</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='50' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_4 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="知道好多的设计朋友，做过的设计都不要了的那一刻，仿佛自己什么东西没了一样！
+一个图片下载，素材下载，支持psd,cdr,ai等文件的素材工具
+下载文件里面提供素材的详细图层。">
+                                                <img src='/public/index/63.png' alt="免费图片素材下载"/>
+                                                <a href='/index/picture/index.html'>免费图片素材下载                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="知道好多的设计朋友，做过的设计都不要了的那一刻，仿佛自己什么东西没了一样！
+一个图片下载，素材下载，支持psd,cdr,ai等文件的素材工具
+下载文件里面提供素材的详细图层。">图片素材源文件下载，一键修改即可</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='63' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_4 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="">
+                                                <img src='/public/index/84.png' alt="PDF转图片"/>
+                                                <a href='/index/pdf/image.html'>PDF转图片                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="">PDF转图片png、jpg、webp</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='84' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_4 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="">
+                                                <img src='/public/index/90.png' alt="Word转PDF"/>
+                                                <a href='/index/pdf/word.html'>Word转PDF                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="">可以批量进行Word转换PDF</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='90' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_4 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="">
+                                                <img src='/public/index/91.png' alt="PPT转视频"/>
+                                                <a href='/index/pptx/video.html'>PPT转视频                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="">PPT幻灯片在线转换成视频MP4，保留幻灯片原有效果</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='91' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_4 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="">
+                                                <img src='/public/index/112.png' alt="PDF转Word"/>
+                                                <a href='/index/pdf/docx.html'>PDF转Word                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="">把pdf转换成docx的word文档</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='112' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <h2 class='index_title '><a>便民工具</a> <span>最新房贷计算器 | 房贷计算器 | 贷款计算 | 事务处理 | 记事本</span></h2>
+                                                                          <div class="jquery index_menu name_7 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="贷款计算器（商业贷款、公积金贷款、组合型贷款），可根据根据面积、单价计算，也可根据贷款总额计算，同时有等额本息和等额本金的计算还款金额详细数据">
+                                                <img src='/public/index/31.png' alt="贷款计算器"/>
+                                                <a href='/index/calculation/loan.html'>贷款计算器                                                    <svg t="1499634215564" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2464" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" class="icon"><path d="M156.181 847.743s277.072 359.221 631.433 52.012c386.442-335.403-322.279-563.866-322.279-563.866L275.76 528.867 156.18 847.743z" fill="#FDB350" p-id="2465"></path><path d="M325.827 982.39c-65.622-136.105-30.624-214.366 19.93-287.766 54.928-80.69 69.51-160.41 69.51-160.41s43.263 56.387 25.764 144.37c76.316-85.067 90.899-221.172 79.233-273.184 173.048 121.037 246.934 383.04 147.285 576.99 529.84-299.432 131.73-748.58 62.22-799.134 23.332 50.554 27.707 136.106-19.444 177.91C631.578 61.247 436.17 0 436.17 0c23.332 154.577-83.608 323.737-186.66 449.634-3.402-61.733-7.29-104.023-39.859-163.326-7.291 111.8-92.843 203.186-116.176 315.473-31.11 152.146 23.333 263.461 232.352 380.61z" fill="#F23921" p-id="2466"></path></svg>
+                                                                                                    </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="贷款计算器（商业贷款、公积金贷款、组合型贷款），可根据根据面积、单价计算，也可根据贷款总额计算，同时有等额本息和等额本金的计算还款金额详细数据">可计算房贷的每月还款明细和周期</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='31' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_7 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="">
+                                                <img src='/public/index/89.png' alt="推广计算器"/>
+                                                <a href='/index/calculator/index.html'>推广计算器                                                    <svg t="1499634215564" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2464" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" class="icon"><path d="M156.181 847.743s277.072 359.221 631.433 52.012c386.442-335.403-322.279-563.866-322.279-563.866L275.76 528.867 156.18 847.743z" fill="#FDB350" p-id="2465"></path><path d="M325.827 982.39c-65.622-136.105-30.624-214.366 19.93-287.766 54.928-80.69 69.51-160.41 69.51-160.41s43.263 56.387 25.764 144.37c76.316-85.067 90.899-221.172 79.233-273.184 173.048 121.037 246.934 383.04 147.285 576.99 529.84-299.432 131.73-748.58 62.22-799.134 23.332 50.554 27.707 136.106-19.444 177.91C631.578 61.247 436.17 0 436.17 0c23.332 154.577-83.608 323.737-186.66 449.634-3.402-61.733-7.29-104.023-39.859-163.326-7.291 111.8-92.843 203.186-116.176 315.473-31.11 152.146 23.333 263.461 232.352 380.61z" fill="#F23921" p-id="2466"></path></svg>
+                                                                                                    </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="">二类电商,产品,选品,起量,合作,资讯,物流,利润</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='89' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_7 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="记录一些资料，方便以后查看搜素，能更快的管理好自己的资料，不为繁琐的资料无处安放而烦躁。">
+                                                <img src='/public/index/29.png' alt="记事本"/>
+                                                <a href='/index/notepad/index.html'>记事本                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="记录一些资料，方便以后查看搜素，能更快的管理好自己的资料，不为繁琐的资料无处安放而烦躁。">可以储存自己的信息数据</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='29' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_7 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="日常事务处理，可批量添加未完成的事务，每个事务后面都有已完成和删除按钮，同时点击已完成可记录完成时间，方便自己管理自己的事情，以防止过后就忘了">
+                                                <img src='/public/index/30.png' alt="个人事务"/>
+                                                <a href='/index/notepad/thing.html'>个人事务                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="日常事务处理，可批量添加未完成的事务，每个事务后面都有已完成和删除按钮，同时点击已完成可记录完成时间，方便自己管理自己的事情，以防止过后就忘了">可添加正在执行、已执行完成的事务</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='30' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_7 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="一个可以在线使用的元素周期表，包含了所有元素及其相关数据，可以轻松快捷的查看出每个元素的信息">
+                                                <img src='/public/index/49.png' alt="在线元素周期表"/>
+                                                <a href='/index/typeface/element.html'>在线元素周期表                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="一个可以在线使用的元素周期表，包含了所有元素及其相关数据，可以轻松快捷的查看出每个元素的信息">元素周期表的属性值</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='49' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_7 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="乘法口诀表,九九乘法口诀表
+快速简单的得出来结果，通过鼠标拉动即可">
+                                                <img src='/public/index/60.png' alt="九九乘法口诀表"/>
+                                                <a href='/index/multiplication/index.html'>九九乘法口诀表                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="乘法口诀表,九九乘法口诀表
+快速简单的得出来结果，通过鼠标拉动即可">快捷的九九乘法口诀</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='60' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_7 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="">
+                                                <img src='/public/index/80.png' alt="骚扰电话查询"/>
+                                                <a href='/index/tools/saoraodianhua.html'>骚扰电话查询                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="">通过电话手机号在线查询是否为骚扰电话</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='80' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_7 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="">
+                                                <img src='/public/index/102.png' alt="食物卡路里计算器"/>
+                                                <a href='/index/calculation/food.html'>食物卡路里计算器                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="">免费计算食物里含多少卡路里，在线食物卡路里计算器</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='102' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <h2 class='index_title '><a>其他工具</a> <span></span></h2>
+                                                                          <div class="jquery index_menu name_8 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="可转换为迅雷下载地址，旋风下载地址，快车下载地址，为下载方式提供了一定的帮助">
+                                                <img src='/public/index/22.png' alt="下载地址转换"/>
+                                                <a href='/index/graburl/download.html'>下载地址转换                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="可转换为迅雷下载地址，旋风下载地址，快车下载地址，为下载方式提供了一定的帮助">将下载地址转化成迅雷、旋风、快车地址</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='22' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_8 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="内含大量的简历模板，各种炫酷简易风格与颜色搭配一应俱全，可为面试者提供了一定的简历参考。">
+                                                <img src='/public/index/24.png' alt="简历在线工具 | 简历模板下载库"/>
+                                                <a href='/index/resume/index.html'>简历在线工具 | 简历模板下载库                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="内含大量的简历模板，各种炫酷简易风格与颜色搭配一应俱全，可为面试者提供了一定的简历参考。">简历模板和PPT下载</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='24' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_8 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="拾取坐标器是通过搜素地名在地图搜索出地名区域，通过鼠标选取所需坐标，为开发者开发地图等功能提供了一个不错的功能。">
+                                                <img src='/public/index/43.png' alt="拾取坐标器"/>
+                                                <a href='/index/map/coordinate.html'>拾取坐标器                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="拾取坐标器是通过搜素地名在地图搜索出地名区域，通过鼠标选取所需坐标，为开发者开发地图等功能提供了一个不错的功能。">通过地图拾取目的地的坐标参数</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='43' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_8 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="一款锻炼反应力和判断力的游戏，通过道具和躲避小怪的存在时间来获取积分，生存得越久，积分越高，是一款不错的休闲游戏。">
+                                                <img src='/public/index/45.png' alt="躲僵尸小游戏"/>
+                                                <a href='/index/game/survivals.html'>躲僵尸小游戏                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="一款锻炼反应力和判断力的游戏，通过道具和躲避小怪的存在时间来获取积分，生存得越久，积分越高，是一款不错的休闲游戏。">锻炼头脑的一个好玩小游戏</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='45' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_8 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="吸烟成本计算器，可以让你知道，你抽这种烟，一个月和一年的抽烟消费成本是怎么样的？同时，吸烟有害身体，建议能不吸就不吸。">
+                                                <img src='/public/index/55.png' alt="吸烟成本计算器"/>
+                                                <a href='/index/tools/xycbjsq.html'>吸烟成本计算器                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="吸烟成本计算器，可以让你知道，你抽这种烟，一个月和一年的抽烟消费成本是怎么样的？同时，吸烟有害身体，建议能不吸就不吸。">计算当前吸烟的成本消费（吸烟有害身体）</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='55' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_8 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="练习键盘打字，同时也能体验游戏的感觉，还能看到炫酷的效果。是一个练习打字的好辅助工具">
+                                                <img src='/public/index/57.png' alt="快速练习打字娱乐工具"/>
+                                                <a href='/index/game/typing.html'>快速练习打字娱乐工具                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="练习键盘打字，同时也能体验游戏的感觉，还能看到炫酷的效果。是一个练习打字的好辅助工具">通过玩游戏联系打字速度</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='57' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_8 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="">
+                                                <img src='/public/index/67.png' alt="子女血型遗存查询"/>
+                                                <a href='/index/tools/xuexing.html'>子女血型遗存查询                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="">通过自己和伴侣的血型，查询子女可能的血型</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='67' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                       <div class="jquery index_menu name_8 ">          
+                                        <div class="jquery_content">        
+                                            <div class="jquery_title" title="">
+                                                <img src='/public/index/100.png' alt="人生重开模拟器"/>
+                                                <a href='/index/game/again.html'>人生重开模拟器                                                </a>
+
+                                            </div>
+                                            <div class="jquery_text" title="">人生重开模拟器大全给我们带来了各种各样好玩的人生模拟游戏。</div>  
+                                            <div class="jquery_count">           
+                                                <div>
+                                                    <span data-id='100' ><i class="fa fa-fw fa-heart"></i> 加入收藏</span>
+                                                </div>                                      
+                                            </div> 
+                                        </div>                             
+                                    </div>   
+                                                                   </div>                        
+                            </div>                        
+                            <div class="layui-tab-item lmcjl_search"></div>
+                        </div>         
+                    </div>            
+                </div>
+            </div> 
+        </div>  
+    </div> 
+</div>
+<script>
+    layui.use(['table'], function () {
+        var table = layui.table;
+        var $ = layui.$;
+        $('.name_id').click(function () {
+            $('.name_id').removeClass('name_click');
+            var name_id = $(this).attr('name_id');
+            $(this).addClass('name_click');
+            if (name_id > 0) {
+                $('.index_menu').hide();
+                $('.name_' + name_id).show();
+                $('.index_title').hide();
+            } else {
+                $('.index_title').show();
+                $('.index_menu').show();
+                $('.index_title').css('display', 'inline-block');
+            }
+            $.ajax({
+                type: 'get',
+                url: '/index/index/nameid',
+                data: 'name_id=' + name_id,
+                dataType: 'json',
+                success: function () {
+
+                }
+            });
+        });
+        $('#search_name').bind('keydown', function (event) {
+            if (event.keyCode == "13") {
+                Search();
+            }
+        });
+        $('.jquery_count span').click(function () {
+            var id = parseInt($(this).attr('data-id'));
+            if (id) {
+                var that = $(this);
+                that.attr('data-id', 0);
+                layer.load(0, {shade: false});
+                $.ajax({
+                    type: 'post',
+                    url: '/index/index/collect',
+                    data: 'id=' + id,
+                    dataType: 'json',
+                    success: function (json) {
+                        layer.closeAll();
+                        layer.msg(json.msg);
+                        that.attr('data-id', id);
+                        if (json.status == 0) {
+                            if (json.msg == '收藏成功') {
+                                that.css('color', '#f06f6f');
+                                that.html('<i class="fa fa-fw fa-heart"></i> 取消收藏');
+                            } else {
+                                that.css('color', '#666666');
+                                that.html('<i class="fa fa-fw fa-heart"></i> 加入收藏');
+                            }
+
+                        }
+                    }
+                });
+            }
+        });
+        $('.search_name').click(function () {
+            var name = $(this).html();
+            $('#search_name').val(name);
+            Search();
+        });
+        $('.search').on('click', function () {
+            Search();
+        });
+        function SearchMenu(key) {
+            $.ajax({
+                type: 'post',
+                url: '/index/index/search',
+                data: 'key=' + key,
+                dataType: 'json',
+                success: function (json) {
+                    if (json.status == 0) {
+                        if (json.msg.length > 0) {
+                            var html = '<div class="menu_list"><span class="layui-badge layui-bg-green">在线工具</span>';
+                            $(json.msg).each(function (i, j) {
+                                html += '<div class="search_result"><a href=' + (j.url) + '  target="_blank"><img src="/public/index/' + j.id + '.png" width="15"/> <span>' + j.name + '</span> - ' + j.brief + '</a></div>';
+                            });
+                            html += "</div>";
+                            $('.lmcjl_search').append(html);
+                        }
+                    }
+                }});
+        }
+        function SearchJquery(key) {
+            $.ajax({type: 'post', url: '/index/index/jquery', data: 'key=' + key, dataType: 'json', success: function (json) {
+                    if (json.status == 0) {
+                        if (json.msg.length > 0) {
+                            var html = '<div class="jquery_list"><span class="layui-badge layui-badge">网站模板插件</span>';
+                            $(json.msg).each(function (i, j) {
+                                html += '<div class="search_result"><a href="/index/javascript/jqueryview/id/' + j.id + '.html"  target="_blank"><i class="fa fa-fw fa-leaf"></i> <span>' + j.name + '</span> - ' + j.introduce + '</a></div>';
+                            });
+                            html += "</div>";
+                            $('.lmcjl_search').append(html);
+                        }
+                    }
+                }});
+        }
+        function SearchProgram(key) {
+            $.ajax({type: 'post', url: '/index/index/searchfault', data: 'key=' + key, dataType: 'json', success: function (json) {
+                    if (json.status == 0) {
+                        if (json.msg.length > 0) {
+                            var html = '<div class="search_fault"><span class="layui-badge layui-bg-green">技术故障方案</span>';
+                            $(json.msg).each(function (i, j) {
+                                html += '<div class="search_result"><a href="/index/program/faultview/id/' + j.doc_id + '.html"  target="_blank"><i class="fa fa-code"></i> <span>' + j.doc_name + '</span></a></div>';
+                            });
+                            html += "</div>";
+                            $('.lmcjl_search').append(html);
+                        }
+                    }
+                }});
+        }
+        function SearchResume(key) {
+            $.ajax({type: 'post', url: '/index/index/resume', data: 'key=' + key, dataType: 'json', success: function (json) {
+                    if (json.status == 0) {
+                        if (json.msg.length > 0) {
+                            var html = '<div class="resume_list"><span class="layui-badge layui-bg-blue">简历模板</span>';
+                            $(json.msg).each(function (i, j) {
+                                html += '<div class="search_result"><a href="/index/resume/resumeview/id/' + j.id + '.html"  target="_blank"><i class="fa fa-cloud-download"></i> <span>' + j.name + '</span></a></div>';
+                            });
+                            html += "</div>";
+                            $('.lmcjl_search').append(html);
+                        }
+                    }
+                }});
+        }
+        function Search() {
+            var search_name = $('#search_name').val();
+            if (isEmpty(search_name)) {
+                layer.msg('请输入功能名称');
+                return false;
+            }
+            if (search_name.length > 88) {
+                layer.msg('大佬，饶了小的吧，搜索关键词不用这么长吧！');
+                return false;
+            }
+            $('.lmcjl_content').click();
+            $('.lmcjl_search').html('');
+            $('.menu_list').html('');
+            layer.load(0, {shade: false});
+            $.ajax({type: 'post', url: '/index/index/searchkey', data: 'key=' + search_name, dataType: 'json', success: function (json) {
+                    if (json.status == 0) {
+                        SearchMenu(json.msg);
+                        SearchProgram(json.msg);
+                        SearchJquery(json.msg);
+                        SearchResume(json.msg);
+                        layer.closeAll();
+                    } else {
+                        layer.closeAll();
+                        layer.msg(json.msg);
+                    }
+                }});
+        }
+    });
+</script>
+<div class="layui-footer">
+    <a href="/index/comment/index" target="_blank">LmCjl社区</a> 丨 
+    <a href="/index/comment/index/class_id/2.html" target="_blank">在线反馈</a> 丨
+    <a href="/index/index/responsibility" target="_blank">免责声明</a> 丨
+    <a href="/task.html" target="_blank">获取机器币</a> 丨
+    <a href="/link.html"><i class="fa fa-fw fa-heart" style="color:#F76685"></i> 申请友链</a> 丨
+    <a href="http://beian.miit.gov.cn/" target="_blank" rel="external nofollow">备案号：粤ICP备18019057号-1</a>
+    <a href="https://beian.mps.gov.cn/#/query/webSearch?code=44052302000065" rel="noreferrer" target="_blank"><img src="/public/index/ga.png" width="20"> 粤公网安备44052302000065号</a>
+</div>
+</div>
+</div>
+</body>
+</html>
